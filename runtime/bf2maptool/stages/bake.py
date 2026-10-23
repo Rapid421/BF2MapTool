@@ -76,6 +76,30 @@ def free_gb():
     return m.ullAvailPhys / 2 ** 30
 
 
+class BakerDied(Exception):
+    """the light baker gave no result on the full scene and on the lighter one"""
+
+    def __init__(self, tries):
+        Exception.__init__(self, 'the light baker stopped without a result %d times' % len(tries))
+        self.tries = tries
+
+
+def unbaked(job, log, src, tries):
+    """the build goes on WITHOUT baked lighting rather than failing: the level as it was before the bake becomes this
+    stage's project, and the Check tab gets a warning that says so"""
+    shutil.copyfile(src, job.project('bake'))
+    info = {'unbaked': True, 'why': 'the light baker stopped without a result on the full and on the lighter scene', 'tries': tries}
+    with open(job.work + '/bake.json', 'w', encoding='utf-8') as f:
+        json.dump(info, f, indent=1)
+    msg = ('The light bake failed (the baker stopped twice, exit %s - also with the lighter scene), so this mod was made WITHOUT '
+           'baked lighting: the sun and lamps still light it, but shade is flat. Try Bake lighting at Draft, lower the map\'s '
+           'piece count, or send a bug report.  [log: %s]' % (tries[-1]['exit'], job.path('logs', 'bake_flux_lite.log')))
+    log('bake: ' + msg)
+    getattr(log, 'feed', log)('@@RESULT ' + json.dumps({'code': 'bake.failed_unbaked', 'severity': 'warning', 'message': msg,
+                                                       'objects': [], 'materials': [], 'fix': ''}))
+    return {'unbaked': True, 'exits': [t['exit'] for t in tries]}
+
+
 class Steps:
     """sub-step markers: a step is redone when its key (inputs) changed or a step before it was redone"""
 
@@ -748,10 +772,12 @@ def run(job, log):
             json.dump(doc, f)
         return out_f, len(recs), n_own
 
-    def scene():
-        extra = sorted(m.split('/')[-1][:-5] for m, v in cls.items() if v['emitter'] or v['occluder'])
+    def scene(lite=False, out=scene_f):
+        # lite: the second try after the baker died - the light-blocking pieces without a lightmap are left out (only
+        # the glowing ones stay). LEGO Utapau: 0.65 M triangles with no blockers baked, every scene with them aborted.
+        extra = sorted(m.split('/')[-1][:-5] for m, v in cls.items() if v['emitter'] or (v['occluder'] and not lite))
         lights_f, n_lamps, n_own = bake_lights()
-        args = ['enlighten', 'flux-scene', job.level, '--out', scene_f, '--plan', plan_f, '--materials', mats_f, '--probes', probes_f,
+        args = ['enlighten', 'flux-scene', job.level, '--out', out, '--plan', plan_f, '--materials', mats_f, '--probes', probes_f,
                 '--sky-cube', cube_f, '--report', B + '/scene_report.json']
         if extra:
             # the list is matched as substrings of the mesh path. Piece names start "<prefix>_<number>_", which is unique,
@@ -766,11 +792,13 @@ def run(job, log):
         if not bool((job.map.get('look') or {}).get('sun_on', True)):
             args.append('--no-sun')
         args += ['--lights', lights_f]
-        r = clix.direct('bake_scene', args, project=p_geo, check=False)
-        if not os.path.exists(scene_f):
+        if os.path.exists(out):
+            os.remove(out)
+        r = clix.direct('bake_scene_lite' if lite else 'bake_scene', args, project=p_geo, check=False)
+        if not os.path.exists(out):
             raise StageError('The bake scene could not be written  [log: %s]' % r.log_path)
         said = [l.strip()[:200] for l in r.text.splitlines() if re.search(r'mesh(es)?[, ]|instance|emitter|light', l) and 'WARN' not in l][-6:]
-        return {'bytes': os.path.getsize(scene_f), 'non_lightmapped_in_scene': len(extra), 'said': said, 'lamps': n_lamps,
+        return {'bytes': os.path.getsize(out), 'non_lightmapped_in_scene': len(extra), 'said': said, 'lamps': n_lamps,
                 'lamps_with_own_bake_strength': n_own, 'lamp_scale': getattr(host, 'BAKE_LAMP_SCALE', 1.0)}
     S.run('scene', [config.file_hash(plan_f), config.file_hash(mats_f), config.file_hash(probes_f), config.file_hash(cube_f),
                     (job.map.get('look') or {}).get('sun_on', True), job.map.get('lights'), getattr(host, 'BAKE_LAMP_SCALE', 1.0)], scene, [scene_f])
@@ -786,14 +814,31 @@ def run(job, log):
         if free < MIN_FREE_GB:
             raise StageError('Only %.1f GB of memory is free; the bake needs at least %.0f GB (it would die without a message). '
                              'Close the game or other programs and press Bake again.' % (free, MIN_FREE_GB))
-        shutil.rmtree(out_d, ignore_errors=True)
-        cmd = ['cmd', '/c', 'start', '/belownormal', '/b', '/wait', exe.replace('/', '\\'), scene_f.replace('/', '\\'), out_d.replace('/', '\\'),
-               '--samples', str(Q['samples']), '--filter', str(Q['filter'])]
-        rc, text = cli.spawn(cmd, job.path('logs', 'bake_flux.log'), log, cli.tool_env(job), echo=None, timeout=6 * 3600, quiet_timeout=3600)
-        if not os.path.exists(out_d + '/irradiance.f32'):
-            raise StageError('The light baker stopped without a result (exit %s)  [log: %s]' % (rc, job.path('logs', 'bake_flux.log')))
-        return {'free_gb_before': round(free, 1), 'exit': rc, 'tail': [l.strip()[:160] for l in text.strip().splitlines()[-3:]]}
-    S.run('flux', [config.file_hash(scene_f), Q['samples'], Q['filter']], flux, [out_d + '/irradiance.f32'])
+        tries = []
+        for lite in (False, True):
+            sf = scene_f
+            if lite:
+                # the baker died on the full scene (0xC0000409 on heavy scenes, no message): once more without the
+                # light-blocking pieces that have no lightmap
+                sf = B + '/scene_lite.fxs'
+                log('bake: the light baker stopped without a result (exit %s); trying again with a lighter scene '
+                    '(no light-blocking pieces without a lightmap)' % tries[-1]['exit'])
+                tries[-1]['lite_scene'] = scene(lite=True, out=sf)
+            shutil.rmtree(out_d, ignore_errors=True)
+            cmd = ['cmd', '/c', 'start', '/belownormal', '/b', '/wait', exe.replace('/', '\\'), sf.replace('/', '\\'), out_d.replace('/', '\\'),
+                   '--samples', str(Q['samples']), '--filter', str(Q['filter'])]
+            rc, text = cli.spawn(cmd, job.path('logs', 'bake_flux%s.log' % ('_lite' if lite else '')), log, cli.tool_env(job), echo=None,
+                                 timeout=6 * 3600, quiet_timeout=3600)
+            tries.append({'scene': sf, 'exit': rc, 'tail': [l.strip()[:160] for l in text.strip().splitlines()[-3:]]})
+            if os.path.exists(out_d + '/irradiance.f32'):
+                return {'free_gb_before': round(free, 1), 'exit': rc, 'scene': sf, 'lite': lite, 'tries': tries}
+        raise BakerDied(tries)
+
+    try:
+        fx = S.run('flux', [config.file_hash(scene_f), Q['samples'], Q['filter']], flux, [out_d + '/irradiance.f32'])
+    except BakerDied as e:
+        return unbaked(job, log, src, e.tries)
+    used_scene = (fx or {}).get('scene') or scene_f
 
     # ---- leak filter
     def leak():
@@ -801,7 +846,7 @@ def run(job, log):
         if not os.path.exists(exe):
             raise StageError('The leak filter (leakmask) was not found: "%s". Set it in the add-on preferences.' % exe)
         shutil.rmtree(out_f, ignore_errors=True)
-        rc, text = cli.spawn([exe, scene_f, out_d, out_f], job.path('logs', 'bake_leak.log'), log, cli.tool_env(job), echo=None, timeout=3600, quiet_timeout=1800)
+        rc, text = cli.spawn([exe, used_scene, out_d, out_f], job.path('logs', 'bake_leak.log'), log, cli.tool_env(job), echo=None, timeout=3600, quiet_timeout=1800)
         if not os.path.exists(out_f + '/irradiance.f32'):
             raise StageError('The leak filter stopped without a result (exit %s)  [log: %s]' % (rc, job.path('logs', 'bake_leak.log')))
         st = {}

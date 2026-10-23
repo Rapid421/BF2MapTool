@@ -363,6 +363,8 @@ def main():
                 if tmp != png and os.path.exists(tmp):
                     shutil.move(tmp, png)
                 res['shots'].append({'name': name, 'ok': os.path.exists(png), 't': time.strftime('%H:%M:%S')})
+                if not os.path.exists(png):         # what the game said, so a missing picture can be explained
+                    res['shots'][-1].update(rc=rc, said=' | '.join(l.strip() for l in o[-3:])[:300])
                 if k + 1 < int(s.get('repeat', 1)):
                     time.sleep(float(s.get('gap', 4.0)))
         if a.then and time.time() - t0 < TOTAL - 180 - a.then_limit:
