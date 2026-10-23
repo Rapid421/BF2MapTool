@@ -1,4 +1,0 @@
-[submodule "deps/FrostyCLI"]
-	path = deps/FrostyCLI
-	url = https://github.com/Rapid421/FrostyCLI-BF2MapTool.git
-	branch = feat/bf2maptool
