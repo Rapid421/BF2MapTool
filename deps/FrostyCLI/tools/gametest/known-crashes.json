@@ -1,0 +1,73 @@
+{
+  "_about": "Crash addresses already diagnosed in Star Wars Battlefront II (2017), build with module size 0xE45C000. Read by `frostycli mod test` (on a non-LOADED verdict) and `frostycli game crash`: the fault address and the first stack entries are matched against `address` (exact) or `range` (inclusive). Add entries as crashes get diagnosed. `confidence`: confirmed = traced in the game's code; observed = seen and fixed, mechanism not fully traced.",
+  "crashes": [
+    {
+      "address": "game+0x15AC36B",
+      "cause": "MeshStreamingManager's fixed table of 2,048 unique MeshAssets overflowed (no bounds check). The count is every unique mesh loaded at once: host level + port + soldiers/weapons spawned at runtime.",
+      "fix": "Reduce unique MeshAssets: reuse meshes across placements, drop unused imports, or use a lighter host level.",
+      "confidence": "confirmed"
+    },
+    {
+      "address": "game+0x159E617",
+      "also": ["game+0x159E634"],
+      "cause": "Texture-streaming distance pass over a mesh built from a multi-material template, once a piece is drawn about 1 km from the camera.",
+      "fix": "Build ported meshes from a single-material template.",
+      "confidence": "confirmed"
+    },
+    {
+      "address": "game+0x62A85DB",
+      "also": ["game+0x62A8602"],
+      "cause": "A SoundPatchConfiguration whose SoundPatch is not loaded: the configuration sits in a bundle without its SoundPatchAsset (or the sound's data chunks aren't reachable).",
+      "fix": "`frostycli bundle closure --apply` so each sound's configuration and patch share a bundle.",
+      "confidence": "confirmed"
+    },
+    {
+      "address": "game+0x816376",
+      "cause": "Not the faulting code: the return address inside the engine's thread-entry wrapper (game+0x8162E0); a worker-thread job faulted. Seen when a cloned emitter's original mesh/shaders were bundled but missing from the level's shader database.",
+      "fix": "Don't bundle the originals of cloned emitters; check `level closure` didn't pull their meshes/shaders. Look at the worker's stack for the real fault.",
+      "confidence": "confirmed"
+    },
+    {
+      "address": "game+0x1522B97",
+      "cause": "EBX/resource import resolution: an import GUID in no loaded compartment - e.g. a foreign VisualEnvironment whose flare shaders import textures bundled only with another level, a source prefab bundled with its old imports, or (Kyber only) a root/stage-late import.",
+      "fix": "Clone foreign VEs and strip the lens flare; never bundle source prefabs; null refs before ebx array-remove; run `level closure --audit`.",
+      "confidence": "confirmed"
+    },
+    {
+      "address": "game+0xCC1F2F",
+      "cause": "ReferenceObjectGhost slot 11 (client create of a replicated reference object) reads a null pointer: an _MP ground vehicle (STAP/BARC) placed directly on the map. Those take their look from the kit, which only the spawn manager applies.",
+      "fix": "Don't map-spawn _MP speeders; use the pickup (Starkiller GP kit) pattern or a game mode's vehicle spawn manager.",
+      "confidence": "confirmed"
+    },
+    {
+      "address": "game+0x167FE84",
+      "cause": "A *_class_schematics asset bundled without its *_class ClassInfoAsset.",
+      "fix": "Let `level closure` add the pairs; every _class_schematics needs its _class in the same bundle.",
+      "confidence": "observed"
+    },
+    {
+      "address": "game+0xC62103",
+      "cause": "A Blueprint.Objects entry resolved to null while the level loaded: an external reference to a partition or instance that isn't loaded (e.g. root references still pointing at host partitions).",
+      "fix": "Repoint or remove references to unloaded partitions; clone non-root exported objects the port still needs.",
+      "confidence": "observed"
+    },
+    {
+      "range": ["game+0x7C65200", "game+0x7C652FF"],
+      "cause": "Late crash after loading a large port: the level's LOD-slot budget (2,048 slots) was exceeded - seen on Kamino when the dropped Content sub-world still held its meshes.",
+      "fix": "Exclude or trim the host's Content sub-world (and repoint the stream-in wiring that depended on it).",
+      "confidence": "observed"
+    },
+    {
+      "address": "game+0x1651B9D",
+      "cause": "memcpy with a garbage count. Kyber only: a modified SHIPPED res whose 16-byte meta changed (e.g. a merged RVM database) gets the shipped meta under Kyber.",
+      "fix": "Ship such data as an ADDED res under the level's own path and revert the shipped one; `mod check` must report shippedResMetaChanged 0.",
+      "confidence": "observed"
+    },
+    {
+      "address": "game+0x6137CDF",
+      "cause": "Kyber host crash at match end / map change while the next level loads: a MapEdit-style plugin kept level data containers or entities in Lua tables across the level change.",
+      "fix": "Never store engine values in plugin (Lua) state across levels; keep names only.",
+      "confidence": "observed"
+    }
+  ]
+}

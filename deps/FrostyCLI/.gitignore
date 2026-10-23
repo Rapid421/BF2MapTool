@@ -1,0 +1,30 @@
+# Build outputs
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+
+# Asset cache built at first run (large, machine-specific)
+**/Caches/
+Caches/
+
+# Scratch / test artifacts
+build_*.txt
+mesh-exports/
+
+# Release packages produced by package.ps1
+dist/
+
+# NOTE: lib/ (FrostyCore/FrostySdk/FrostyHash/SharpDX/native deps + plugins) IS
+# committed so this repo builds standalone on clone. setup.ps1 only re-copies
+# them from an FE editor build if you need to refresh.
+tools/gametest/autotest-args.json
+tools/gametest/autotest-result.json
+tools/gametest/autotest.log
+
+# local backup of the bundled SDK, not part of the source
+*.dll.orig
+
+# Python bytecode (tools/blender)
+__pycache__/

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+          Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{A2222222-2222-2222-2222-222222222222}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FrostyCLI.Core</RootNamespace>
+    <AssemblyName>FrostyCLI.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FrostySdk">
+      <HintPath>..\lib\FrostySdk.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FrostyCore">
+      <HintPath>..\lib\FrostyCore.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FrostyHash">
+      <HintPath>..\lib\FrostyHash.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FrostyControls">
+      <HintPath>..\lib\FrostyControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX">
+      <HintPath>..\lib\SharpDX.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics">
+      <HintPath>..\lib\SharpDX.Mathematics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EbxGraphBuilder.cs" />
+    <Compile Include="EbxGraphPackage.cs" />
+    <Compile Include="BundleManagerHost.cs" />
+    <Compile Include="PortManifest.cs" />
+    <Compile Include="Corpus\Sqlite.cs" />
+    <Compile Include="Corpus\CorpusFlattener.cs" />
+    <Compile Include="Corpus\CorpusStore.cs" />
+    <Compile Include="MergeHandlerFidelity.cs" />
+    <Compile Include="OccluderMeshResource.cs" />
+    <Compile Include="ResWriter.cs" />
+    <Compile Include="Animation\SeAnimModel.cs" />
+    <Compile Include="Animation\SeAnimWriter.cs" />
+    <Compile Include="Animation\SeAnimReader.cs" />
+    <Compile Include="Animation\StrikeClipName.cs" />
+    <Compile Include="Animation\ClipChannelDecoder.cs" />
+    <Compile Include="Animation\AnimSkeleton.cs" />
+    <Compile Include="Animation\AntStateClipSource.cs" />
+    <Compile Include="Animation\AntBankReader.cs" />
+    <Compile Include="Animation\AntBankBrowser.cs" />
+    <Compile Include="Animation\AntAnimationDecoder.cs" />
+    <Compile Include="Animation\AnimExporter.cs" />
+    <Compile Include="FrostyInitializer.cs" />
+    <Compile Include="ExportLogger.cs" />
+    <Compile Include="LevelDuplicator.cs" />
+    <Compile Include="LevelCreator.cs" />
+    <Compile Include="SkirmishShell.cs" />
+    <Compile Include="CombatArea.cs" />
+    <Compile Include="KyberDeclaration.cs" />
+    <Compile Include="LocalizationHost.cs" />
+    <Compile Include="WpfStub.cs" />
+    <Compile Include="FrostyMessageBoxPatch.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="PluginRegistry.cs" />
+    <Compile Include="OutputFormatter.cs" />
+    <Compile Include="TypeCoercion.cs" />
+    <Compile Include="ModSettings.cs" />
+    <Compile Include="HeadlessProject.cs" />
+    <Compile Include="AssetCloner.cs" />
+    <Compile Include="DryRun.cs" />
+    <Compile Include="PropertyPathWriter.cs" />
+    <Compile Include="InProcessObjects.cs" />
+    <Compile Include="PathAutoCreate.cs" />
+    <Compile Include="RefTargetPicker.cs" />
+    <Compile Include="ShippedDiff.cs" />
+    <Compile Include="PointerRefUtil.cs" />
+    <Compile Include="PortNames.cs" />
+    <Compile Include="TransformBuilder.cs" />
+    <Compile Include="LightPort.cs" />
+    <Compile Include="MaterialIds.cs" />
+    <Compile Include="HavokPhysicsResource.cs" />
+    <Compile Include="HavokPhysicsResource.Shapes.cs" />
+    <Compile Include="WriteOpBus.cs" />
+    <Compile Include="PipelineRunnerBus.cs" />
+    <Compile Include="IndexService.cs" />
+    <Compile Include="EbxDumper.cs" />
+    <Compile Include="ProjectDelta.cs" />
+    <Compile Include="PropertyPathReader.cs" />
+    <Compile Include="EbxRefWriter.cs" />
+    <Compile Include="SubWorldScaffolder.cs" />
+    <Compile Include="HeadlessSoundImporter.cs" />
+    <Compile Include="AudioPackage.cs" />
+    <Compile Include="SoundWavePort.cs" />
+    <Compile Include="EditorPluginHost.cs" />
+    <Compile Include="NavmeshObjPin.cs" />
+    <Compile Include="NavTileStitch.cs" />
+    <Compile Include="TerrainNavMesher.cs" />
+    <Compile Include="NavmeshSpawnReach.cs" />
+    <Compile Include="SoundGraphPackage.cs" />
+    <Compile Include="SoundGraphPort.cs" />
+    <Compile Include="EALayer3Encoder.cs" />
+    <Compile Include="FbProjectManifestReader.cs" />
+    <Compile Include="HavokTransformReader.cs" />
+    <Compile Include="TerrainResource.cs" />
+    <Compile Include="Enlighten\EnlightenDatabase.cs" />
+    <Compile Include="Enlighten\ProbeVolumes.cs" />
+    <Compile Include="Enlighten\AtlasIo.cs" />
+    <Compile Include="Enlighten\GeometrySoup.cs" />
+    <Compile Include="Enlighten\FluxScene.cs" />
+    <Compile Include="Enlighten\ProbeRelight.cs" />
+    <Compile Include="Enlighten\LightmapKey.cs" />
+    <Compile Include="Enlighten\Swbf1Enlighten.cs" />
+    <Compile Include="Enlighten\ChartRaster.cs" />
+    <Compile Include="Enlighten\SkyModel.cs" />
+    <Compile Include="Enlighten\TerrainRelight.cs" />
+    <Compile Include="Enlighten\LocalLights.cs" />
+    <Compile Include="TerrainSurvey.cs" />
+    <Compile Include="TerrainMaskTransplant.cs" />
+    <Compile Include="TerrainCloner.cs" />
+    <Compile Include="Terrain\Net48Compat.cs" />
+    <Compile Include="Terrain\Primitives.cs" />
+    <Compile Include="Terrain\Model.cs" />
+    <Compile Include="Terrain\MaskStride.cs" />
+    <Compile Include="Terrain\Parser.cs" />
+    <Compile Include="Terrain\Serializer.cs" />
+    <Compile Include="Terrain\Sizing.cs" />
+    <Compile Include="Terrain\MinMaxPyramid.cs" />
+    <Compile Include="Terrain\Rle4.cs" />
+    <Compile Include="Terrain\HeightSources.cs" />
+    <Compile Include="Terrain\MinMaxLevels.cs" />
+    <Compile Include="Terrain\OccluderPlaneFit.cs" />
+    <Compile Include="Terrain\HeightfieldBuilder.cs" />
+    <Compile Include="Terrain\MaskBuilder.cs" />
+    <Compile Include="Terrain\ColorMaterialBuilders.cs" />
+    <Compile Include="Terrain\TerrainAssembler.cs" />
+    <Compile Include="Terrain\TerrainGenerator.cs" />
+    <Compile Include="Terrain\RasterFiles.cs" />
+    <Compile Include="Terrain\HeightmapInput.cs" />
+    <Compile Include="Terrain\LayerInput.cs" />
+    <Compile Include="Terrain\TerrainExport.cs" />
+    <Compile Include="Terrain\MaskEditor.cs" />
+    <Compile Include="Terrain\Derivations.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

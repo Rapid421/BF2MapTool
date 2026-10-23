@@ -1,0 +1,100 @@
+{
+ "note": "MP1: combat area rect x 35..200, z 5..175 (floor 50, no vertical limit) on the Tatooine test terrain; the inherited Skirmish polygon was x 68.6..175.5, z 23.6..145.3 (y 57.81..97.81). Inside points: 4-6 m inside the new edges (all outside the old polygon), the mesa top, the pit floor, the centre. Outside: 15 m past the west edge.",
+ "heights": "F:/Frosty/projects/map-playable/work/tat/heights.r32",
+ "settle": 5,
+ "death_wait": 22,
+ "inside": [
+  {
+   "name": "centre",
+   "x": 122.0,
+   "z": 84.0
+  },
+  {
+   "name": "west4",
+   "x": 39.0,
+   "z": 90.0
+  },
+  {
+   "name": "east4",
+   "x": 196.0,
+   "z": 90.0
+  },
+  {
+   "name": "south4",
+   "x": 120.0,
+   "z": 9.0
+  },
+  {
+   "name": "north4",
+   "x": 120.0,
+   "z": 171.0
+  },
+  {
+   "name": "sw_corner",
+   "x": 41.0,
+   "z": 11.0
+  },
+  {
+   "name": "ne_corner",
+   "x": 194.0,
+   "z": 169.0
+  },
+  {
+   "name": "mesa_top",
+   "x": 108.6,
+   "z": 100.6
+  },
+  {
+   "name": "pit_floor",
+   "x": 159.6,
+   "z": 67.6,
+   "hold": 6
+  }
+ ],
+ "outside": {
+  "name": "west15",
+  "x": 20.0,
+  "z": 90.0
+ },
+ "views": [
+  [
+   "overview",
+   [
+    122.0,
+    260.0,
+    -170.0
+   ],
+   [
+    122.0,
+    60.0,
+    85.0
+   ]
+  ],
+  [
+   "arena_high",
+   [
+    40.0,
+    120.0,
+    10.0
+   ],
+   [
+    125.0,
+    64.0,
+    95.0
+   ]
+  ],
+  [
+   "mesa_sw",
+   [
+    72.0,
+    74.0,
+    62.0
+   ],
+   [
+    109.0,
+    68.0,
+    101.0
+   ]
+  ]
+ ]
+}

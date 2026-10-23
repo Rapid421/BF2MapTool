@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    navmesh: the command line of Bfii.Navmesh: inspect (header, graphs, islands), export-obj (a graph's
+    polygons as OBJ, e.g. DICE's own navmesh to compare against), compile, roundtrip, islands. Built next to
+    FrostyCLI.exe (bin\x64\<config>\navgen\navmesh.exe). Program.cs is vendored from BfiiMapTools with
+    tools\sync-navgen.ps1.
+  -->
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Bfii.Navmesh.Cli</RootNamespace>
+    <AssemblyName>navmesh</AssemblyName>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <OutDir>$(MSBuildThisFileDirectory)..\..\..\FrostyCLI\bin\x64\$(Configuration)\navgen\</OutDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bfii.Navmesh\Bfii.Navmesh.csproj" />
+  </ItemGroup>
+
+</Project>

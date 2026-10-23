@@ -1,0 +1,20 @@
+<Project>
+  <!--
+    The navmesh tools under tools\navgen build with the settings of their upstream (BfiiMapTools
+    Directory.Build.props); FrostyCLI's own projects are .NET Framework and live outside this folder.
+    Sources are vendored with tools\sync-navgen.ps1; these project files are the CLI's own.
+  -->
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <Deterministic>true</Deterministic>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <!-- Build output outside the project folders, as upstream: the library has its own Obj\ folder (the OBJ
+         reader and writer), and the SDK's default obj\ exclusion would drop it on a case-insensitive disk. -->
+    <BaseOutputPath>$(MSBuildThisFileDirectory)artifacts\bin\$(MSBuildProjectName)\</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)artifacts\obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>

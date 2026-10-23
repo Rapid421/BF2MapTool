@@ -1,0 +1,177 @@
+{
+ "00008000": {
+  "bf2": "00000800",
+  "how": "DICE pair (165 obs)",
+  "tables": 284
+ },
+ "28108000": {
+  "bf2": "0880e800",
+  "how": "DICE pair (48 obs)",
+  "tables": 79
+ },
+ "28998000": {
+  "bf2": "08890800",
+  "how": "DICE pair (52 obs)",
+  "tables": 69
+ },
+ "8d178000": {
+  "bf2": "21015800",
+  "how": "DICE pair (45 obs)",
+  "tables": 62
+ },
+ "8d108000": {
+  "bf2": "2100e800",
+  "how": "DICE pair (19 obs)",
+  "tables": 61
+ },
+ "8d1e8000": {
+  "bf2": "2101c800",
+  "how": "DICE pair (37 obs)",
+  "tables": 57
+ },
+ "8d118000": {
+  "bf2": "2100f800",
+  "how": "DICE pair (9 obs)",
+  "tables": 21
+ },
+ "8d638000": {
+  "bf2": "2105b800",
+  "how": "DICE pair (17 obs)",
+  "tables": 18
+ },
+ "28118000": {
+  "bf2": "0880f800",
+  "how": "DICE pair (4 obs)",
+  "tables": 17
+ },
+ "8a108000": {
+  "bf2": "2100e800",
+  "how": "derived (top 0x8a->0x210, idx 0x10->0x0e)",
+  "tables": 12
+ },
+ "28148000": {
+  "bf2": "08812800",
+  "how": "derived (top 0x28->0x088, idx 0x14->0x12)",
+  "tables": 11
+ },
+ "25108000": {
+  "bf2": "0000e800",
+  "how": "DICE pair (2 obs)",
+  "tables": 11
+ },
+ "8a148000": {
+  "bf2": "21012800",
+  "how": "DICE pair (1 obs)",
+  "tables": 10
+ },
+ "8d128000": {
+  "bf2": "21010800",
+  "how": "DICE pair (1 obs)",
+  "tables": 9
+ },
+ "8b108000": {
+  "bf2": "2100e800",
+  "how": "DICE pair (1 obs)",
+  "tables": 9
+ },
+ "8d1f8000": {
+  "bf2": "2101d800",
+  "how": "DICE pair (2 obs)",
+  "tables": 9
+ },
+ "251e8000": {
+  "bf2": "0001c800",
+  "how": "DICE pair (6 obs)",
+  "tables": 8
+ },
+ "28638000": {
+  "bf2": "0885b800",
+  "how": "DICE pair (6 obs)",
+  "tables": 7
+ },
+ "8a138000": {
+  "bf2": "21011800",
+  "how": "DICE pair (2 obs)",
+  "tables": 6
+ },
+ "28138000": {
+  "bf2": "08811800",
+  "how": "derived (top 0x28->0x088, idx 0x13->0x11)",
+  "tables": 6
+ },
+ "28128000": {
+  "bf2": "08810800",
+  "how": "derived (top 0x28->0x088, idx 0x12->0x10)",
+  "tables": 6
+ },
+ "8b128000": {
+  "bf2": "20810800",
+  "how": "derived (top 0x8b->0x208, idx 0x12->0x10)",
+  "tables": 6
+ },
+ "8d998000": {
+  "bf2": "21090800",
+  "how": "DICE pair (5 obs)",
+  "tables": 6
+ },
+ "8d148000": {
+  "bf2": "21012800",
+  "how": "derived (top 0x8d->0x210, idx 0x14->0x12)",
+  "tables": 5
+ },
+ "281e8000": {
+  "bf2": "0881c800",
+  "how": "DICE pair (2 obs)",
+  "tables": 5
+ },
+ "8b118000": {
+  "bf2": "2080f800",
+  "how": "DICE pair (1 obs)",
+  "tables": 4
+ },
+ "28168000": {
+  "bf2": "08814800",
+  "how": "derived (top 0x28->0x088, idx 0x16->0x14)",
+  "tables": 4
+ },
+ "28178000": {
+  "bf2": "08815800",
+  "how": "DICE pair (2 obs)",
+  "tables": 4
+ },
+ "8d138000": {
+  "bf2": "21011800",
+  "how": "derived (top 0x8d->0x210, idx 0x13->0x11)",
+  "tables": 3
+ },
+ "251a8000": {
+  "bf2": "0881c800",
+  "how": "DICE pair (2 obs)",
+  "tables": 3
+ },
+ "28738000": {
+  "bf2": "0886b800",
+  "how": "DICE pair (1 obs)",
+  "tables": 2
+ },
+ "29738001": {
+  "bf2": "08c6b801",
+  "how": "DICE pair (1 obs)",
+  "tables": 2
+ },
+ "00008001": {
+  "bf2": "00000801",
+  "how": "DICE pair (1 obs)",
+  "tables": 2
+ },
+ "25138000": {
+  "bf2": "00011800",
+  "how": "derived (top 0x25->0x000, idx 0x13->0x11)",
+  "tables": 2
+ },
+ "8d818000": {
+  "bf2": "21079800",
+  "how": "derived (top 0x8d->0x210, idx 0x81->0x79)",
+  "tables": 1
+ }
+}
