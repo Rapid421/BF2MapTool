@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    navgen: a level's walkable geometry (`frostycli navmesh geometry`) -> Recast (DotRecast, MIT) -> a NavPower
+    image seeded from a donor navmesh, self-checked by a byte-exact round trip. `frostycli navmesh build` runs
+    it as a process; the build puts it next to FrostyCLI.exe (bin\x64\<config>\navgen\navgen.dll), where the
+    CLI finds it when no navgen path is given. Program.cs is vendored from BfiiMapTools with tools\sync-navgen.ps1.
+  -->
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <AssemblyName>navgen</AssemblyName>
+    <RootNamespace>Bfii.Navgen</RootNamespace>
+    <OutDir>$(MSBuildThisFileDirectory)..\..\..\FrostyCLI\bin\x64\$(Configuration)\navgen\</OutDir>
+    <!-- CLI-owned entry (TiledBuild.cs): build with a tile size runs the tiled build, the rest the vendored Program.Main -->
+    <StartupObject>Bfii.Navgen.Entry</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- the tile stitcher is plain C# shared with FrostyCLI.Core, where the CLI's unit tests exercise it -->
+    <Compile Include="..\..\..\FrostyCLI.Core\NavTileStitch.cs" Link="NavTileStitch.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bfii.Navmesh\Bfii.Navmesh.csproj" />
+    <PackageReference Include="DotRecast.Recast" Version="2026.3.1" />
+  </ItemGroup>
+
+</Project>

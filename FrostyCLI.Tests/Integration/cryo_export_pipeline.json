@@ -1,0 +1,13 @@
+{
+  "game": "swbf1",
+  "game-path": "C:/Program Files (x86)/Origin Games/STAR WARS Battlefront",
+  "steps": [
+    {
+      "op": "export",
+      "ebx": "xp2/objects/architecture/_wallscryochamber_01/wallscryochamber_01_mesh",
+      "out": "C:/Temp/cryo_export/wallscryochamber_01_mesh.fbx",
+      "format": "fbx",
+      "on-error": "continue"
+    }
+  ]
+}

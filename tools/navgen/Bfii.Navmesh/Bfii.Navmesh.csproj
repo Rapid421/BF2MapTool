@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Bfii.Navmesh: reads, writes, compiles and round-trips the BFII pathfinding blob (the NavPower image a
+    level's PathfindingBlobAsset chunk holds). Vendored from BfiiMapTools src\Bfii.Navmesh with
+    tools\sync-navgen.ps1. netstandard2.0, no packages, no Frosty references.
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Bfii.Navmesh</RootNamespace>
+    <AssemblyName>Bfii.Navmesh</AssemblyName>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+</Project>

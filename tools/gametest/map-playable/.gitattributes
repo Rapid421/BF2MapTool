@@ -1,0 +1,2 @@
+# bash scripts: LF on every checkout (core.autocrlf would make them CRLF, which Git Bash cannot run)
+*.sh text eol=lf

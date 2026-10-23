@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+          Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{A6666666-6666-6666-6666-666666666666}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FrostyCLI.Tests</RootNamespace>
+    <AssemblyName>FrostyCLI.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FrostySdk">
+      <HintPath>..\lib\FrostySdk.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FrostyCore">
+      <HintPath>..\lib\FrostyCore.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\FrostyCLI.Core\FrostyCLI.Core.csproj">
+      <Project>{A2222222-2222-2222-2222-222222222222}</Project>
+      <Name>FrostyCLI.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrostyCLI.Commands\FrostyCLI.Commands.csproj">
+      <Project>{A3333333-3333-3333-3333-333333333333}</Project>
+      <Name>FrostyCLI.Commands</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrostyCLI.Pipeline\FrostyCLI.Pipeline.csproj">
+      <Project>{A4444444-4444-4444-4444-444444444444}</Project>
+      <Name>FrostyCLI.Pipeline</Name>
+    </ProjectReference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <ProjectReference Include="..\FrostyCLI.Tests.Fakes\FrostyCLI.Tests.Fakes.csproj">
+      <Project>{A7777777-7777-7777-7777-777777777777}</Project>
+      <Name>FrostyCLI.Tests.Fakes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrostyCLI.Adapters.Mesh\FrostyCLI.Adapters.Mesh.csproj">
+      <Project>{A5555555-5555-5555-5555-555555555555}</Project>
+      <Name>FrostyCLI.Adapters.Mesh</Name>
+    </ProjectReference>
+    <Reference Include="MeshSetPlugin">
+      <HintPath>..\lib\MeshSetPlugin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FrostyHash">
+      <HintPath>..\lib\FrostyHash.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <ProjectReference Include="..\FrostyCLI.Adapters.Texture\FrostyCLI.Adapters.Texture.csproj">
+      <Project>{B4444444-4444-4444-4444-444444444444}</Project>
+      <Name>FrostyCLI.Adapters.Texture</Name>
+    </ProjectReference>
+    <Reference Include="TexturePlugin">
+      <HintPath>..\lib\TexturePlugin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectionTargetFlagTests.cs" />
+    <Compile Include="MaterialParamEditorTests.cs" />
+    <Compile Include="ModApplyOnlyTests.cs" />
+    <Compile Include="MeshVariationDupeTests.cs" />
+    <Compile Include="ReferenceClassTests.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="SurfaceDonorKindTests.cs" />
+    <Compile Include="EbxGraphPackageTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestAttribute.cs" />
+    <Compile Include="IntegrationTestAttribute.cs" />
+    <Compile Include="Assert.cs" />
+    <Compile Include="AudioPackageTests.cs" />
+    <Compile Include="NavmeshObjPinTests.cs" />
+    <Compile Include="NavmeshSpawnReachTests.cs" />
+    <Compile Include="NavmeshGeometryTests.cs" />
+    <Compile Include="NavmeshCollisionTests.cs" />
+    <Compile Include="CombatAreaTests.cs" />
+    <Compile Include="KyberDeclarationTests.cs" />
+    <Compile Include="LoadingScreenTests.cs" />
+    <Compile Include="MenuEntryTests.cs" />
+    <Compile Include="MergeHandlerFidelityTests.cs" />
+    <Compile Include="MeshDepotBundleTests.cs" />
+    <Compile Include="GraphTextureDefaultsTests.cs" />
+    <Compile Include="MeshGeoFieldTests.cs" />
+    <Compile Include="AutoPlayerTests.cs" />
+    <Compile Include="EditorPluginHostTests.cs" />
+    <Compile Include="SoundGraphPackageTests.cs" />
+    <Compile Include="Integration\SoundGraphIntegrationTests.cs" />
+    <Compile Include="Integration\AudioPortIntegrationTests.cs" />
+    <Compile Include="Vendored\FaaeSeAnimParser.cs" />
+    <Compile Include="SeAnimWriterTests.cs" />
+    <Compile Include="StrikeClipNameTests.cs" />
+    <Compile Include="AnimExporterTests.cs" />
+    <Compile Include="PluginRegistryTests.cs" />
+    <Compile Include="OutputFormatterTests.cs" />
+    <Compile Include="ArgParsingTests.cs" />
+    <Compile Include="ManTests.cs" />
+    <Compile Include="GameCommandTests.cs" />
+    <Compile Include="ExportBatchCommandTests.cs" />
+    <Compile Include="TypeCoercionTests.cs" />
+    <Compile Include="PipelineParsingTests.cs" />
+    <Compile Include="PipelineRunnerTests.cs" />
+    <Compile Include="PropertyPathWriterTests.cs" />
+    <Compile Include="PathAutoCreateTests.cs" />
+    <Compile Include="RefTargetPickerTests.cs" />
+    <Compile Include="Integration\PathAutoCreateIntegrationTests.cs" />
+    <Compile Include="ShippedDiffTests.cs" />
+    <Compile Include="Integration\DiffShippedTests.cs" />
+    <Compile Include="TransformBuilderTests.cs" />
+    <Compile Include="LightPortTests.cs" />
+    <Compile Include="LevelAuthorTests.cs" />
+    <Compile Include="TextureArrayHeaderTests.cs" />
+    <Compile Include="MaterialIdsTests.cs" />
+    <Compile Include="PortCommandTests.cs" />
+    <Compile Include="PortIdTests.cs" />
+    <Compile Include="ConnectionEndpointTests.cs" />
+    <Compile Include="Integration\ConnectionCrossPartitionTests.cs" />
+    <Compile Include="Integration\PortImportTests.cs" />
+    <Compile Include="HavokPhysicsResourceTests.cs" />
+    <Compile Include="OccluderMeshResourceTests.cs" />
+    <Compile Include="Integration\HavokPhysicsResourceIntegrationTests.cs" />
+    <Compile Include="EbxWriteCommandTests.cs" />
+    <Compile Include="LevelCommandTests.cs" />
+    <Compile Include="TerrainResourceTests.cs" />
+    <Compile Include="TerrainCreateCommandTests.cs" />
+    <Compile Include="EnlightenCommandTests.cs" />
+    <Compile Include="EnlightenDatabaseTests.cs" />
+    <Compile Include="ProbeVolumesTests.cs" />
+    <Compile Include="Swbf1EnlightenTests.cs" />
+    <Compile Include="MvdbCommandTests.cs" />
+    <Compile Include="HavokTransformReaderTests.cs" />
+    <Compile Include="Integration\ExportTests.cs" />
+    <Compile Include="Integration\ExportBatchTests.cs" />
+    <Compile Include="Integration\EbxWriteTests.cs" />
+    <Compile Include="Integration\LevelTests.cs" />
+    <Compile Include="Integration\TextureExportTests.cs" />
+    <Compile Include="Integration\ExportAnimTests.cs" />
+    <Compile Include="Integration\AnimImportTests.cs" />
+    <Compile Include="Integration\ExportSkinMeshTests.cs" />
+    <Compile Include="ProjectCommandTests.cs" />
+    <Compile Include="Integration\ProjectTests.cs" />
+    <Compile Include="Integration\SpikePhase5.cs" />
+    <Compile Include="Integration\EbxDumpIntegrationTests.cs" />
+    <Compile Include="Integration\EbxSearchIntegrationTests.cs" />
+    <Compile Include="Integration\EbxRefsIntegrationTests.cs" />
+    <Compile Include="Integration\IndexBuildIntegrationTests.cs" />
+    <Compile Include="Integration\ResExportIntegrationTests.cs" />
+    <Compile Include="Integration\ChunkExportIntegrationTests.cs" />
+    <Compile Include="IndexServiceTests.cs" />
+    <Compile Include="EbxDumperTests.cs" />
+    <Compile Include="EbxRefWriterTests.cs" />
+    <Compile Include="SubWorldScaffolderTests.cs" />
+    <Compile Include="Integration\Phase6IntegrationTests.cs" />
+    <Compile Include="Integration\Phase7IntegrationTests.cs" />
+    <Compile Include="Integration\Phase8IntegrationTests.cs" />
+    <Compile Include="Integration\ModDiffTests.cs" />
+    <Compile Include="Integration\ModApplyTests.cs" />
+    <Compile Include="Integration\ResImportTests.cs" />
+    <Compile Include="Integration\ChunkImportTests.cs" />
+    <Compile Include="Integration\ImportSoundTests.cs" />
+    <Compile Include="Integration\Swbf1ParityTests.cs" />
+    <Compile Include="Integration\EbxArrayTests.cs" />
+    <Compile Include="Integration\BundleTests.cs" />
+    <Compile Include="Integration\ModBuildHandlerTests.cs" />
+    <Compile Include="Integration\MaterialTests.cs" />
+    <Compile Include="Integration\WhereTests.cs" />
+    <Compile Include="Integration\ImportResourceTests.cs" />
+    <Compile Include="Integration\HandlerPluginTests.cs" />
+    <Compile Include="Integration\ConnectionTests.cs" />
+    <Compile Include="Integration\EnlightenTests.cs" />
+    <Compile Include="Integration\DryRunTests.cs" />
+    <Compile Include="ImportCommandTests.cs" />
+    <Compile Include="MeshGeoTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Integration\cryo_export_pipeline.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\lib\libfbxsdk.dll">
+      <Link>thirdparty\libfbxsdk.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\lib\libzstd.dll">
+      <Link>thirdparty\libzstd.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <!-- Required for headless SWBF1/SWBF2 zstd binding (see FrostyCLI.csproj note). -->
+    <Content Include="..\lib\libzstd.1.1.5.dll">
+      <Link>thirdparty\libzstd.1.1.5.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <!-- Prebuilt EBX SDK assemblies. TypeLibrary loads these (relative to CWD, pinned to the
+         output dir by FrostyInitializer); without them it generates stripped types missing
+         SetInstanceGuid and every GetEbx throws. -->
+    <Content Include="..\lib\Profiles\StarWarsSDK.dll">
+      <Link>Profiles\StarWarsSDK.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\lib\Profiles\StarWarsIISDK.dll">
+      <Link>Profiles\StarWarsIISDK.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\lib\zlibwapi.dll">
+      <Link>thirdparty\zlibwapi.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\lib\liblz4.so.1.8.0.dll">
+      <Link>thirdparty\liblz4.so.1.8.0.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\lib\thirdparty\dxtex.dll">
+      <Link>thirdparty\dxtex.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <!-- EALayer3 encoder so the gated compressed-sound test can run when ffmpeg is also present. -->
+    <Content Include="..\lib\thirdparty\ealayer3_encode.exe">
+      <Link>thirdparty\ealayer3_encode.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\lib\thirdparty\ealayer3_encode.dll">
+      <Link>thirdparty\ealayer3_encode.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\lib\thirdparty\libmpg123-0.dll">
+      <Link>thirdparty\libmpg123-0.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

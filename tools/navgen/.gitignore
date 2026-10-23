@@ -1,0 +1,3 @@
+artifacts/
+# the library's own Obj folder is source (the OBJ reader and writer), not build output
+!Bfii.Navmesh/Obj/

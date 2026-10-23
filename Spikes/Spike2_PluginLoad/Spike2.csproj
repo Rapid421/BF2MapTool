@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{B2222222-2222-2222-2222-222222222222}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Spike2</RootNamespace>
+    <AssemblyName>Spike2</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FrostySdk">
+      <HintPath>..\..\lib\FrostySdk.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FrostyCore">
+      <HintPath>..\..\lib\FrostyCore.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FrostyHash">
+      <HintPath>..\..\lib\FrostyHash.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FrostyControls">
+      <HintPath>..\..\lib\FrostyControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MeshSetPlugin">
+      <HintPath>..\..\lib\MeshSetPlugin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Content Include="..\..\lib\libfbxsdk.dll">
+      <Link>thirdparty\libfbxsdk.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\lib\libzstd.dll">
+      <Link>thirdparty\libzstd.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\lib\zlibwapi.dll">
+      <Link>thirdparty\zlibwapi.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\lib\liblz4.so.1.8.0.dll">
+      <Link>thirdparty\liblz4.so.1.8.0.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\lib\Profiles\StarWarsSDK.dll">
+      <Link>Profiles\StarWarsSDK.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\lib\Profiles\StarWarsIISDK.dll">
+      <Link>Profiles\StarWarsIISDK.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

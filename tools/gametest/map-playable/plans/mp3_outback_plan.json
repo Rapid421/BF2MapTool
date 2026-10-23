@@ -1,0 +1,11 @@
+{
+ "note": "Blast (Online rule: ~5 s countdown, then death): inside west4, out 15 m past the west edge for 2 s then back to x 45 (the warning should clear, no death), then the fatal walk-out 15 m past the north edge.",
+ "heights": "F:/Frosty/projects/map-playable/work/tat/heights.r32",
+ "settle": 4,
+ "death_wait": 14,
+ "inside": [
+  {"name": "west4", "x": 39.0, "z": 90.0}
+ ],
+ "out_and_back": {"x": 20.0, "z": 90.0, "wait": 2, "back_x": 45.0, "back_z": 90.0, "wait_back": 5, "stay_back": 8},
+ "outside": {"name": "north15", "x": 120.0, "z": 190.0}
+}
