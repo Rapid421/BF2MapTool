@@ -246,6 +246,44 @@ class BF2_OT_open_folder(bpy.types.Operator):
         return {'FINISHED'}
 
 
+class BF2_OT_clean_caches(bpy.types.Operator):
+    bl_idname = 'bf2.clean_caches'
+    bl_label = 'Clean build caches'
+    bl_description = ('Free the disk space this map\'s build keeps to skip work next time (pieces, packages, projects, light bake, '
+                      'navmesh, collision). The built mods and the exported scene stay. The next build takes as long as the first')
+
+    def invoke(self, context, event):
+        from . import caches
+        wf = build.work_folder(context)
+        if not wf or not os.path.isdir(wf):
+            self.report({'WARNING'}, 'This map has no work folder yet: nothing to clean.')
+            return {'CANCELLED'}
+        self._sizes = caches.measure(wf)
+        return context.window_manager.invoke_confirm(self, event, title='Clean build caches',
+                                                     message='Delete %s of caches in %s? Mods and export stay.' % (
+                                                         caches.human(sum(self._sizes.values())), wf), confirm_text='Delete')
+
+    def execute(self, context):
+        from . import caches
+        if build.state(context).running:
+            self.report({'ERROR'}, 'A build is running. Cancel it first.')
+            return {'CANCELLED'}
+        wf = build.work_folder(context)
+        try:
+            r = caches.clean(wf)
+        except (ValueError, caches.Busy) as e:
+            self.report({'ERROR'}, str(e))
+            return {'CANCELLED'}
+        msg = 'Freed %s (%s); mods and export kept' % (caches.human(r['freed']), ', '.join(
+            '%s %s' % (k, caches.human(v)) for k, v in r['folders'].items() if v) or 'nothing to free')
+        if r['failed']:
+            self.report({'WARNING'}, msg + '. Not deleted: ' + '; '.join(r['failed']))
+        else:
+            self.report({'INFO'}, msg)
+        build.state(context).message = msg[:400]
+        return {'FINISHED'}
+
+
 # ------------------------------------------------------------------ selection from results
 class BF2_OT_select_result(bpy.types.Operator):
     bl_idname = 'bf2.select_result'
@@ -580,6 +618,40 @@ def _box(context, name, size, role):
     return o
 
 
+SOLDIER_HEIGHT = 1.8
+# (centre x, y, z, size x, y, z) of the blocks of the scale figure: a game soldier standing at the 3D cursor, facing -Y
+SOLDIER_BLOCKS = ((-0.1, 0.0, 0.43, 0.15, 0.2, 0.86), (0.1, 0.0, 0.43, 0.15, 0.2, 0.86),        # legs
+                  (0.0, 0.0, 1.17, 0.44, 0.26, 0.62),                                            # body
+                  (-0.29, 0.0, 1.12, 0.12, 0.14, 0.62), (0.29, 0.0, 1.12, 0.12, 0.14, 0.62),     # arms
+                  (0.0, 0.0, 1.53, 0.1, 0.1, 0.1),                                               # neck
+                  (0.0, -0.01, 1.69, 0.22, 0.25, 0.22))                                          # head: top at 1.80 m
+
+
+def soldier_figure(context):
+    """the 'BF2 soldier (1.8 m)' scale figure at the 3D cursor; marked so the export never takes it, whatever its role"""
+    import bmesh
+    name = 'BF2 soldier (%.1f m)' % SOLDIER_HEIGHT
+    me = bpy.data.meshes.new(name)
+    bm = bmesh.new()
+    for cx, cy, cz, sx, sy, sz in SOLDIER_BLOCKS:
+        r = bmesh.ops.create_cube(bm, size=1.0)
+        for v in r['verts']:
+            v.co.x = cx + v.co.x * sx; v.co.y = cy + v.co.y * sy; v.co.z = cz + v.co.z * sz
+    bm.to_mesh(me); bm.free()
+    o = bpy.data.objects.new(name, me)
+    o.location = context.scene.cursor.location
+    o.color = (0.9, 0.75, 0.2, 1.0)            # shows in Solid view with "Object" colour
+    o.hide_render = True
+    o['bf2_reference'] = True
+    context.collection.objects.link(o)
+    o.bf2.role, o.bf2.collision = 'reference', 'none'
+    for x in context.view_layer.objects:
+        x.select_set(False)
+    o.select_set(True)
+    context.view_layer.objects.active = o
+    return o
+
+
 class BF2_OT_add_marker(bpy.types.Operator):
     bl_idname = 'bf2.add_marker'
     bl_label = 'Add BF2 object'
@@ -587,7 +659,8 @@ class BF2_OT_add_marker(bpy.types.Operator):
     kind: EnumProperty(items=[('spawn1', 'Team 1 spawn', ''), ('spawn2', 'Team 2 spawn', ''), ('spawn0', 'Neutral spawn', ''),
                               ('hero1', 'Hero spawn, team 1', ''), ('hero2', 'Hero spawn, team 2', ''), ('cp', 'Command post', ''),
                               ('kill', 'Kill volume', ''), ('nowalk', 'Not walkable', ''), ('combat', 'Combat area', ''),
-                              ('probe', 'Reflection probe', ''), ('figure', '1.8 m reference figure', ''),
+                              ('probe', 'Reflection probe', ''),
+                              ('figure', 'BF2 soldier (1.8 m)', 'A soldier-sized figure to judge the scale by; never exported'),
                               # last so the numbering of the others stays
                               ('wall', 'Invisible wall', 'A box that is solid but not drawn (keeps players in, blocks shots)')])
 
@@ -613,9 +686,7 @@ class BF2_OT_add_marker(bpy.types.Operator):
             o = _empty(context, 'Reflection probe', 'SPHERE', 10.0, 'reflection_probe')      # the sphere = the room it serves
             o.location.z += 1.6
         elif k == 'figure':
-            o = _box(context, 'Reference 1.8 m', (0.5, 0.3, 1.8), 'reference')
-            o.location.z += 0.9
-            o.display_type = 'SOLID'
+            soldier_figure(context)
         elif k == 'wall':
             # a standalone "Collision mesh": its triangles become collision of the nearest pieces, it is never drawn
             o = _box(context, 'Invisible wall', (10.0, 0.5, 6.0), 'collision')
@@ -635,6 +706,34 @@ class BF2_OT_mark_selected(bpy.types.Operator):
             o.bf2.role = self.role
             n += 1
         self.report({'INFO'}, '%d object(s) set to "%s"' % (n, dict((k, v) for k, v, _ in props.ROLES)[self.role]))
+        return {'FINISHED'}
+
+
+class BF2_OT_game_look(bpy.types.Operator):
+    bl_idname = 'bf2.game_look'
+    bl_label = 'Game look'
+    bl_description = ('Show the map with the textures the last build packed for the game (colour, smoothness, metal, normal map, '
+                      'cut-out mask, glow) on copies of the materials; press again to go back. Your materials are not changed')
+    bl_options = {'REGISTER', 'UNDO'}
+
+    def execute(self, context):
+        from . import gamelook
+        if gamelook.is_on(context.scene):
+            n = gamelook.restore(context)
+            self.report({'INFO'}, 'Game look off: %d material slot(s) back to your materials' % n)
+            return {'FINISHED'}
+        wf = build.work_folder(context)
+        made, kept, err = gamelook.apply(context, wf) if wf else (0, 0, 'Set the work folder and the level name first.')
+        if err:
+            self.report({'WARNING'}, err)
+            return {'CANCELLED'}
+        self.report({'INFO'}, 'Game look on: %d material(s) show the packed game textures, %d kept as they are (glass, lava, not '
+                    'built yet). Use Material Preview to see them' % (made, kept))
+        for area in context.screen.areas if context.screen else ():
+            if area.type == 'VIEW_3D':
+                for sp in area.spaces:
+                    if sp.type == 'VIEW_3D' and sp.shading.type == 'SOLID':
+                        sp.shading.type = 'MATERIAL'
         return {'FINISHED'}
 
 
@@ -1155,20 +1254,74 @@ FIXES = {'light.dynamic_budget': 'bf2.fit_light_budget', 'class.guessed': 'bf2.c
          'map.name_clash': 'bf2.rename_level'}
 
 
+def marker_kinds():
+    """the items of Add BF2 object (the registered operator's own list: a Python operator class's bl_rna does not list
+    its properties in Blender 5)"""
+    return bpy.ops.bf2.add_marker.get_rna_type().properties['kind'].enum_items
+
+
 class BF2_MT_add(bpy.types.Menu):
     bl_idname = 'BF2_MT_add'
     bl_label = 'BF2 Map'
 
     def draw(self, context):
-        for e in BF2_OT_add_marker.bl_rna.properties['kind'].enum_items:
+        for e in marker_kinds():
             self.layout.operator('bf2.add_marker', text=e.name).kind = e.identifier
+
+
+# the pie: eight directions in Blender's order (left, right, bottom, top, top-left, top-right, bottom-left, bottom-right);
+# the bottom one is a column with the rarer items (a ninth pie item would take the place of the first one)
+PIE = (('spawn1', 'EVENT_A'), ('spawn2', 'EVENT_B'), None, ('cp', 'MESH_CIRCLE'), ('spawn0', 'EMPTY_SINGLE_ARROW'),
+       ('figure', 'OUTLINER_OB_ARMATURE'), ('nowalk', 'MOD_MASK'), ('wall', 'MOD_SOLIDIFY'))
+PIE_MORE = (('kill', 'CANCEL'), ('hero1', 'USER'), ('hero2', 'USER'), ('combat', 'MESH_PLANE'), ('probe', 'SPHERE'))
+PIE_KEY = ('A', True, False, True)      # Shift + Alt + A in the 3D view (Shift + A is Blender's own Add menu)
+
+
+class BF2_MT_add_pie(bpy.types.Menu):
+    bl_idname = 'BF2_MT_add_pie'
+    bl_label = 'Add BF2 object'
+
+    def draw(self, context):
+        names = {e.identifier: e.name for e in marker_kinds()}
+        pie = self.layout.menu_pie()
+        for item in PIE:
+            if item is None:
+                col = pie.column().box().column(align=True)
+                for k, icon in PIE_MORE:
+                    col.operator('bf2.add_marker', text=names[k], icon=icon).kind = k
+            else:
+                pie.operator('bf2.add_marker', text=names[item[0]], icon=item[1]).kind = item[0]
+
+
+_keymaps = []
+
+
+def register_keymap():
+    kc = bpy.context.window_manager.keyconfigs.addon
+    if kc is None:                          # background Blender: no key configuration
+        return
+    km = kc.keymaps.new(name='3D View', space_type='VIEW_3D')
+    key, shift, ctrl, alt = PIE_KEY
+    kmi = km.keymap_items.new('wm.call_menu_pie', key, 'PRESS', shift=shift, ctrl=ctrl, alt=alt)
+    kmi.properties.name = BF2_MT_add_pie.bl_idname
+    _keymaps.append((km, kmi))
+
+
+def unregister_keymap():
+    for km, kmi in _keymaps:
+        try:
+            km.keymap_items.remove(kmi)
+        except (ReferenceError, RuntimeError):
+            pass
+    _keymaps.clear()
 
 
 def add_menu(self, context):
     self.layout.menu('BF2_MT_add', icon='WORLD')
+    self.layout.operator('wm.call_menu_pie', text='BF2 Map (pie, Shift Alt A)', icon='WORLD').name = BF2_MT_add_pie.bl_idname
 
 
-CLASSES = (BF2_OT_check_setup, BF2_OT_find_paths, BF2_OT_install_packages, BF2_OT_port, BF2_OT_check, BF2_OT_bake, BF2_OT_rebuild_mod, BF2_OT_cancel, BF2_OT_open_log, BF2_OT_open_folder,
-           BF2_OT_select_result, BF2_OT_guess_classes, BF2_OT_guess_roles, BF2_OT_add_marker, BF2_OT_mark_selected, BF2_OT_set_collision,
+CLASSES = (BF2_OT_check_setup, BF2_OT_find_paths, BF2_OT_install_packages, BF2_OT_port, BF2_OT_check, BF2_OT_bake, BF2_OT_rebuild_mod, BF2_OT_cancel, BF2_OT_open_log, BF2_OT_open_folder, BF2_OT_clean_caches,
+           BF2_OT_select_result, BF2_OT_guess_classes, BF2_OT_guess_roles, BF2_OT_add_marker, BF2_OT_mark_selected, BF2_OT_set_collision, BF2_OT_game_look,
            BF2_OT_fit_light_budget, BF2_OT_scale_map, BF2_OT_bug_report, BF2_OT_prepare_import, BF2_OT_import_map, BF2_OT_estimate,
-           BF2_OT_confirm_classes, BF2_OT_letter_posts, BF2_OT_rename_level, BF2_OT_export_settings, BF2_OT_import_settings, BF2_MT_add)
+           BF2_OT_confirm_classes, BF2_OT_letter_posts, BF2_OT_rename_level, BF2_OT_export_settings, BF2_OT_import_settings, BF2_MT_add, BF2_MT_add_pie)

@@ -81,7 +81,7 @@ class BF2_PT_main(bpy.types.Panel):
         col.separator()
         col.label(text='Scale: 1 Blender unit = 1 metre')
         row = col.row(align=True)
-        row.operator('bf2.add_marker', text='Add a 1.8 m reference figure', icon='OUTLINER_OB_ARMATURE').kind = 'figure'
+        row.operator('bf2.add_marker', text='Add BF2 soldier (1.8 m)', icon='OUTLINER_OB_ARMATURE').kind = 'figure'
         row.operator('bf2.scale_map', text='Scale map', icon='FULLSCREEN_ENTER')
         col.operator('bf2.prepare_import', icon='IMPORT')
         col.operator('bf2.guess_roles', icon='VIEWZOOM')
@@ -112,6 +112,10 @@ class BF2_PT_main(bpy.types.Panel):
     # ---- Materials
     def tab_materials(self, context, col):
         mats = ops.scene_materials(context)
+        from . import gamelook
+        on = gamelook.is_on(context.scene)
+        col.operator('bf2.game_look', text='Game look: on (press to go back)' if on else 'Game look (textures as built)',
+                     icon='SHADING_TEXTURE', depress=on)
         col.operator('bf2.guess_classes', icon='VIEWZOOM')
         row = col.row(align=True)
         row.prop(context.scene.bf2, 'bake_materials'); row.prop(context.scene.bf2, 'bake_max_size', text='')
@@ -212,6 +216,9 @@ class BF2_PT_main(bpy.types.Panel):
         wf = build.work_folder(context)
         if wf:
             col.label(text='Spawn map after a build: %s/spawn_map.png' % wf)
+        col.separator()
+        col.label(text='After a build: what the level really holds')
+        overlay.draw_build_ui(context, col)
 
     # ---- Lighting
     def tab_lighting(self, context, col):
@@ -315,6 +322,9 @@ class BF2_PT_main(bpy.types.Panel):
         sub.enabled = st.running
         sub.operator('bf2.cancel', icon='CANCEL')
         col.operator('bf2.bug_report', icon='URL')
+        row = col.row()
+        row.enabled = not st.running
+        row.operator('bf2.clean_caches', icon='TRASH')
         if st.running or st.message:
             box = col.box()
             m, sec = divmod(int(st.elapsed), 60)
