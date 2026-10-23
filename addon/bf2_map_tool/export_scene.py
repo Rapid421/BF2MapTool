@@ -768,9 +768,24 @@ def find_collision_object(ob, scene_objects):
     return None
 
 
+def undo_game_look(scene):
+    """material slots that show the "Game look" copies point to their originals again (gamelook.py): the export always
+    reads the user's own materials"""
+    n = 0
+    for o in scene.objects:
+        for s in o.material_slots:
+            m = s.material
+            if m is not None and m.get('bf2_game_look_of') and m['bf2_game_look_of'] in bpy.data.materials:
+                s.material = bpy.data.materials[m['bf2_game_look_of']]
+                n += 1
+    return n
+
+
 def export(out_dir, scene=None, log=print):
     ensure_props()
     scene = scene or bpy.context.scene
+    if undo_game_look(scene):
+        log('game look: the export reads the original materials')
     out_dir = os.path.abspath(out_dir)
     os.makedirs(os.path.join(out_dir, 'geo'), exist_ok=True)
     dg = bpy.context.evaluated_depsgraph_get()
@@ -817,8 +832,8 @@ def export(out_dir, scene=None, log=print):
         role = b.role
         if o.name in col_users and role == 'static':
             role = 'collision'
-        if role in ('skip', 'reference'):
-            M['skipped'].append({'name': o.name, 'why': role}); continue
+        if role in ('skip', 'reference') or o.get('bf2_reference'):      # the soldier figure, whatever its role was set to
+            M['skipped'].append({'name': o.name, 'why': 'reference' if o.get('bf2_reference') else role}); continue
         if o.type == 'LIGHT':
             d = o.data
             fwd = o.matrix_world.to_3x3() @ Vector((0.0, 0.0, -1.0))
@@ -914,7 +929,7 @@ def export(out_dir, scene=None, log=print):
         prole = 'collision' if par.name in col_users else par.bf2.role
         srole = src.bf2.role if src is not par else prole
         why = None
-        if prole in ('skip', 'reference') or srole in ('skip', 'reference'):
+        if prole in ('skip', 'reference') or srole in ('skip', 'reference') or src.get('bf2_reference') or par.get('bf2_reference'):
             why = 'instancer or instanced object is "Leave out"'
         elif par.hide_render or (src is not par and src.hide_render):
             why = 'hidden in renders'

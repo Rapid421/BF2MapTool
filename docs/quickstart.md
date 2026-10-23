@@ -6,7 +6,9 @@ Sidebar (`N`) > **BF2 Map**. The tabs follow the order of the work.
 - **Level name**: 2-24 letters or digits. It becomes the level (`AddedContent/<Name>/Levels/<Name>_01`) and the asset folder
   (`Objects/Ported/<Name>`). A different name = a different level beside your other mods.
 - Display name, planet, description, era, and the **game modes** as tick boxes.
-- **1 Blender unit = 1 metre.** "Add a 1.8 m reference figure" drops a soldier-sized marker to check your scale.
+- **1 Blender unit = 1 metre.** **BF2 soldier (1.8 m)** (Add > BF2 Map, the pie menu, or "Add BF2 soldier (1.8 m)"
+  here) puts a soldier-sized figure at the 3D cursor to judge doorways, steps and corridors by. It is never built into
+  the level, whatever you do to it.
 - **Prepare imported map** (for scenes that were not made for this tool: FBX / OBJ / glTF rips, other games' levels):
   in one go it scales a scene that is clearly not in metres, marks sky domes, backdrops, duplicates and helpers as
   "Leave out" (also a far-away sky MATERIAL inside one big mesh), guesses the material classes, fits the real-time
@@ -22,6 +24,12 @@ Sidebar (`N`) > **BF2 Map**. The tabs follow the order of the work.
   pieces within -4 % to +29 % - an early warning, not an exact count.
 
 ## 2 Materials
+**Game look** (top of the tab, after a build): the map shows the textures the build really packed for the game -
+colour, smoothness, metal, normal map, cut-out mask, glow - on copies of your materials (named "... [game]"); the
+viewport switches to Material Preview. Press it again to go back. Your materials are never changed, and a build started
+while it is on still reads your own materials. Glass and lava keep their Blender look (the game makes those from its
+own templates); a LEGO-style tinted material shows its first tint.
+
 Nothing to export or pack by hand: each material's **Principled BSDF** is read (also inside node groups) and packed
 into the game's textures - colour + smoothness, normal + metal, emission, cut-out mask.
 - **Class**: Opaque, Emissive, Cut-out, Cut-out two-sided, Lava, Glass. Leave a material on Opaque with **Detect from
@@ -53,7 +61,21 @@ red boxes = kill volumes. What shows no colour is not solid in game. Press the r
 Add at the 3D cursor: team spawns, hero spawns, kill volumes (a box), not-walkable boxes, a combat area outline.
 "Selected mesh is a door" turns a mesh into a door that slides open (up / down / left / right, distance) when a
 soldier is near. With **Auto spawns** on, the tool fills in the spawns you did not place from the walkable floor; off,
-soldiers spawn only where you put spawns. After a build `spawn_map.png` in the work folder shows all of them.
+soldiers spawn only where you put spawns. After a build `spawn_map.png` in the work folder shows all of them, and **Show the build** (bottom of the tab) draws in
+the viewport what the level really holds, read back from the work folder:
+- the navmesh: cyan = the main walkable part, orange = parts not connected to it (bots and players there cannot walk
+  to the rest), grey = other parts;
+- every spawn point as a 1.8 m post in its team colour (blue team 1, red team 2, white neutral) with a tick the way it
+  faces, on a ring: green = on the main part, orange = on a cut-off part, magenta = no navmesh under its feet;
+- the spawn-finder areas in the team colour; one that reaches navmesh floors at other heights (a finder area with
+  Height 0 finds spots on every floor inside its outline) gets yellow posts down / up to them;
+- thin white outlines: the play areas.
+The lines under the button list what is wrong (spawns on islands, finder areas reaching other floors). Press the
+arrow after a new build.
+
+Pie menu: Shift Alt A in the 3D view opens Add BF2 object as a pie (spawns, command post,
+soldier, not walkable, invisible wall; at the bottom kill volume, hero spawns, combat area, reflection probe). Change the key in
+Preferences > Keymap > Add-ons.
 
 **Supremacy**: tick it in the Map tab and add five command posts lettered A to E (A, B on team 1's side, C in the
 middle, D, E on team 2's). The tool builds a second level `<Name>_02` that shares everything with the first, puts
@@ -138,6 +160,9 @@ name).
   bake, surfaces the sun does not reach are black.
 - **Rebuild mod**, **Open log**, **Open mod folder**.
 - **Make bug report**: a small zip of the logs and settings (no meshes, no textures) for whoever helps you.
+- **Clean build caches**: frees the disk space this map's build keeps to skip work next time (game pieces, packages,
+  projects, the light bake, navmesh, collision - several GB on a big map). The built mods and the exported scene stay;
+  it says how much it freed. The next build then takes as long as the first one.
 
 Typical times on the development PC: a 500-piece map about 15 minutes for a first build (most of it the final
 consistency checks), a re-build after a small change 2-10 minutes, a draft bake 2-4 minutes on top.

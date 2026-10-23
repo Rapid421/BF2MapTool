@@ -29,9 +29,11 @@ def register():
     overlay.register_props()
     bpy.types.VIEW3D_MT_add.append(ops.add_menu)
     bpy.types.TOPBAR_MT_file_import.append(ops.import_menu)
+    ops.register_keymap()
 
 
 def unregister():
+    ops.unregister_keymap()
     bpy.types.TOPBAR_MT_file_import.remove(ops.import_menu)
     bpy.types.VIEW3D_MT_add.remove(ops.add_menu)
     overlay.unregister_props()
