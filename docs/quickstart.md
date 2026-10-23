@@ -141,3 +141,15 @@ name).
 
 Typical times on the development PC: a 500-piece map about 15 minutes for a first build (most of it the final
 consistency checks), a re-build after a small change 2-10 minutes, a draft bake 2-4 minutes on top.
+
+## 8 Several maps
+Every map mod carries its own copy of the game's menu lists, and when several are loaded together the last one wins:
+only its map shows. **BF2 Map Menu Maker.exe** (in the bundle, next to FrostyCLI) fixes that for any maps made with
+this tool, by anyone:
+1. Open it, press **Add map mods...** and pick the map `.fbmod` files (two or more).
+2. Check the game folder (found by itself) and where to save, then press **Make menu mod** (about a minute).
+3. In Frosty Mod Manager or the Kyber mod list, load the map mods and then the new menu mod **below all of them**
+   (last). Every map then shows in Skirmish / Instant Action.
+
+Adding a map later: make the menu mod again with the new list. Only the small menu mod changes, never the maps.
+Without a window: `"BF2 Map Menu Maker.exe" --make Maps_Menu.fbmod a.fbmod b.fbmod`.

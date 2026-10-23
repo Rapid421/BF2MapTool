@@ -6,13 +6,15 @@ import re
 import sys
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))
-src = ''.join(open(f, encoding='utf-8').read() for f in glob.glob(os.path.join(ROOT, 'addon', 'bf2_map_tool', '*.py')))
+src = ''.join(open(f, encoding='utf-8').read() for f in glob.glob(os.path.join(ROOT, 'addon', 'bf2_map_tool', '*.py'))
+              + [os.path.join(ROOT, 'tools', 'menu_maker', 'menu_maker.py')])          # the Menu Maker app's buttons too
 labels = set(re.findall(r"bl_label = '([^']+)'", src)) | set(re.findall(r"name='([^']+)'", src))
 labels |= set(re.findall(r"\('[a-z_0-9]+', '([^']+)'", src))           # enum item names (tabs, classes, presets ...)
 labels |= set(re.findall(r"text='([^'%]+)'", src))                       # buttons drawn with their own text
+labels |= set(re.findall(r"\('([^']+)', (?:add|remove|lambda)", src))      # the Menu Maker's (label, command) button list
 # words in bold that are not controls (headings in prose, Blender's own menus, file names)
 NOT_CONTROLS = {'do not', 'Install from Disk', 'Port map again', 'Get Extensions', 'Blender World (match the scene)', 'N',
-                'Principled BSDF', 'Instances', 'Many lamps', 'BF2 Map Tool'}
+                'Principled BSDF', 'Instances', 'Many lamps', 'BF2 Map Tool', 'BF2 Map Menu Maker.exe'}
 fails, seen = [], 0
 for f in sorted(glob.glob(os.path.join(ROOT, 'docs', '*.md'))):
     if os.path.basename(f) == 'CHANGELOG.md':

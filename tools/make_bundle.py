@@ -42,6 +42,8 @@ What is in this bundle
   fluxbake\\                      the light baker (only for "Bake lighting")
   scenes\\arena.blend             a small test scene made for the tool - try this first
   docs\\                          setup.md, quickstart.md, troubleshooting.md
+  BF2 Map Menu Maker.exe          combine map mods: makes the small menu mod to load BELOW them, so every map shows
+                                 in the menu (offline and on Kyber) - see docs\\quickstart.md, "8 Several maps"
 
 What you must have yourself
 ---------------------------
@@ -101,6 +103,12 @@ with zipfile.ZipFile(path, 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as z:
         z.write(f, '%s/collision_template/%s' % (name, os.path.basename(f)))
     z.write(S['fluxbake'], '%s/fluxbake/%s' % (name, os.path.basename(S['fluxbake'])))
     counts['docs'] = add_tree(z, os.path.join(ROOT, 'docs'), name + '/docs')
+    # the Menu Maker app (PyInstaller --onefile of tools/menu_maker/menu_maker.py): at the top, next to FrostyCLI\ and
+    # FrostyPlugins\, where it looks for them
+    mm = next((f for f in (S.get('menu_maker_exe') or '', os.path.join(out, 'BF2 Map Menu Maker.exe')) if f and os.path.isfile(f)), None)
+    if not mm:
+        sys.exit('BF2 Map Menu Maker.exe not found: build it (tools/menu_maker) and put it in %s' % out)
+    z.write(mm, '%s/BF2 Map Menu Maker.exe' % name)
     for f in os.listdir(out):                         # the Blender 4.2+ extension form of the add-on too
         if f.startswith('bf2_map_tool-') and f.endswith('-extension.zip') and f.replace('-extension', '') == addon:
             z.write(os.path.join(out, f), '%s/%s' % (name, f))
