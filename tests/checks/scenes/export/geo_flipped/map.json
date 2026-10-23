@@ -1,0 +1,233 @@
+{
+ "version": 1,
+ "map": {
+  "name": "ChkGeoFlipped",
+  "display_name": "ChkGeoFlipped",
+  "planet": "ChkGeoFlipped",
+  "description": "",
+  "era": "clone_wars",
+  "host": "kamino_01",
+  "modes": [
+   "blast",
+   "hvv",
+   "arcade"
+  ],
+  "piece_tris": 3000,
+  "piece_far": 0.5,
+  "piece_ext": 48.0
+ },
+ "blend": {
+  "file": "I:/BF2MapTool/tests/checks/scenes/geo_flipped.blend",
+  "blender": "5.2.0 LTS",
+  "unit_scale": 1.0
+ },
+ "objects": [
+  {
+   "name": "floor",
+   "geo": "geo/floor.npz",
+   "tris": 12,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "auto_uv": false,
+   "modifiers": []
+  },
+  {
+   "name": "inside_out",
+   "geo": "geo/inside_out.npz",
+   "tris": 12,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "auto_uv": false,
+   "modifiers": []
+  }
+ ],
+ "materials": {
+  "floor": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "normal_format": "auto",
+   "class_auto": true,
+   "template": "",
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "floor_c",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "",
+      "missing": false,
+      "file": "tex/floor_c.png",
+      "size": [
+       64,
+       64
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "alpha": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    },
+    "roughness": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 0.5
+    },
+    "metallic": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 0.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false,
+   "in_group": []
+  }
+ },
+ "lights": [],
+ "spawns": [],
+ "command_posts": [],
+ "kill_volumes": [],
+ "doors": [],
+ "not_walkable": [],
+ "combat_area": null,
+ "reflection_probes": [],
+ "markers": [],
+ "skipped": [],
+ "instances": {
+  "objects": 0,
+  "triangles": 0,
+  "skipped": {}
+ },
+ "bake": {
+  "mode": "auto",
+  "bakes": 0,
+  "seconds": 0.0,
+  "failed": [],
+  "materials": []
+ },
+ "play": {
+  "centre": [
+   0.0,
+   0.0,
+   0.5
+  ],
+  "radius": 36.05551275463989,
+  "keep_distance": 250.0,
+  "measured": "geometry box"
+ },
+ "look": {
+  "sky": "world",
+  "sky_hdr": "",
+  "sky_strength": 1.0,
+  "sun_on": false,
+  "sun": null,
+  "exposure": 0.0,
+  "suns": [],
+  "fog": {
+   "color": [
+    0.5,
+    0.550000011920929,
+    0.6000000238418579
+   ],
+   "start": 40.0,
+   "end": 800.0,
+   "density": 0.0,
+   "on": false
+  },
+  "world_color": [
+   0.05,
+   0.05,
+   0.05
+  ],
+  "ev_level": "auto",
+  "game_sky": "tatooine_sunny",
+  "game_sky_asset": "",
+  "sun_from_scene": true,
+  "exposure_mode": "outdoor",
+  "blender": {
+   "view_transform": "AgX",
+   "look": "None",
+   "exposure": 0.0,
+   "gamma": 1.0
+  },
+  "world_kind": "none",
+  "world_hdr": "",
+  "world_name": "",
+  "reflection": {
+   "file": "I:/BF2MapTool/tests/checks/scenes/export/geo_flipped/reflection.hdr",
+   "width": 512,
+   "height": 256,
+   "point": [
+    0.0,
+    0.0,
+    2.0999999046325684
+   ],
+   "clearance": 2.1
+  }
+ },
+ "tints": {
+  "on": true,
+  "objects_tinted": 0,
+  "variants": 0,
+  "materials_with_variants": 0,
+  "objects_varying": 0,
+  "varying_examples": [],
+  "objects_without_colour_attribute": 0
+ },
+ "glowing_cutouts": {
+  "materials": [],
+  "objects": 0
+ },
+ "default_material_objects": [],
+ "options": {
+  "auto_spawns": true,
+  "bake_quality": "normal",
+  "dynamic_light_budget": 64
+ }
+}

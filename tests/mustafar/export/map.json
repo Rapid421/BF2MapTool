@@ -1,0 +1,6179 @@
+{
+ "version": 1,
+ "map": {
+  "name": "MustafarT",
+  "display_name": "Mustafar: Refinery (tool)",
+  "planet": "Mustafar",
+  "description": "A Separatist mining refinery above the lava rivers of Mustafar.",
+  "era": "clone_wars",
+  "host": "kamino_01",
+  "modes": [
+   "blast",
+   "hvv",
+   "arcade"
+  ]
+ },
+ "blend": {
+  "file": "I:/2005_Map_Ports/MustafarPort/blend/mus_fixed.blend",
+  "blender": "5.2.0 LTS",
+  "unit_scale": 1.0
+ },
+ "objects": [
+  {
+   "name": "antenna",
+   "geo": "geo/antenna.npz",
+   "tris": 1661,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "antenna_walkway_left",
+   "geo": "geo/antenna_walkway_left.npz",
+   "tris": 2132,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "antenna_walkway_right",
+   "geo": "geo/antenna_walkway_right.npz",
+   "tris": 2132,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "beam",
+   "geo": "geo/beam.npz",
+   "tris": 30,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "beam_1",
+   "geo": "geo/beam_1.npz",
+   "tris": 30,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "beam_10",
+   "geo": "geo/beam_10.npz",
+   "tris": 30,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "beam_2",
+   "geo": "geo/beam_2.npz",
+   "tris": 30,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "beam_3",
+   "geo": "geo/beam_3.npz",
+   "tris": 30,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "beam_4",
+   "geo": "geo/beam_4.npz",
+   "tris": 30,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "beam_5",
+   "geo": "geo/beam_5.npz",
+   "tris": 30,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "beam_6",
+   "geo": "geo/beam_6.npz",
+   "tris": 30,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "beam_7",
+   "geo": "geo/beam_7.npz",
+   "tris": 30,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "beam_8",
+   "geo": "geo/beam_8.npz",
+   "tris": 30,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "beam_9",
+   "geo": "geo/beam_9.npz",
+   "tris": 30,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.010000000707805157,
+    0.009999999776482582,
+    0.010000000707805157
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "bone_door",
+   "geo": "geo/bone_door.npz",
+   "tris": 12,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.010000004433095455,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.35559749603271484,
+      0.9346392154693604
+     ],
+     [
+      0.0,
+      0.9346392154693604,
+      -0.35559749603271484
+     ]
+    ],
+    "origin": [
+     14.0,
+     63.69096755981445,
+     68.00003051757812
+    ]
+   }
+  },
+  {
+   "name": "bone_door_1",
+   "geo": "geo/bone_door_1.npz",
+   "tris": 12,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.009999999776482582,
+    0.009999999776482582
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      -0.007604598067700863,
+      0.9999710917472839
+     ],
+     [
+      0.0,
+      -0.9999710917472839,
+      -0.007604598067700863
+     ]
+    ],
+    "origin": [
+     46.01298904418945,
+     87.99996948242188,
+     68.36202239990234
+    ]
+   }
+  },
+  {
+   "name": "bone_door_2",
+   "geo": "geo/bone_door_2.npz",
+   "tris": 14,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.010000010952353477,
+    0.010000007227063179,
+    0.010000002570450306
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      -0.93409264087677,
+      -1.5613139225933992e-07,
+      0.3570307791233063
+     ],
+     [
+      0.357030987739563,
+      -4.084834586137731e-07,
+      0.9340925216674805
+     ],
+     [
+      1.311652647559031e-15,
+      1.0,
+      4.373051467609912e-07
+     ]
+    ],
+    "origin": [
+     28.0,
+     40.999969482421875,
+     68.00001525878906
+    ]
+   }
+  },
+  {
+   "name": "bone_door_3",
+   "geo": "geo/bone_door_3.npz",
+   "tris": 12,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.010000001639127731,
+    0.010000002570450306,
+    0.010000008158385754
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      0.999181866645813,
+      0.04041369631886482,
+      -0.0015879112761467695
+     ],
+     [
+      0.0010707194451242685,
+      0.012815880589187145,
+      0.9999173283576965
+     ],
+     [
+      0.040430691093206406,
+      -0.9991008043289185,
+      0.012762297876179218
+     ]
+    ],
+    "origin": [
+     14.057002067565918,
+     87.99996948242188,
+     68.38605499267578
+    ]
+   }
+  },
+  {
+   "name": "bone_door_4",
+   "geo": "geo/bone_door_4.npz",
+   "tris": 12,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000004433095455,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      0.0028286937158554792,
+      -0.9999960064888,
+      -7.215382993308594e-07
+     ],
+     [
+      -0.3555971384048462,
+      -0.0010065537644550204,
+      0.9346387982368469
+     ],
+     [
+      -0.9346350431442261,
+      -0.0026435505133122206,
+      -0.355598509311676
+     ]
+    ],
+    "origin": [
+     42.878013610839844,
+     18.597970962524414,
+     65.97502136230469
+    ]
+   }
+  },
+  {
+   "name": "bone_door_5",
+   "geo": "geo/bone_door_5.npz",
+   "tris": 14,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.010000004433095455,
+    0.010000006295740604,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      0.9340925812721252,
+      -2.466392174937937e-07,
+      0.357030987739563
+     ],
+     [
+      -0.35703086853027344,
+      -6.300602990449988e-07,
+      0.9340925812721252
+     ],
+     [
+      -5.43282752119012e-09,
+      -1.0,
+      -6.76592435411294e-07
+     ]
+    ],
+    "origin": [
+     56.207008361816406,
+     41.097965240478516,
+     68.00001525878906
+    ]
+   }
+  },
+  {
+   "name": "bone_door_6",
+   "geo": "geo/bone_door_6.npz",
+   "tris": 12,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000004433095455,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      0.0028286937158554792,
+      0.9999960064888,
+      7.215382993308594e-07
+     ],
+     [
+      0.3555971384048462,
+      -0.0010065537644550204,
+      0.9346387982368469
+     ],
+     [
+      0.9346350431442261,
+      -0.0026435505133122206,
+      -0.355598509311676
+     ]
+    ],
+    "origin": [
+     28.788997650146484,
+     18.65697479248047,
+     64.9959945678711
+    ]
+   }
+  },
+  {
+   "name": "boneroot",
+   "geo": "geo/boneroot.npz",
+   "tris": 12,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.010000007227063179,
+    0.010000006295740604,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      -0.9351838231086731,
+      1.3970246470762504e-07,
+      -0.3541628122329712
+     ],
+     [
+      -0.3541630208492279,
+      -3.260441303609696e-07,
+      0.9351837038993835
+     ],
+     [
+      1.5174771661463637e-08,
+      1.0,
+      3.5438858958514174e-07
+     ]
+    ],
+    "origin": [
+     -0.3569999933242798,
+     46.999969482421875,
+     67.99803924560547
+    ]
+   }
+  },
+  {
+   "name": "boneroot_11",
+   "geo": "geo/boneroot_11.npz",
+   "tris": 12,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.010000007227063179,
+    0.010000006295740604,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      -0.9351838231086731,
+      1.3970246470762504e-07,
+      -0.3541628122329712
+     ],
+     [
+      -0.3541630208492279,
+      -3.260441303609696e-07,
+      0.9351837038993835
+     ],
+     [
+      1.5174771661463637e-08,
+      1.0,
+      3.5438858958514174e-07
+     ]
+    ],
+    "origin": [
+     -0.32700005173683167,
+     -18.711030960083008,
+     69.10700988769531
+    ]
+   }
+  },
+  {
+   "name": "boneroot_12",
+   "geo": "geo/boneroot_12.npz",
+   "tris": 12,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.010000000707805157,
+    0.01000000350177288,
+    0.01000000350177288
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      0.007936261594295502,
+      -0.9351499676704407,
+      -0.3541630804538727
+     ],
+     [
+      0.003005492500960827,
+      -0.35415032505989075,
+      0.9351836442947388
+     ],
+     [
+      -0.9999639391899109,
+      -0.008486296981573105,
+      -4.35803251264133e-08
+     ]
+    ],
+    "origin": [
+     50.66800308227539,
+     5.774971008300781,
+     66.00001525878906
+    ]
+   }
+  },
+  {
+   "name": "boneroot_13",
+   "geo": "geo/boneroot_13.npz",
+   "tris": 12,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.01000000350177288,
+    0.009999999776482582,
+    0.009999998845160007
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      0.0052909464575350285,
+      -0.9351685643196106,
+      -0.35416319966316223
+     ],
+     [
+      0.0020036427304148674,
+      -0.35415759682655334,
+      0.935183584690094
+     ],
+     [
+      -0.9999840259552002,
+      -0.0056576235219836235,
+      -8.525947947646273e-08
+     ]
+    ],
+    "origin": [
+     72.71001434326172,
+     5.780972003936768,
+     66.00299835205078
+    ]
+   }
+  },
+  {
+   "name": "boneroot_14",
+   "geo": "geo/boneroot_14.npz",
+   "tris": 12,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.010000007227063179,
+    0.010000006295740604,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      -0.9351838231086731,
+      1.3970246470762504e-07,
+      -0.3541628122329712
+     ],
+     [
+      -0.3541630208492279,
+      -3.260441303609696e-07,
+      0.9351837038993835
+     ],
+     [
+      1.5174771661463637e-08,
+      1.0,
+      3.5438858958514174e-07
+     ]
+    ],
+    "origin": [
+     -0.37400001287460327,
+     82.5119857788086,
+     67.98005676269531
+    ]
+   }
+  },
+  {
+   "name": "boneroot_16",
+   "geo": "geo/boneroot_16.npz",
+   "tris": 12,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.010000002570450306,
+    0.010000004433095455,
+    0.010000004433095455
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      0.00793604925274849,
+      0.9351502060890198,
+      -0.3541625440120697
+     ],
+     [
+      0.0030059691052883863,
+      0.35414978861808777,
+      0.9351838827133179
+     ],
+     [
+      0.9999639391899109,
+      -0.008486267179250717,
+      -4.819345349460491e-07
+     ]
+    ],
+    "origin": [
+     61.69001388549805,
+     30.569971084594727,
+     66.55902862548828
+    ]
+   }
+  },
+  {
+   "name": "boneroot_2",
+   "geo": "geo/boneroot_2.npz",
+   "tris": 12,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.01000000350177288,
+    0.01000000536441803,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      0.9351837635040283,
+      2.6305775691071176e-07,
+      -0.35416293144226074
+     ],
+     [
+      0.3541628420352936,
+      -7.313524861274345e-07,
+      0.9351838231086731
+     ],
+     [
+      -1.3010598820528685e-08,
+      -1.0,
+      -7.77114280481328e-07
+     ]
+    ],
+    "origin": [
+     -3.7019996643066406,
+     18.65397071838379,
+     65.9850082397461
+    ]
+   }
+  },
+  {
+   "name": "boneroot_3",
+   "geo": "geo/boneroot_3.npz",
+   "tris": 12,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.01000000350177288,
+    0.01000000536441803,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      0.9351837635040283,
+      2.6305775691071176e-07,
+      -0.35416293144226074
+     ],
+     [
+      0.3541628420352936,
+      -7.313524861274345e-07,
+      0.9351838231086731
+     ],
+     [
+      -1.3010598820528685e-08,
+      -1.0,
+      -7.77114280481328e-07
+     ]
+    ],
+    "origin": [
+     -4.577001094818115,
+     -41.569026947021484,
+     66.0
+    ]
+   }
+  },
+  {
+   "name": "boneroot_4",
+   "geo": "geo/boneroot_4.npz",
+   "tris": 12,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.010000007227063179,
+    0.010000006295740604,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      -0.9351838231086731,
+      1.3970246470762504e-07,
+      -0.3541628122329712
+     ],
+     [
+      -0.3541630208492279,
+      -3.260441303609696e-07,
+      0.9351837038993835
+     ],
+     [
+      1.5174771661463637e-08,
+      1.0,
+      3.5438858958514174e-07
+     ]
+    ],
+    "origin": [
+     27.713003158569336,
+     -41.651031494140625,
+     65.97899627685547
+    ]
+   }
+  },
+  {
+   "name": "boneroot_7",
+   "geo": "geo/boneroot_7.npz",
+   "tris": 12,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.01000000350177288,
+    0.01000000536441803,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      0.9351837635040283,
+      2.6305775691071176e-07,
+      -0.35416293144226074
+     ],
+     [
+      0.3541628420352936,
+      -7.313524861274345e-07,
+      0.9351838231086731
+     ],
+     [
+      -1.3010598820528685e-08,
+      -1.0,
+      -7.77114280481328e-07
+     ]
+    ],
+    "origin": [
+     28.188003540039062,
+     -10.612030982971191,
+     69.08699035644531
+    ]
+   }
+  },
+  {
+   "name": "boneroot_8",
+   "geo": "geo/boneroot_8.npz",
+   "tris": 12,
+   "role": "door",
+   "collision": "exact",
+   "scale": [
+    0.01000000350177288,
+    0.01000000536441803,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": [],
+   "door": {
+    "axis": "up",
+    "distance": 0.0,
+    "axes": [
+     [
+      0.9351837635040283,
+      2.6305775691071176e-07,
+      -0.35416293144226074
+     ],
+     [
+      0.3541628420352936,
+      -7.313524861274345e-07,
+      0.9351838231086731
+     ],
+     [
+      -1.3010598820528685e-08,
+      -1.0,
+      -7.77114280481328e-07
+     ]
+    ],
+    "origin": [
+     -3.6060004234313965,
+     5.020970344543457,
+     65.98600006103516
+    ]
+   }
+  },
+  {
+   "name": "bottom",
+   "geo": "geo/bottom.npz",
+   "tris": 1514,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "collection",
+   "geo": "geo/collection.npz",
+   "tris": 564,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "collection_ramp",
+   "geo": "geo/collection_ramp.npz",
+   "tris": 662,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "collection_top",
+   "geo": "geo/collection_top.npz",
+   "tris": 2224,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "conference_room",
+   "geo": "geo/conference_room.npz",
+   "tris": 3040,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "control",
+   "geo": "geo/control.npz",
+   "tris": 3461,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "control02",
+   "geo": "geo/control02.npz",
+   "tris": 3320,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "controlroom_hall",
+   "geo": "geo/controlroom_hall.npz",
+   "tris": 1027,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube",
+   "geo": "geo/cube.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.009999997913837433,
+    0.009999999776482582
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_1",
+   "geo": "geo/cube_1.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.010000002570450306,
+    0.009999999776482582,
+    0.010000002570450306
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_10",
+   "geo": "geo/cube_10.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999996051192284,
+    0.009999999776482582,
+    0.009999996051192284
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_11",
+   "geo": "geo/cube_11.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.009999999776482582,
+    0.009999997913837433
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_12",
+   "geo": "geo/cube_12.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_13",
+   "geo": "geo/cube_13.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999994188547134,
+    0.009999998845160007,
+    0.009999994188547134
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_14",
+   "geo": "geo/cube_14.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.010000002570450306,
+    0.010000001639127731,
+    0.010000002570450306
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_15",
+   "geo": "geo/cube_15.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000350177288,
+    0.010000001639127731,
+    0.01000000350177288
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_16",
+   "geo": "geo/cube_16.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999998845160007,
+    0.009999999776482582,
+    0.009999998845160007
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_17",
+   "geo": "geo/cube_17.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000002570450306,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_18",
+   "geo": "geo/cube_18.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.009999999776482582,
+    0.009999999776482582
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_19",
+   "geo": "geo/cube_19.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.010000004433095455,
+    0.010000001639127731,
+    0.010000004433095455
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_2",
+   "geo": "geo/cube_2.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.010000000707805157,
+    0.009999999776482582,
+    0.010000000707805157
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_20",
+   "geo": "geo/cube_20.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999998845160007,
+    0.010000001639127731,
+    0.009999999776482582
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_21",
+   "geo": "geo/cube_21.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.010000007227063179,
+    0.010000000707805157,
+    0.010000007227063179
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_22",
+   "geo": "geo/cube_22.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999997913837433,
+    0.009999997913837433,
+    0.009999997913837433
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_23",
+   "geo": "geo/cube_23.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999998845160007,
+    0.009999999776482582,
+    0.009999998845160007
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_24",
+   "geo": "geo/cube_24.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.010000001639127731,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_25",
+   "geo": "geo/cube_25.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999997913837433,
+    0.009999999776482582,
+    0.009999997913837433
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_26",
+   "geo": "geo/cube_26.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.010000001639127731,
+    0.010000001639127731,
+    0.009999999776482582
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_27",
+   "geo": "geo/cube_27.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.009999997913837433,
+    0.009999999776482582
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_28",
+   "geo": "geo/cube_28.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.010000000707805157,
+    0.009999999776482582,
+    0.010000000707805157
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_29",
+   "geo": "geo/cube_29.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999996051192284,
+    0.009999997913837433,
+    0.009999996051192284
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_3",
+   "geo": "geo/cube_3.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999994188547134,
+    0.009999994188547134,
+    0.009999997913837433
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_30",
+   "geo": "geo/cube_30.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.009999999776482582,
+    0.009999999776482582
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_31",
+   "geo": "geo/cube_31.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.010000004433095455,
+    0.010000000707805157,
+    0.010000004433095455
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_32",
+   "geo": "geo/cube_32.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999997913837433,
+    0.009999999776482582,
+    0.009999997913837433
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_33",
+   "geo": "geo/cube_33.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000350177288,
+    0.010000000707805157,
+    0.01000000350177288
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_4",
+   "geo": "geo/cube_4.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999996051192284,
+    0.009999997913837433,
+    0.009999996051192284
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_5",
+   "geo": "geo/cube_5.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.010000004433095455,
+    0.010000000707805157,
+    0.010000004433095455
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_6",
+   "geo": "geo/cube_6.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.009999997913837433,
+    0.009999996051192284
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_7",
+   "geo": "geo/cube_7.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999996051192284,
+    0.009999997913837433,
+    0.009999996051192284
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_8",
+   "geo": "geo/cube_8.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.009999997913837433,
+    0.009999999776482582
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "cube_9",
+   "geo": "geo/cube_9.npz",
+   "tris": 74,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999996051192284,
+    0.010000000707805157,
+    0.009999997913837433
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "hallway_conference",
+   "geo": "geo/hallway_conference.npz",
+   "tris": 664,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "hallway_window",
+   "geo": "geo/hallway_window.npz",
+   "tris": 414,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "hanger_halls1",
+   "geo": "geo/hanger_halls1.npz",
+   "tris": 1649,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "lava_hall1",
+   "geo": "geo/lava_hall1.npz",
+   "tris": 900,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_bldg_control_middle_1",
+   "geo": "geo/mus1_bldg_control_middle_1.npz",
+   "tris": 1335,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_bldg_hallway_ribbed_1_1",
+   "geo": "geo/mus1_bldg_hallway_ribbed_1_1.npz",
+   "tris": 721,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_bldg_halway_ribbed_2",
+   "geo": "geo/mus1_bldg_halway_ribbed_2.npz",
+   "tris": 990,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_bldg_hanger_1",
+   "geo": "geo/mus1_bldg_hanger_1.npz",
+   "tris": 2137,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_bldg_lava_control_1",
+   "geo": "geo/mus1_bldg_lava_control_1.npz",
+   "tris": 2873,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_bldg_lava_lava_1",
+   "geo": "geo/mus1_bldg_lava_lava_1.npz",
+   "tris": 589,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_bldg_lava_platform",
+   "geo": "geo/mus1_bldg_lava_platform.npz",
+   "tris": 1576,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_bldg_lava_roof_1",
+   "geo": "geo/mus1_bldg_lava_roof_1.npz",
+   "tris": 1150,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_bldg_world_1_1",
+   "geo": "geo/mus1_bldg_world_1_1.npz",
+   "tris": 933,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_bldg_world_2_1",
+   "geo": "geo/mus1_bldg_world_2_1.npz",
+   "tris": 386,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_bldg_world_3_1",
+   "geo": "geo/mus1_bldg_world_3_1.npz",
+   "tris": 372,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_collection_miniwalkway",
+   "geo": "geo/mus1_collection_miniwalkway.npz",
+   "tris": 687,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_collection_miniwalkway2",
+   "geo": "geo/mus1_collection_miniwalkway2.npz",
+   "tris": 859,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_collection_struts",
+   "geo": "geo/mus1_collection_struts.npz",
+   "tris": 104,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_prop__holotable",
+   "geo": "geo/mus1_prop__holotable.npz",
+   "tris": 84,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_prop__holotable_1",
+   "geo": "geo/mus1_prop__holotable_1.npz",
+   "tris": 84,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_prop__holotable_2",
+   "geo": "geo/mus1_prop__holotable_2.npz",
+   "tris": 84,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "mus1_walkway",
+   "geo": "geo/mus1_walkway.npz",
+   "tris": 2597,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "spatula",
+   "geo": "geo/spatula.npz",
+   "tris": 194,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "spatula_1",
+   "geo": "geo/spatula_1.npz",
+   "tris": 194,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "spatula_10",
+   "geo": "geo/spatula_10.npz",
+   "tris": 194,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "spatula_11",
+   "geo": "geo/spatula_11.npz",
+   "tris": 194,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "spatula_2",
+   "geo": "geo/spatula_2.npz",
+   "tris": 194,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.010000002570450306,
+    0.010000001639127731,
+    0.010000002570450306
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "spatula_3",
+   "geo": "geo/spatula_3.npz",
+   "tris": 194,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.010000001639127731,
+    0.01000000536441803,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "spatula_4",
+   "geo": "geo/spatula_4.npz",
+   "tris": 194,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999998845160007,
+    0.009999997913837433,
+    0.009999998845160007
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "spatula_5",
+   "geo": "geo/spatula_5.npz",
+   "tris": 194,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.009999999776482582,
+    0.009999999776482582
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "spatula_6",
+   "geo": "geo/spatula_6.npz",
+   "tris": 194,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "spatula_7",
+   "geo": "geo/spatula_7.npz",
+   "tris": 194,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.009999999776482582,
+    0.009999999776482582
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "spatula_8",
+   "geo": "geo/spatula_8.npz",
+   "tris": 194,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.009999999776482582,
+    0.009999998845160007,
+    0.009999999776482582
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  },
+  {
+   "name": "spatula_9",
+   "geo": "geo/spatula_9.npz",
+   "tris": 194,
+   "role": "static",
+   "collision": "exact",
+   "scale": [
+    0.01000000536441803,
+    0.010000001639127731,
+    0.010000001639127731
+   ],
+   "negative_scale": false,
+   "has_uv": true,
+   "modifiers": []
+  }
+ ],
+ "materials": {
+  "mus1_bldg_control010_details_1": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "MetalTrimming.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalTrimming.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    },
+    "normal": {
+     "image": {
+      "name": "MetalTrimming_nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalTrimming_nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control010_details_3": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "MetalTrimming.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalTrimming.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    },
+    "normal": {
+     "image": {
+      "name": "MetalTrimming_nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalTrimming_nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control011_floor_1": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "Floors.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/Floors.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "image": {
+      "name": "Floors_rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/Floors_rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 0.25,
+     "scale": 1.0
+    },
+    "metallic": {
+     "image": {
+      "name": "Floors_rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/Floors_rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    },
+    "normal": {
+     "image": {
+      "name": "Floors_nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/Floors_nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control011_floor_513": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "Floors.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/Floors.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "image": {
+      "name": "Floors_rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/Floors_rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 0.25,
+     "scale": 1.0
+    },
+    "metallic": {
+     "image": {
+      "name": "Floors_rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/Floors_rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    },
+    "normal": {
+     "image": {
+      "name": "Floors_nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/Floors_nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control01_513": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "FloorAndSteps.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/FloorAndSteps.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "image": {
+      "name": "FloorAndSteps_rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/FloorAndSteps_rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    },
+    "normal": {
+     "image": {
+      "name": "FloorAndSteps_nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/FloorAndSteps_nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control02_513": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "screensAndFlooring.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/screensAndFlooring.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    },
+    "normal": {
+     "image": {
+      "name": "screensAndFlooring_nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/screensAndFlooring_nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control02_528": {
+   "class": "emissive",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "screensAndFlooring.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/screensAndFlooring.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "image": {
+      "name": "screensAndFlooring_em.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/screensAndFlooring_em.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission_strength": {
+     "value": 3.0
+    },
+    "normal": {
+     "image": {
+      "name": "screensAndFlooring_nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/screensAndFlooring_nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control03_1": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_bldg_control03.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_bldg_control03.png",
+      "missing": false,
+      "file": "tex/mus1_bldg_control03.png",
+      "size": [
+       512,
+       512
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control03_513": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_bldg_control03.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_bldg_control03.png",
+      "missing": false,
+      "file": "tex/mus1_bldg_control03.png",
+      "size": [
+       512,
+       512
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control04_0": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_bldg_control04.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_bldg_control04.png",
+      "missing": false,
+      "file": "tex/mus1_bldg_control04.png",
+      "size": [
+       512,
+       512
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control04_1": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_bldg_control04.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_bldg_control04.png",
+      "missing": false,
+      "file": "tex/mus1_bldg_control04.png",
+      "size": [
+       512,
+       512
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control04_16": {
+   "class": "emissive",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_bldg_control04.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_bldg_control04.png",
+      "missing": false,
+      "file": "tex/mus1_bldg_control04.png",
+      "size": [
+       512,
+       512
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "image": {
+      "name": "mus1_bldg_control04_glow2005.png",
+      "file": "tex/mus1_bldg_control04_glow2005.png"
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission_strength": {
+     "value": 5.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control04_512": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_bldg_control04.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_bldg_control04.png",
+      "missing": false,
+      "file": "tex/mus1_bldg_control04.png",
+      "size": [
+       512,
+       512
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control04_513": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_bldg_control04.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_bldg_control04.png",
+      "missing": false,
+      "file": "tex/mus1_bldg_control04.png",
+      "size": [
+       512,
+       512
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control04_528": {
+   "class": "emissive",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_bldg_control04.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_bldg_control04.png",
+      "missing": false,
+      "file": "tex/mus1_bldg_control04.png",
+      "size": [
+       512,
+       512
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "image": {
+      "name": "mus1_bldg_control04_glow2005.png",
+      "file": "tex/mus1_bldg_control04_glow2005.png"
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission_strength": {
+     "value": 5.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control05_513": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_bldg_control05.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_bldg_control05.png",
+      "missing": false,
+      "file": "tex/mus1_bldg_control05.png",
+      "size": [
+       256,
+       256
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control06_1": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "interior_and_lights_upscale.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/interior_and_lights_upscale.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control06_16": {
+   "class": "emissive",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "interior_and_lights_upscale.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/interior_and_lights_upscale.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "image": {
+      "name": "interior_and_lights_upscale_em.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/interior_and_lights_upscale_em.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission_strength": {
+     "value": 5.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control06_18": {
+   "class": "emissive",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "interior_and_lights_upscale.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/interior_and_lights_upscale.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "image": {
+      "name": "interior_and_lights_upscale_em.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/interior_and_lights_upscale_em.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission_strength": {
+     "value": 5.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control06_513": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "interior_and_lights_upscale.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/interior_and_lights_upscale.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control06_528": {
+   "class": "emissive",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "interior_and_lights_upscale.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/interior_and_lights_upscale.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "image": {
+      "name": "interior_and_lights_upscale_em.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/interior_and_lights_upscale_em.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission_strength": {
+     "value": 5.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control06_530": {
+   "class": "emissive",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "interior_and_lights_upscale.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/interior_and_lights_upscale.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "image": {
+      "name": "interior_and_lights_upscale_em.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/interior_and_lights_upscale_em.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission_strength": {
+     "value": 5.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control07_1": {
+   "class": "emissive",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "screens_upscale.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/screens_upscale.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "image": {
+      "name": "screens_upscale_em.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/screens_upscale_em.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission_strength": {
+     "value": 3.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control07_16": {
+   "class": "emissive",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "screens_upscale.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/screens_upscale.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "image": {
+      "name": "screens_upscale_em.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/screens_upscale_em.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission_strength": {
+     "value": 3.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control07_528": {
+   "class": "emissive",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "screens_upscale.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/screens_upscale.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "image": {
+      "name": "screens_upscale_em.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/screens_upscale_em.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission_strength": {
+     "value": 3.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control08_0": {
+   "class": "emissive",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "StepsAndTrim.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "image": {
+      "name": "StepsAndTrim_rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "metallic": {
+     "image": {
+      "name": "StepsAndTrim_rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission": {
+     "image": {
+      "name": "StepsAndTrim_em.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_em.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission_strength": {
+     "value": 5.0
+    },
+    "normal": {
+     "image": {
+      "name": "StepsAndTrim_nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control08_1": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "StepsAndTrim.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "image": {
+      "name": "StepsAndTrim_rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "metallic": {
+     "image": {
+      "name": "StepsAndTrim_rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    },
+    "normal": {
+     "image": {
+      "name": "StepsAndTrim_nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control08_512": {
+   "class": "emissive",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "StepsAndTrim.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "image": {
+      "name": "StepsAndTrim_rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "metallic": {
+     "image": {
+      "name": "StepsAndTrim_rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission": {
+     "image": {
+      "name": "StepsAndTrim_em.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_em.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission_strength": {
+     "value": 5.0
+    },
+    "normal": {
+     "image": {
+      "name": "StepsAndTrim_nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control08_513": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "StepsAndTrim.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "image": {
+      "name": "StepsAndTrim_rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "metallic": {
+     "image": {
+      "name": "StepsAndTrim_rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    },
+    "normal": {
+     "image": {
+      "name": "StepsAndTrim_nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control08_528": {
+   "class": "emissive",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "StepsAndTrim.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "image": {
+      "name": "StepsAndTrim_rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "metallic": {
+     "image": {
+      "name": "StepsAndTrim_rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission": {
+     "image": {
+      "name": "StepsAndTrim_em.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_em.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission_strength": {
+     "value": 5.0
+    },
+    "normal": {
+     "image": {
+      "name": "StepsAndTrim_nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/StepsAndTrim_nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control09_tile_1": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "Metal.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/Metal.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    },
+    "normal": {
+     "image": {
+      "name": "Metal_nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/Metal_nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control09_tile_513": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "Metal.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/Metal.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    },
+    "normal": {
+     "image": {
+      "name": "Metal_nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/Metal_nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control13_floor_1": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_bldg_control13_floor.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_bldg_control13_floor.png",
+      "missing": false,
+      "file": "tex/mus1_bldg_control13_floor.png",
+      "size": [
+       128,
+       128
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control14_pipes_1": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_bldg_control14_pipes.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_bldg_control14_pipes.png",
+      "missing": false,
+      "file": "tex/mus1_bldg_control14_pipes.png",
+      "size": [
+       512,
+       512
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control15_grill_1": {
+   "class": "cutout",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "grate02.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/grate02.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "alpha": {
+     "image": {
+      "name": "grate02.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/grate02.png",
+      "missing": false
+     },
+     "channel": "A",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control15_grill_3": {
+   "class": "cutout",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "grate02.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/grate02.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "alpha": {
+     "image": {
+      "name": "grate02.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/grate02.png",
+      "missing": false
+     },
+     "channel": "A",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_control16_513": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_bldg_control16.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_bldg_control16.png",
+      "missing": false,
+      "file": "tex/mus1_bldg_control16.png",
+      "size": [
+       512,
+       512
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_grate_1_515": {
+   "class": "cutout",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "grate01.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/grate01.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "alpha": {
+     "image": {
+      "name": "grate01.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/grate01.png",
+      "missing": false
+     },
+     "channel": "A",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_grate_1_66051": {
+   "class": "cutout",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": true,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "grate01.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/grate01.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "alpha": {
+     "image": {
+      "name": "grate01.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/grate01.png",
+      "missing": false
+     },
+     "channel": "A",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_hall_1_513": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_bldg_hall_1.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_bldg_hall_1.png",
+      "missing": false,
+      "file": "tex/mus1_bldg_hall_1.png",
+      "size": [
+       512,
+       512
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_hall_2_513": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_bldg_hall_2.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_bldg_hall_2.png",
+      "missing": false,
+      "file": "tex/mus1_bldg_hall_2.png",
+      "size": [
+       512,
+       512
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_hall_3_513": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_bldg_hall_3.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_bldg_hall_3.png",
+      "missing": false,
+      "file": "tex/mus1_bldg_hall_3.png",
+      "size": [
+       512,
+       512
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_lavawalk_1": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "MetalGrateAndLight.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "image": {
+      "name": "MetalGrateAndLight_Rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight_Rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "metallic": {
+     "image": {
+      "name": "MetalGrateAndLight_Rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight_Rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    },
+    "normal": {
+     "image": {
+      "name": "MetalGrateAndLight_Nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight_Nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_lavawalk_513": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "MetalGrateAndLight.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "image": {
+      "name": "MetalGrateAndLight_Rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight_Rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "metallic": {
+     "image": {
+      "name": "MetalGrateAndLight_Rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight_Rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    },
+    "normal": {
+     "image": {
+      "name": "MetalGrateAndLight_Nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight_Nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_lavawalk_515": {
+   "class": "cutout",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "MetalGrateAndLight.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "alpha": {
+     "image": {
+      "name": "MetalGrateAndLight.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight.png",
+      "missing": false
+     },
+     "channel": "A",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "image": {
+      "name": "MetalGrateAndLight_Rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight_Rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "metallic": {
+     "image": {
+      "name": "MetalGrateAndLight_Rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight_Rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    },
+    "normal": {
+     "image": {
+      "name": "MetalGrateAndLight_Nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight_Nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_bldg_lavawalk_528": {
+   "class": "emissive",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "image": {
+      "name": "MetalGrateAndLight.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "roughness": {
+     "image": {
+      "name": "MetalGrateAndLight_Rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight_Rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "metallic": {
+     "image": {
+      "name": "MetalGrateAndLight_Rgh.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight_Rgh.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission": {
+     "image": {
+      "name": "MetalGrateAndLight_em.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight_em.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    },
+    "emission_strength": {
+     "value": 10.0
+    },
+    "normal": {
+     "image": {
+      "name": "MetalGrateAndLight_Nrm.png",
+      "file": "C:/Users/rubes/Downloads/BF2-05-Mustafar/BF2-05-Mustafar/textures/MetalGrateAndLight_Nrm.png",
+      "missing": false
+     },
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_main_1_513": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_main_1.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_main_1.png",
+      "missing": false,
+      "file": "tex/mus1_main_1.png",
+      "size": [
+       512,
+       512
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 0.74
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_main_2_16777744": {
+   "class": "lava",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_main_2.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_main_2.png",
+      "missing": false,
+      "file": "tex/mus1_main_2.png",
+      "size": [
+       1024,
+       1024
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_main_2.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_main_2.png",
+      "missing": false,
+      "file": "tex/mus1_main_2.png",
+      "size": [
+       1024,
+       1024
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "emission_strength": {
+     "value": 3.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false,
+   "lava": {
+    "color": [
+     1.0,
+     0.8999999761581421,
+     0.800000011920929
+    ],
+    "brightness": 1.0,
+    "crust": 0.0949999988079071,
+    "speed": 1.0
+   }
+  },
+  "mus1_main_2_528": {
+   "class": "lava",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_main_2.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_main_2.png",
+      "missing": false,
+      "file": "tex/mus1_main_2.png",
+      "size": [
+       1024,
+       1024
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_main_2.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_main_2.png",
+      "missing": false,
+      "file": "tex/mus1_main_2.png",
+      "size": [
+       1024,
+       1024
+      ],
+      "channels": 4,
+      "alpha_min": 1.0,
+      "alpha_mean": 1.0
+     }
+    },
+    "emission_strength": {
+     "value": 3.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false,
+   "lava": {
+    "color": [
+     1.0,
+     0.8999999761581421,
+     0.800000011920929
+    ],
+    "brightness": 1.0,
+    "crust": 0.0949999988079071,
+    "speed": 1.0
+   }
+  },
+  "mus1_main_3_16777744": {
+   "class": "lava",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_main_3.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_main_3.png",
+      "missing": false,
+      "file": "tex/mus1_main_3.png",
+      "size": [
+       128,
+       256
+      ],
+      "channels": 4,
+      "alpha_min": 0.0,
+      "alpha_mean": 0.7058146595954895
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_main_3.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_main_3.png",
+      "missing": false,
+      "file": "tex/mus1_main_3.png",
+      "size": [
+       128,
+       256
+      ],
+      "channels": 4,
+      "alpha_min": 0.0,
+      "alpha_mean": 0.7058146595954895
+     }
+    },
+    "emission_strength": {
+     "value": 3.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false,
+   "lava": {
+    "color": [
+     1.0,
+     0.8999999761581421,
+     0.800000011920929
+    ],
+    "brightness": 1.0,
+    "crust": 0.0949999988079071,
+    "speed": 1.0
+   }
+  },
+  "mus1_main_3_16777746": {
+   "class": "lava",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": false,
+   "inputs": {
+    "base_color": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_main_3.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_main_3.png",
+      "missing": false,
+      "file": "tex/mus1_main_3.png",
+      "size": [
+       128,
+       256
+      ],
+      "channels": 4,
+      "alpha_min": 0.0,
+      "alpha_mean": 0.7058146595954895
+     }
+    },
+    "roughness": {
+     "value": 1.0
+    },
+    "metallic": {
+     "value": 0.0
+    },
+    "emission": {
+     "channel": "RGB",
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "image": {
+      "name": "mus1_main_3.png",
+      "colorspace": "sRGB",
+      "packed": true,
+      "source_path": "I:\\2005_Map_Ports\\MustafarPort\\blend\\..\\..\\..\\OG_Battlefront_2_Maps_Blend-20261004T183729Z-1-001\\OG_Battlefront_2_Maps_Blend\\mus1\\mus1\\Textures\\mus1_main_3.png",
+      "missing": false,
+      "file": "tex/mus1_main_3.png",
+      "size": [
+       128,
+       256
+      ],
+      "channels": 4,
+      "alpha_min": 0.0,
+      "alpha_mean": 0.7058146595954895
+     }
+    },
+    "emission_strength": {
+     "value": 3.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false,
+   "lava": {
+    "color": [
+     1.0,
+     0.8999999761581421,
+     0.800000011920929
+    ],
+    "brightness": 1.0,
+    "crust": 0.0949999988079071,
+    "speed": 1.0
+   }
+  },
+  "mus1_prop_console_fx_1": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": true,
+   "inputs": {
+    "base_color": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    "alpha": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    },
+    "roughness": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 0.0
+    },
+    "metallic": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  },
+  "mus1_prop_console_fx_16777232": {
+   "class": "opaque",
+   "class_guessed": false,
+   "emission_screen": 1.0,
+   "emission_bake": 1.0,
+   "double_sided": false,
+   "skip": true,
+   "inputs": {
+    "base_color": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    "alpha": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    },
+    "roughness": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 0.0
+    },
+    "metallic": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 0.0
+    },
+    "emission": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    "emission_strength": {
+     "invert": false,
+     "power": 1.0,
+     "scale": 1.0,
+     "value": 1.0
+    }
+   },
+   "blend_method": "HASHED",
+   "backface_culling": false
+  }
+ },
+ "lights": [
+  {
+   "name": "Back",
+   "type": "sun",
+   "pos": [
+    -135.21630859375,
+    175.33099365234375,
+    165.29132080078125
+   ],
+   "dir": [
+    -0.33472156524658203,
+    0.5705845952033997,
+    -0.7499299049377441
+   ],
+   "color": [
+    0.7725489735603333,
+    0.6509799957275391,
+    0.4039219915866852
+   ],
+   "energy": 3.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "Light_10",
+   "type": "point",
+   "pos": [
+    77.66867065429688,
+    14.211618423461914,
+    66.79305267333984
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.8588240146636963,
+    0.9254900217056274,
+    0.058823999017477036
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "Light_11",
+   "type": "point",
+   "pos": [
+    77.36176300048828,
+    21.97550392150879,
+    67.45877075195312
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.8588240146636963,
+    0.9254900217056274,
+    0.058823999017477036
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "Light_12",
+   "type": "point",
+   "pos": [
+    45.286590576171875,
+    13.605232238769531,
+    68.02886962890625
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.8588240146636963,
+    0.9254900217056274,
+    0.058823999017477036
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "Light_13",
+   "type": "point",
+   "pos": [
+    45.566986083984375,
+    24.122011184692383,
+    67.1082763671875
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.8588240146636963,
+    0.9254900217056274,
+    0.058823999017477036
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "Light_19",
+   "type": "spot",
+   "pos": [
+    29.825458526611328,
+    107.6180191040039,
+    88.39667510986328
+   ],
+   "dir": [
+    0.0,
+    -0.6994996070861816,
+    -0.714633047580719
+   ],
+   "color": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "energy": 0.5,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0,
+   "spot_size": 0.7853981852531433,
+   "spot_blend": 0.15000000596046448
+  },
+  {
+   "name": "Light_3",
+   "type": "point",
+   "pos": [
+    57.81744384765625,
+    6.55194616317749,
+    69.39466857910156
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    1.0,
+    0.34902000427246094,
+    0.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "Light_8",
+   "type": "point",
+   "pos": [
+    13.90795612335205,
+    -17.041086196899414,
+    70.27168273925781
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.0,
+    0.5019609928131104,
+    1.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "Light_9",
+   "type": "point",
+   "pos": [
+    65.45668029785156,
+    6.792872905731201,
+    70.48153686523438
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    1.0,
+    0.34902000427246094,
+    0.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "hallway",
+   "type": "sun",
+   "pos": [
+    13.506403923034668,
+    70.08386993408203,
+    78.47502136230469
+   ],
+   "dir": [
+    -0.05059695616364479,
+    0.009192235767841339,
+    -0.9986768960952759
+   ],
+   "color": [
+    0.8941180109977722,
+    0.800000011920929,
+    0.5803920030593872
+   ],
+   "energy": 0.30000001192092896,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "hallway1",
+   "type": "sun",
+   "pos": [
+    44.48548126220703,
+    70.45653533935547,
+    78.83223724365234
+   ],
+   "dir": [
+    0.0,
+    0.009200270287692547,
+    -0.9999577403068542
+   ],
+   "color": [
+    0.8941180109977722,
+    0.800000011920929,
+    0.5764709711074829
+   ],
+   "energy": 0.30000001192092896,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "projection",
+   "type": "spot",
+   "pos": [
+    61.69031524658203,
+    2.799177885055542,
+    73.69171905517578
+   ],
+   "dir": [
+    -0.001535848481580615,
+    0.9490452408790588,
+    -0.3151363432407379
+   ],
+   "color": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "energy": 0.5,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0,
+   "spot_size": 0.7853981852531433,
+   "spot_blend": 0.15000000596046448
+  },
+  {
+   "name": "sun",
+   "type": "sun",
+   "pos": [
+    -132.29310607910156,
+    173.67514038085938,
+    165.46536254882812
+   ],
+   "dir": [
+    0.336000919342041,
+    -0.584132194519043,
+    0.7388456463813782
+   ],
+   "color": [
+    1.0,
+    0.556863009929657,
+    0.2901960015296936
+   ],
+   "energy": 3.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "table",
+   "type": "point",
+   "pos": [
+    14.260799407958984,
+    47.42329788208008,
+    69.03433227539062
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.0,
+    0.5019609928131104,
+    1.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "table_1",
+   "type": "point",
+   "pos": [
+    13.930638313293457,
+    35.85187530517578,
+    69.0425033569336
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.0,
+    0.5019609928131104,
+    1.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "table_2",
+   "type": "point",
+   "pos": [
+    13.8811616897583,
+    0.41577836871147156,
+    70.06568145751953
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.0,
+    0.5019609928131104,
+    1.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "walk",
+   "type": "point",
+   "pos": [
+    -54.052528381347656,
+    -22.12763214111328,
+    74.91685485839844
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.0,
+    0.5019609928131104,
+    1.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "walk_1",
+   "type": "point",
+   "pos": [
+    -57.81901168823242,
+    -22.121665954589844,
+    73.41935729980469
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.0,
+    0.5019609928131104,
+    1.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "walk_10",
+   "type": "point",
+   "pos": [
+    -69.69571685791016,
+    -15.361872673034668,
+    68.0996322631836
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.0,
+    0.5019609928131104,
+    1.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "walk_11",
+   "type": "point",
+   "pos": [
+    -72.51419830322266,
+    -15.330035209655762,
+    66.44500732421875
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.0,
+    0.5019609928131104,
+    1.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "walk_2",
+   "type": "point",
+   "pos": [
+    -61.6464729309082,
+    -22.11941909790039,
+    71.8592758178711
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.0,
+    0.5019609928131104,
+    1.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "walk_3",
+   "type": "point",
+   "pos": [
+    -65.87713623046875,
+    -22.126529693603516,
+    70.03128051757812
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.0,
+    0.5019609928131104,
+    1.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "walk_4",
+   "type": "point",
+   "pos": [
+    -72.47425842285156,
+    -22.09568214416504,
+    66.46244049072266
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.0,
+    0.5019609928131104,
+    1.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "walk_5",
+   "type": "point",
+   "pos": [
+    -69.76939392089844,
+    -22.081560134887695,
+    68.09921264648438
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.0,
+    0.5019609928131104,
+    1.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "walk_6",
+   "type": "point",
+   "pos": [
+    -54.16462707519531,
+    -15.272599220275879,
+    74.98820495605469
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.0,
+    0.5019609928131104,
+    1.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "walk_7",
+   "type": "point",
+   "pos": [
+    -57.66611862182617,
+    -15.218121528625488,
+    73.6521224975586
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.0,
+    0.5019609928131104,
+    1.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "walk_8",
+   "type": "point",
+   "pos": [
+    -61.80416488647461,
+    -15.257410049438477,
+    71.67615509033203
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.0,
+    0.5019609928131104,
+    1.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "walk_9",
+   "type": "point",
+   "pos": [
+    -65.88023376464844,
+    -15.278401374816895,
+    69.90933227539062
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -3.0294629027594056e-07
+   ],
+   "color": [
+    0.0,
+    0.5019609928131104,
+    1.0
+   ],
+   "energy": 4.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "walkway_1",
+   "type": "sun",
+   "pos": [
+    -18.817262649536133,
+    49.844276428222656,
+    69.47510528564453
+   ],
+   "dir": [
+    -0.5969011187553406,
+    -0.01071911957114935,
+    0.8022432327270508
+   ],
+   "color": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "energy": 0.30000001192092896,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  {
+   "name": "walkway_2",
+   "type": "sun",
+   "pos": [
+    -17.79664421081543,
+    71.67689514160156,
+    63.78519058227539
+   ],
+   "dir": [
+    0.5138843059539795,
+    0.029145803302526474,
+    0.8573641777038574
+   ],
+   "color": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "energy": 0.30000001192092896,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  }
+ ],
+ "spawns": [],
+ "command_posts": [],
+ "kill_volumes": [
+  {
+   "name": "lava_upper",
+   "centre": [
+    -71.76499999999999,
+    186.615,
+    52.79000000000002
+   ],
+   "half": [
+    210.265,
+    104.935,
+    13.0
+   ],
+   "axes": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ]
+  },
+  {
+   "name": "lava_pool",
+   "centre": [
+    60.4,
+    -14.14,
+    54.02999999999997
+   ],
+   "half": [
+    36.5,
+    27.8,
+    5.0
+   ],
+   "axes": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ]
+  },
+  {
+   "name": "lava_lower",
+   "centre": [
+    -90.5,
+    0.5499999999999972,
+    -106.0
+   ],
+   "half": [
+    826.0,
+    888.0,
+    150.0
+   ],
+   "axes": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ]
+  }
+ ],
+ "doors": [
+  "bone_door",
+  "bone_door_1",
+  "bone_door_2",
+  "bone_door_3",
+  "bone_door_4",
+  "bone_door_5",
+  "bone_door_6",
+  "boneroot",
+  "boneroot_11",
+  "boneroot_12",
+  "boneroot_13",
+  "boneroot_14",
+  "boneroot_16",
+  "boneroot_2",
+  "boneroot_3",
+  "boneroot_4",
+  "boneroot_7",
+  "boneroot_8"
+ ],
+ "not_walkable": [],
+ "combat_area": null,
+ "reflection_probes": [],
+ "markers": [],
+ "skipped": [],
+ "play": {
+  "centre": [
+   10.0,
+   30.0,
+   68.0
+  ],
+  "radius": 160.0,
+  "measured": "Mustafar port value"
+ },
+ "look": {
+  "sky": "overcast",
+  "sky_hdr": "",
+  "sky_strength": 1.0,
+  "sun_on": true,
+  "sun": {
+   "name": "Back",
+   "type": "sun",
+   "pos": [
+    -135.21630859375,
+    175.33099365234375,
+    165.29132080078125
+   ],
+   "dir": [
+    -0.33472156524658203,
+    0.5705845952033997,
+    -0.7499299049377441
+   ],
+   "color": [
+    0.7725489735603333,
+    0.6509799957275391,
+    0.4039219915866852
+   ],
+   "energy": 3.0,
+   "radius": 0.0,
+   "mode": "both",
+   "shadows": false,
+   "hidden": false,
+   "cutoff": 0.0
+  },
+  "exposure": 0.0,
+  "fog": {
+   "color": [
+    0.5,
+    0.550000011920929,
+    0.6000000238418579
+   ],
+   "start": 40.0,
+   "end": 800.0,
+   "density": 0.30000001192092896
+  },
+  "world_color": [
+   0.05087608844041824,
+   0.05087608844041824,
+   0.05087608844041824
+  ],
+  "emissive_scale": 280.0
+ },
+ "options": {
+  "auto_spawns": true,
+  "bake_quality": "normal",
+  "dynamic_light_budget": 64
+ },
+ "navmesh": {
+  "z_range": [
+   45.0,
+   90.0
+  ]
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "ok": true,
+ "classes": {
+  "opaque": {
+   "template": "opaque",
+   "layouts": {
+    "CS (_CS)": {
+     "base_colour": true,
+     "roughness": true
+    },
+    "NAM (_NAM_texcoord0)": {
+     "normal_xy_green_up": true,
+     "constant_blue": true,
+     "metallic": true,
+     "convention_detected": true,
+     "directx_detected": true,
+     "directx_packs_to_the_same": true
+    }
+   },
+   "pass": true
+  },
+  "emissive": {
+   "template": "emissive",
+   "layouts": {
+    "CS (_CS)": {
+     "base_colour": true,
+     "roughness": true
+    },
+    "NAM (_NAM_texcoord0)": {
+     "normal_xy_green_up": true,
+     "constant_blue": true,
+     "metallic": true,
+     "convention_detected": true,
+     "directx_detected": true,
+     "directx_packs_to_the_same": true
+    },
+    "E (_E)": {
+     "emission": true
+    }
+   },
+   "pass": true
+  },
+  "cutout": {
+   "template": "cutout",
+   "layouts": {
+    "CS (CS)": {
+     "base_colour": true,
+     "roughness": true
+    },
+    "NW (NW)": {
+     "normal_xy_green_up": true,
+     "constant_blue": true,
+     "cutout_mask": true,
+     "convention_detected": true,
+     "directx_detected": true,
+     "directx_packs_to_the_same": true
+    }
+   },
+   "pass": true
+  },
+  "cutout2s": {
+   "template": "cutout",
+   "layouts": {
+    "CS (CS)": {
+     "base_colour": true,
+     "roughness": true
+    },
+    "NW (NW)": {
+     "normal_xy_green_up": true,
+     "constant_blue": true,
+     "cutout_mask": true,
+     "convention_detected": true,
+     "directx_detected": true,
+     "directx_packs_to_the_same": true
+    }
+   },
+   "pass": true
+  },
+  "lava": {
+   "template": "emissive",
+   "layouts": {
+    "CS (_CS)": {
+     "base_colour": true,
+     "roughness": true
+    },
+    "NAM (_NAM_texcoord0)": {
+     "normal_xy_green_up": true,
+     "constant_blue": true,
+     "metallic": true,
+     "convention_detected": true,
+     "directx_detected": true,
+     "directx_packs_to_the_same": true
+    },
+    "E (_E)": {
+     "emission": true
+    }
+   },
+   "pass": true
+  },
+  "glass": {
+   "template": "glass",
+   "pass": true,
+   "note": "takes no texture: nothing to pack (the window glass surface of the host as it is)"
+  }
+ }
+}

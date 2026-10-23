@@ -1,0 +1,30 @@
+# --- build outputs, caches, machine files (never in the repo) ---
+work/
+tmp/
+logs/
+dist/
+**/__pycache__/
+*.pyc
+*.blend1
+settings.json
+# the FrostyCLI fork is its own repo (see DEPENDENCIES.md)
+cli-wt/
+
+# --- tests: the scripts and small JSON / text expectations are kept; scenes are made by the make_*.py scripts.
+# Large scenes, ripped-map exports and game-derived pictures stay out.
+tests/maps/
+tests/survey/
+tests/**/*.blend
+tests/**/*.png
+tests/**/*.jpg
+tests/**/*.hdr
+tests/**/*.exr
+tests/**/*.dds
+tests/**/*.fbmod
+tests/**/*.npz
+tests/**/*.fbx
+tests/**/*.obj
+tests/**/*.res
+tests/**/*.f32
+tests/**/*.fxs
+tests/**/out/

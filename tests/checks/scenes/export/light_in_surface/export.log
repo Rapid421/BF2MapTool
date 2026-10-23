@@ -1,0 +1,12 @@
+00:00.422  blend            | Read blend: "I:\BF2MapTool\tests\checks\scenes\light_in_surface.blend"
+I:\BF2MapTool\addon\bf2_map_tool\export_scene.py:560: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  return bool(mat and mat.use_nodes and mat.node_tree and _vcol_nodes(mat.node_tree))
+I:\BF2MapTool\addon\bf2_map_tool\export_scene.py:124: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if not mat or not mat.use_nodes or not mat.node_tree:
+materials baked: 0 (0 renders, 0.0 s)
+00:01.469  render           | Saved: 'I:\BF2MapTool\tests\checks\scenes\export\light_in_surface\reflection.hdr'
+reflection capture at (0.0, 0.0, 1.1), 1.1 m of free space around it
+EXPORT DONE objects 1 (triangles 12), materials 1, images 1, lights 1, spawns 0, command posts 0, kill volumes 0, doors 0 -> I:\BF2MapTool\tests\checks\scenes\export\light_in_surface
+Blender 5.2.0 LTS (hash fbe6228777e7 built 2026-07-14 01:35:40)
+
+Blender quit

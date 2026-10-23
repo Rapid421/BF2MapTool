@@ -1,0 +1,147 @@
+{
+ "scene": "I:\\BF2MapTool\\tests\\scenes\\arena.blend",
+ "level": "ToolArena",
+ "runs": [
+  {
+   "note": "cancelled at collision",
+   "ok": false,
+   "message": "Cancelled. Press the button again to continue where it stopped.",
+   "elapsed_s": 4.7,
+   "fbmod": "",
+   "stages": [
+    [
+     "export",
+     "done",
+     1.9
+    ],
+    [
+     "split",
+     "done",
+     0.1
+    ],
+    [
+     "textures",
+     "done",
+     0.1
+    ],
+    [
+     "collision",
+     "start",
+     0.0
+    ]
+   ],
+   "results": [
+    [
+     "warning",
+     "geo.scale",
+     "1 object(s) are mirrored (negative scale). Their faces are flipped back on export; check that they look right."
+    ],
+    [
+     "info",
+     "geo.scale",
+     "1 object(s) have an unapplied scale. The export uses the size you see, so nothing changes in game."
+    ]
+   ]
+  },
+  {
+   "note": "second run (resume after cancel)",
+   "ok": false,
+   "message": "Spawns: Only 0 safe spawn spots were found on the walkable floor (4 m2 in its largest connected part). The map needs more open, connected floor with collision.",
+   "elapsed_s": 466.3,
+   "fbmod": "",
+   "stages": [
+    [
+     "export",
+     "done",
+     1.3
+    ],
+    [
+     "split",
+     "skip",
+     0.0
+    ],
+    [
+     "textures",
+     "skip",
+     0.0
+    ],
+    [
+     "collision",
+     "done",
+     14.3
+    ],
+    [
+     "shell",
+     "done",
+     389.1
+    ],
+    [
+     "shaderdb",
+     "done",
+     16.6
+    ],
+    [
+     "import",
+     "done",
+     12.9
+    ],
+    [
+     "place",
+     "done",
+     9.8
+    ],
+    [
+     "doors",
+     "done",
+     8.2
+    ],
+    [
+     "navmesh",
+     "done",
+     12.5
+    ],
+    [
+     "spawns",
+     "fail",
+     0.0
+    ]
+   ],
+   "results": [
+    [
+     "warning",
+     "geo.scale",
+     "1 object(s) are mirrored (negative scale). Their faces are flipped back on export; check that they look right."
+    ],
+    [
+     "info",
+     "geo.scale",
+     "1 object(s) have an unapplied scale. The export uses the size you see, so nothing changes in game."
+    ],
+    [
+     "warning",
+     "geo.scale",
+     "1 object(s) are mirrored (negative scale). Their faces are flipped back on export; check that they look right."
+    ],
+    [
+     "info",
+     "geo.scale",
+     "1 object(s) have an unapplied scale. The export uses the size you see, so nothing changes in game."
+    ]
+   ]
+  }
+ ],
+ "ticks": 1874,
+ "max_gap_s": 1.4,
+ "gaps_over_1s": 1,
+ "port_operator": [
+  "FINISHED"
+ ],
+ "port_returned_after_s": 0.53,
+ "running_after_cancel": false,
+ "pid_alive_after_cancel": false,
+ "port_operator_2": [
+  "FINISHED"
+ ],
+ "note": "FAILED",
+ "total_s": 477.5
+}

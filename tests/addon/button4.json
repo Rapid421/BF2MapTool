@@ -1,0 +1,81 @@
+{
+ "scene": "I:\\BF2MapTool\\tests\\scenes\\arena.blend",
+ "level": "ToolArena",
+ "runs": [
+  {
+   "note": "first run",
+   "ok": false,
+   "message": "Doors: FrostyCLI stopped in \"doors\" (exit 1):  | [Using DirectCompute on \"AMD Radeon RX 6800\"] |  | [Using DirectCompute on \"AMD Radeon RX 6800\"]  [log: I:/BF2MapTool/work/ToolArena/logs/doors.log]",
+   "elapsed_s": 51.7,
+   "fbmod": "",
+   "stages": [
+    [
+     "export",
+     "done",
+     1.8
+    ],
+    [
+     "split",
+     "done",
+     0.1
+    ],
+    [
+     "textures",
+     "done",
+     0.2
+    ],
+    [
+     "collision",
+     "done",
+     2.0
+    ],
+    [
+     "shell",
+     "skip",
+     0.0
+    ],
+    [
+     "shaderdb",
+     "done",
+     15.8
+    ],
+    [
+     "import",
+     "done",
+     14.8
+    ],
+    [
+     "place",
+     "done",
+     9.7
+    ],
+    [
+     "doors",
+     "fail",
+     5.7
+    ]
+   ],
+   "results": [
+    [
+     "warning",
+     "geo.scale",
+     "1 object(s) are mirrored (negative scale). Their faces are flipped back on export; check that they look right."
+    ],
+    [
+     "info",
+     "geo.scale",
+     "1 object(s) have an unapplied scale. The export uses the size you see, so nothing changes in game."
+    ]
+   ]
+  }
+ ],
+ "ticks": 205,
+ "max_gap_s": 0.26,
+ "gaps_over_1s": 0,
+ "port_operator": [
+  "FINISHED"
+ ],
+ "port_returned_after_s": 0.45,
+ "note": "FAILED",
+ "total_s": 53.7
+}

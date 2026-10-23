@@ -1,0 +1,38 @@
+[
+ {
+  "tag": "baked_1000",
+  "mode": "baked",
+  "watts": 1000.0,
+  "cx": -50.0
+ },
+ {
+  "tag": "dynamic_30",
+  "mode": "dynamic",
+  "watts": 30.0,
+  "cx": -30.0
+ },
+ {
+  "tag": "dynamic_60",
+  "mode": "dynamic",
+  "watts": 60.0,
+  "cx": -10.0
+ },
+ {
+  "tag": "dynamic_125",
+  "mode": "dynamic",
+  "watts": 125.0,
+  "cx": 10.0
+ },
+ {
+  "tag": "dynamic_250",
+  "mode": "dynamic",
+  "watts": 250.0,
+  "cx": 30.0
+ },
+ {
+  "tag": "none_0",
+  "mode": "none",
+  "watts": 0.0,
+  "cx": 50.0
+ }
+]

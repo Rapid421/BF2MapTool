@@ -1,0 +1,111 @@
+{
+ "scene": "I:\\BF2MapTool\\tests\\scenes\\arena.blend",
+ "level": "ToolArena",
+ "runs": [
+  {
+   "note": "first run",
+   "ok": true,
+   "message": "Finished.",
+   "elapsed_s": 274.5,
+   "fbmod": "I:/BF2MapTool/work/ToolArena/mods/ToolArena.fbmod",
+   "stages": [
+    [
+     "export",
+     "done",
+     1.1
+    ],
+    [
+     "split",
+     "done",
+     0.0
+    ],
+    [
+     "textures",
+     "done",
+     0.1
+    ],
+    [
+     "collision",
+     "done",
+     0.3
+    ],
+    [
+     "shell",
+     "skip",
+     0.0
+    ],
+    [
+     "shaderdb",
+     "done",
+     15.5
+    ],
+    [
+     "import",
+     "done",
+     11.2
+    ],
+    [
+     "place",
+     "done",
+     8.6
+    ],
+    [
+     "doors",
+     "done",
+     7.0
+    ],
+    [
+     "lights",
+     "done",
+     6.3
+    ],
+    [
+     "navmesh",
+     "done",
+     10.1
+    ],
+    [
+     "spawns",
+     "done",
+     10.0
+    ],
+    [
+     "kill",
+     "done",
+     10.0
+    ],
+    [
+     "audit",
+     "done",
+     187.3
+    ],
+    [
+     "mod",
+     "done",
+     5.5
+    ]
+   ],
+   "results": [
+    [
+     "warning",
+     "geo.scale",
+     "1 object(s) are mirrored (negative scale). Their faces are flipped back on export; check that they look right."
+    ],
+    [
+     "info",
+     "geo.scale",
+     "1 object(s) have an unapplied scale. The export uses the size you see, so nothing changes in game."
+    ]
+   ]
+  }
+ ],
+ "ticks": 1086,
+ "max_gap_s": 0.47,
+ "gaps_over_1s": 0,
+ "port_operator": [
+  "FINISHED"
+ ],
+ "port_returned_after_s": 0.37,
+ "note": "DONE",
+ "total_s": 276.5
+}

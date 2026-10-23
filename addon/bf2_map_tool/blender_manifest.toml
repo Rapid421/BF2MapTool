@@ -1,0 +1,23 @@
+schema_version = "1.0.0"
+
+id = "bf2_map_tool"
+version = "0.2.0"
+name = "BF2 Map Tool"
+tagline = "Turn a Blender scene into a Battlefront II (2017) level mod"
+maintainer = "Rapid421"
+type = "add-on"
+
+tags = ["Import-Export", "Game Engine"]
+
+blender_version_min = "4.2.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+
+platforms = ["windows-x64"]
+
+[permissions]
+files = "Read scene textures, write builds and the .fbmod"
+network = "Download Python packages with pip when asked"
+
+[build]
+paths_exclude_pattern = ["__pycache__/", "*.pyc"]

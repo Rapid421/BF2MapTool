@@ -1,0 +1,29 @@
+{
+ "scene": "I:/BF2MapTool/tests/scenes/coltest.blend",
+ "work": "I:/BF2MapTool/work/ColTest",
+ "overlay": {
+  "triangles": 192,
+  "area_m2": 11470.295,
+  "by_kind": {
+   "custom": 12,
+   "exact": 168,
+   "hull": 12
+  }
+ },
+ "built": {
+  "triangles": 264,
+  "area_m2": 11470.295,
+  "pieces_with_collision": 14
+ },
+ "overlay_not_in_build": {
+  "triangles": 0,
+  "area_m2": 0.0,
+  "objects": []
+ },
+ "build_not_in_overlay": {
+  "triangles": 0,
+  "area_m2": 0.0,
+  "pieces": []
+ },
+ "pass": true
+}

@@ -1,0 +1,13 @@
+{
+ "scene": "I:\\BF2MapTool\\tests\\scenes\\coltest.blend",
+ "steps": [
+  "overlay on",
+  "screenshot"
+ ],
+ "count": {
+  "exact": 168,
+  "custom": 12,
+  "hull": 12
+ },
+ "handler": true
+}

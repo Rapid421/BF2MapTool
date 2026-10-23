@@ -1,0 +1,377 @@
+{
+ "samples": 256,
+ "view_transform": "Standard",
+ "exposure": 0.0,
+ "views": {
+  "sun_0": {
+   "kind": "ramp_sun",
+   "linear_rgb": [
+    0.022989919409155846,
+    0.025528140366077423,
+    0.029802676290273666
+   ],
+   "linear_std": 0.00021173841378185898,
+   "reflectance": 0.02
+  },
+  "sun_1": {
+   "kind": "ramp_sun",
+   "linear_rgb": [
+    0.05738525837659836,
+    0.06369662284851074,
+    0.07447304576635361
+   ],
+   "linear_std": 0.0005750104901380837,
+   "reflectance": 0.05
+  },
+  "sun_2": {
+   "kind": "ramp_sun",
+   "linear_rgb": [
+    0.11468545347452164,
+    0.12727555632591248,
+    0.1499425768852234
+   ],
+   "linear_std": 0.001200997387059033,
+   "reflectance": 0.1
+  },
+  "sun_3": {
+   "kind": "ramp_sun",
+   "linear_rgb": [
+    0.2064170390367508,
+    0.2291109561920166,
+    0.2716016471385956
+   ],
+   "linear_std": 0.0021516657434403896,
+   "reflectance": 0.18
+  },
+  "sun_4": {
+   "kind": "ramp_sun",
+   "linear_rgb": [
+    0.34421470761299133,
+    0.38212719559669495,
+    0.4552275240421295
+   ],
+   "linear_std": 0.0035373596474528313,
+   "reflectance": 0.3
+  },
+  "sun_5": {
+   "kind": "ramp_sun",
+   "linear_rgb": [
+    0.5167661905288696,
+    0.573847234249115,
+    0.6856892108917236
+   ],
+   "linear_std": 0.005143259186297655,
+   "reflectance": 0.45
+  },
+  "sun_6": {
+   "kind": "ramp_sun",
+   "linear_rgb": [
+    0.689633846282959,
+    0.7660489082336426,
+    0.9162058234214783
+   ],
+   "linear_std": 0.006964442320168018,
+   "reflectance": 0.6
+  },
+  "sun_7": {
+   "kind": "ramp_sun",
+   "linear_rgb": [
+    0.9204277396202087,
+    1.0226664543151855,
+    1.2235873937606812
+   ],
+   "linear_std": 0.009004381485283375,
+   "reflectance": 0.8
+  },
+  "shade_0": {
+   "kind": "ramp_shade",
+   "linear_rgb": [
+    0.005381129682064056,
+    0.007609495893120766,
+    0.012513644061982632
+   ],
+   "linear_std": 0.00022210004681255668,
+   "reflectance": 0.02
+  },
+  "shade_1": {
+   "kind": "ramp_shade",
+   "linear_rgb": [
+    0.012949241325259209,
+    0.0183339174836874,
+    0.030201591551303864
+   ],
+   "linear_std": 0.0005535843083634973,
+   "reflectance": 0.05
+  },
+  "shade_2": {
+   "kind": "ramp_shade",
+   "linear_rgb": [
+    0.02544240467250347,
+    0.036086101084947586,
+    0.059568386524915695
+   ],
+   "linear_std": 0.0011374459136277437,
+   "reflectance": 0.1
+  },
+  "shade_3": {
+   "kind": "ramp_shade",
+   "linear_rgb": [
+    0.045136481523513794,
+    0.0641351044178009,
+    0.10609598457813263
+   ],
+   "linear_std": 0.0021780303213745356,
+   "reflectance": 0.18
+  },
+  "shade_4": {
+   "kind": "ramp_shade",
+   "linear_rgb": [
+    0.07405179738998413,
+    0.10544214397668839,
+    0.17406095564365387
+   ],
+   "linear_std": 0.0038893320597708225,
+   "reflectance": 0.3
+  },
+  "shade_5": {
+   "kind": "ramp_shade",
+   "linear_rgb": [
+    0.10858789086341858,
+    0.15508322417736053,
+    0.25075194239616394
+   ],
+   "linear_std": 0.0056456392630934715,
+   "reflectance": 0.45
+  },
+  "shade_6": {
+   "kind": "ramp_shade",
+   "linear_rgb": [
+    0.1407550424337387,
+    0.2017240822315216,
+    0.3164452910423279
+   ],
+   "linear_std": 0.007630667649209499,
+   "reflectance": 0.6
+  },
+  "shade_7": {
+   "kind": "ramp_shade",
+   "linear_rgb": [
+    0.1833757758140564,
+    0.26654309034347534,
+    0.4148017466068268
+   ],
+   "linear_std": 0.011193963699042797,
+   "reflectance": 0.8
+  },
+  "bay_point_dynamic_floor": {
+   "kind": "bay",
+   "linear_rgb": [
+    0.09128311276435852,
+    0.09128311276435852,
+    0.09128311276435852
+   ],
+   "linear_std": 0.0031438954174518585,
+   "reflectance": 0.45,
+   "bay": "point_dynamic"
+  },
+  "bay_point_dynamic_wall": {
+   "kind": "bay",
+   "linear_rgb": [
+    0.06354449689388275,
+    0.06354449689388275,
+    0.06354449689388275
+   ],
+   "linear_std": 0.001453949837014079,
+   "reflectance": 0.45,
+   "bay": "point_dynamic"
+  },
+  "bay_spot_dynamic_floor": {
+   "kind": "bay",
+   "linear_rgb": [
+    0.10202497988939285,
+    0.10202497988939285,
+    0.10202497988939285
+   ],
+   "linear_std": 0.001218023942783475,
+   "reflectance": 0.45,
+   "bay": "spot_dynamic"
+  },
+  "bay_area_dynamic_floor": {
+   "kind": "bay",
+   "linear_rgb": [
+    0.3966791033744812,
+    0.3966791033744812,
+    0.3966791033744812
+   ],
+   "linear_std": 0.0023777547758072615,
+   "reflectance": 0.45,
+   "bay": "area_dynamic"
+  },
+  "bay_point_baked_floor": {
+   "kind": "bay",
+   "linear_rgb": [
+    0.09130742400884628,
+    0.09130742400884628,
+    0.09130742400884628
+   ],
+   "linear_std": 0.003147273790091276,
+   "reflectance": 0.45,
+   "bay": "point_baked"
+  },
+  "bay_point_baked_wall": {
+   "kind": "bay",
+   "linear_rgb": [
+    0.06354603171348572,
+    0.06354603171348572,
+    0.06354603171348572
+   ],
+   "linear_std": 0.0014788523549214005,
+   "reflectance": 0.45,
+   "bay": "point_baked"
+  },
+  "bay_spot_baked_floor": {
+   "kind": "bay",
+   "linear_rgb": [
+    0.10202031582593918,
+    0.10202031582593918,
+    0.10202031582593918
+   ],
+   "linear_std": 0.0007461384520865977,
+   "reflectance": 0.45,
+   "bay": "spot_baked"
+  },
+  "bay_area_baked_floor": {
+   "kind": "bay",
+   "linear_rgb": [
+    0.39661648869514465,
+    0.39661648869514465,
+    0.39661648869514465
+   ],
+   "linear_std": 0.0042084283195436,
+   "reflectance": 0.45,
+   "bay": "area_baked"
+  },
+  "bay_glow_floor": {
+   "kind": "bay",
+   "linear_rgb": [
+    0.3028618097305298,
+    0.3028618097305298,
+    0.3028618097305298
+   ],
+   "linear_std": 0.010017137974500656,
+   "reflectance": 0.45,
+   "bay": "glow"
+  },
+  "bay_glow_wall": {
+   "kind": "bay",
+   "linear_rgb": [
+    0.152631014585495,
+    0.152631014585495,
+    0.152631014585495
+   ],
+   "linear_std": 0.005731726530939341,
+   "reflectance": 0.45,
+   "bay": "glow"
+  },
+  "bay_glow_panel": {
+   "kind": "glow_direct",
+   "linear_rgb": [
+    5.0,
+    5.0,
+    5.0
+   ],
+   "linear_std": 0.0,
+   "strength": 5.0
+  },
+  "bay_panels_floor": {
+   "kind": "bay",
+   "linear_rgb": [
+    0.0031449052039533854,
+    0.0031449052039533854,
+    0.0031449052039533854
+   ],
+   "linear_std": 0.0003022475284524262,
+   "reflectance": 0.45,
+   "bay": "panels"
+  },
+  "panel_0": {
+   "kind": "glow_direct",
+   "linear_rgb": [
+    0.04999975860118866,
+    0.04999975860118866,
+    0.04999975860118866
+   ],
+   "linear_std": 3.725290298461914e-09,
+   "strength": 0.05
+  },
+  "panel_1": {
+   "kind": "glow_direct",
+   "linear_rgb": [
+    0.19999903440475464,
+    0.19999903440475464,
+    0.19999903440475464
+   ],
+   "linear_std": 1.4901161193847656e-08,
+   "strength": 0.2
+  },
+  "panel_2": {
+   "kind": "glow_direct",
+   "linear_rgb": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "linear_std": 0.0,
+   "strength": 1.0
+  },
+  "sky_pX": {
+   "kind": "sky_marker",
+   "linear_rgb": [
+    0.26066526770591736,
+    7.589174270629883,
+    0.2859451472759247
+   ],
+   "linear_std": 0.4461476504802704,
+   "expect": "+X red"
+  },
+  "sky_pY": {
+   "kind": "sky_marker",
+   "linear_rgb": [
+    0.26066526770591736,
+    0.2687809467315674,
+    7.606335163116455
+   ],
+   "linear_std": 0.4461476504802704,
+   "expect": "+Y green"
+  },
+  "sky_mX": {
+   "kind": "sky_marker",
+   "linear_rgb": [
+    7.5810546875,
+    7.589174270629883,
+    0.2859451472759247
+   ],
+   "linear_std": 0.9723599553108215,
+   "expect": "-X blue"
+  },
+  "sky_mY": {
+   "kind": "sky_marker",
+   "linear_rgb": [
+    7.5810546875,
+    0.2687809467315674,
+    0.2859451472759247
+   ],
+   "linear_std": 0.4461476504802704,
+   "expect": "-Y yellow"
+  },
+  "sky_up": {
+   "kind": "sky_plain",
+   "linear_rgb": [
+    0.25,
+    0.44921875,
+    0.8984375
+   ],
+   "linear_std": 0.0
+  }
+ }
+}

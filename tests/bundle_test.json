@@ -1,0 +1,33 @@
+{
+ "bundle": "dist/BF2MapTool_WIP_2026-10-12.zip",
+ "bytes": 78050529,
+ "unzip_s": 0.8,
+ "cli": {
+  "rc": 0,
+  "seconds": 243.3,
+  "last_lines": [
+   "[08:30:14] HandlerPlugins: loaded Swbf2MergerPlugin.dll",
+   "[08:30:14] LanguageFormat_English",
+   "[08:30:14] localization: FsLocalizationPlugin.FsLocalizationStringDatabase from I:/BF2MapTool/tmp/bundle_test/BF2MapTool_WIP_2026-10-12/FrostyPlugins\\FsLocalizationPlugin.dll"
+  ],
+  "cache_built": true
+ },
+ "check_setup": {
+  "rc": 0,
+  "lines": [
+   "@@SETUP {\"item\": \"Game folder\", \"ok\": true, \"message\": \"F:/STAR WARS Battlefront II\", \"fix\": \"\"}",
+   "@@SETUP {\"item\": \"FrostyCLI\", \"ok\": true, \"message\": \"answers (commands: port, level, navmesh ...)\", \"fix\": \"\"}",
+   "@@SETUP {\"item\": \"Frosty plugins\", \"ok\": true, \"message\": \"I:/BF2MapTool/tmp/bundle_test/BF2MapTool_WIP_2026-10-12/FrostyPlugins\", \"fix\": \"\"}",
+   "@@SETUP {\"item\": \".NET runtime\", \"ok\": true, \"message\": \"C:\\\\Program Files\\\\dotnet\\\\dotnet.EXE\", \"fix\": \"\"}",
+   "@@SETUP {\"item\": \"HavokCollisionTool\", \"ok\": true, \"message\": \"answers\", \"fix\": \"\"}",
+   "@@SETUP {\"item\": \"Collision template\", \"ok\": true, \"message\": \"I:/BF2MapTool/tmp/bundle_test/BF2MapTool_WIP_2026-10-12/collision_template/template.res\", \"fix\": \"\"}",
+   "@@SETUP {\"item\": \"Light baker\", \"ok\": true, \"message\": \"I:/BF2MapTool/tmp/bundle_test/BF2MapTool_WIP_2026-10-12/fluxbake/fluxbake_src.exe\", \"fix\": \"\"}",
+   "@@SETUP {\"item\": \"Blender\", \"ok\": true, \"message\": \"C:/Program Files/Blender Foundation/Blender 5.2/blender.exe\", \"fix\": \"\"}",
+   "@@SETUP {\"item\": \"Work folder\", \"ok\": true, \"message\": \"I:/BF2MapTool/tmp/bundle_test/work (91 GB free)\", \"fix\": \"\"}",
+   "@@SETUP {\"item\": \"Python: numpy\", \"ok\": true, \"message\": \"version 2.5.1\", \"fix\": \"\"}",
+   "@@SETUP {\"item\": \"Python: PIL\", \"ok\": true, \"message\": \"version 12.3.0\", \"fix\": \"\"}",
+   "@@SETUP {\"item\": \"Python: scipy\", \"ok\": true, \"message\": \"version 1.18.1\", \"fix\": \"\"}",
+   "@@SETUP {\"item\": \"Python: xatlas\", \"ok\": true, \"message\": \"version 0.0.11\", \"fix\": \"\"}"
+  ]
+ }
+}

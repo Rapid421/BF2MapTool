@@ -1,0 +1,17 @@
+<Project>
+
+  <!--
+    Applies to every project here, including vendor/, so the vendored upstream csproj
+    stays byte-identical to its pinned commit.
+
+    Release builds ship no PDBs and map source paths to repo-relative ones, so exception
+    text from the tool cannot carry the build machine's user folder. The plugin is passed
+    between people; its error dialogs should not name whoever compiled it.
+  -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <PathMap>$(MSBuildThisFileDirectory)=.\</PathMap>
+  </PropertyGroup>
+
+</Project>

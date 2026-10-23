@@ -1,0 +1,218 @@
+{
+ "available": [
+  "Standard",
+  "Filmic",
+  "AgX",
+  "Khronos PBR Neutral"
+ ],
+ "patches": [
+  {
+   "name": "sun_0",
+   "reflectance": 0.02,
+   "display_srgb": {
+    "Standard": [
+     42.1,
+     44.4,
+     48.3
+    ],
+    "Filmic": [
+     44.5,
+     47.3,
+     51.9
+    ],
+    "AgX": [
+     35.1,
+     38.1,
+     41.8
+    ],
+    "Khronos PBR Neutral": [
+     11.3,
+     17.5,
+     25.7
+    ]
+   }
+  },
+  {
+   "name": "sun_1",
+   "reflectance": 0.05,
+   "display_srgb": {
+    "Standard": [
+     67.9,
+     71.4,
+     77.2
+    ],
+    "Filmic": [
+     75.1,
+     79.3,
+     85.9
+    ],
+    "AgX": [
+     62.7,
+     67.4,
+     73.3
+    ],
+    "Khronos PBR Neutral": [
+     40.0,
+     46.0,
+     55.1
+    ]
+   }
+  },
+  {
+   "name": "sun_2",
+   "reflectance": 0.1,
+   "display_srgb": {
+    "Standard": [
+     95.2,
+     99.9,
+     108.0
+    ],
+    "Filmic": [
+     105.5,
+     110.5,
+     118.5
+    ],
+    "AgX": [
+     93.2,
+     99.6,
+     107.4
+    ],
+    "Khronos PBR Neutral": [
+     77.6,
+     83.6,
+     93.6
+    ]
+   }
+  },
+  {
+   "name": "sun_3",
+   "reflectance": 0.18,
+   "display_srgb": {
+    "Standard": [
+     125.4,
+     131.5,
+     142.3
+    ],
+    "Filmic": [
+     134.4,
+     139.5,
+     148.1
+    ],
+    "AgX": [
+     125.4,
+     131.8,
+     140.1
+    ],
+    "Khronos PBR Neutral": [
+     113.7,
+     120.7,
+     132.4
+    ]
+   }
+  },
+  {
+   "name": "sun_4",
+   "reflectance": 0.3,
+   "display_srgb": {
+    "Standard": [
+     158.5,
+     166.1,
+     179.8
+    ],
+    "Filmic": [
+     159.6,
+     164.6,
+     172.9
+    ],
+    "AgX": [
+     152.4,
+     158.1,
+     165.5
+    ],
+    "Khronos PBR Neutral": [
+     150.1,
+     158.6,
+     172.8
+    ]
+   }
+  },
+  {
+   "name": "sun_5",
+   "reflectance": 0.45,
+   "display_srgb": {
+    "Standard": [
+     190.3,
+     199.4,
+     215.9
+    ],
+    "Filmic": [
+     178.7,
+     183.4,
+     191.0
+    ],
+    "AgX": [
+     171.5,
+     176.2,
+     182.8
+    ],
+    "Khronos PBR Neutral": [
+     184.0,
+     193.4,
+     210.4
+    ]
+   }
+  },
+  {
+   "name": "sun_6",
+   "reflectance": 0.6,
+   "display_srgb": {
+    "Standard": [
+     216.5,
+     226.7,
+     245.4
+    ],
+    "Filmic": [
+     191.3,
+     195.6,
+     202.6
+    ],
+    "AgX": [
+     183.3,
+     187.6,
+     193.6
+    ],
+    "Khronos PBR Neutral": [
+     206.7,
+     217.2,
+     235.3
+    ]
+   }
+  },
+  {
+   "name": "sun_7",
+   "reflectance": 0.8,
+   "display_srgb": {
+    "Standard": [
+     245.9,
+     254.4,
+     255.0
+    ],
+    "Filmic": [
+     202.8,
+     206.7,
+     212.9
+    ],
+    "AgX": [
+     194.0,
+     197.9,
+     203.2
+    ],
+    "Khronos PBR Neutral": [
+     216.5,
+     226.7,
+     244.7
+    ]
+   }
+  }
+ ]
+}

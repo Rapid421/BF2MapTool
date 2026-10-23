@@ -1,0 +1,26 @@
+[
+ {
+  "tag": "baked_100",
+  "mode": "baked",
+  "watts": 100.0,
+  "cx": -30.0
+ },
+ {
+  "tag": "dynamic_100",
+  "mode": "dynamic",
+  "watts": 100.0,
+  "cx": -10.0
+ },
+ {
+  "tag": "both_100",
+  "mode": "both",
+  "watts": 100.0,
+  "cx": 10.0
+ },
+ {
+  "tag": "none_0",
+  "mode": "none",
+  "watts": 0.0,
+  "cx": 30.0
+ }
+]

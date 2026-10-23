@@ -1,0 +1,38 @@
+{
+ "baked_1000": {
+  "picture": "bay_baked_1000_01.png",
+  "floor_linear": 0.14222,
+  "wall_linear": 0.42444,
+  "floor_8bit": 102.5
+ },
+ "dynamic_30": {
+  "picture": "bay_dynamic_30_01.png",
+  "floor_linear": 0.00027,
+  "wall_linear": 0.01267,
+  "floor_8bit": 1.0
+ },
+ "dynamic_60": {
+  "picture": "bay_dynamic_60_01.png",
+  "floor_linear": 0.00029,
+  "wall_linear": 0.04223,
+  "floor_8bit": 1.1
+ },
+ "dynamic_125": {
+  "picture": "bay_dynamic_125_01.png",
+  "floor_linear": 0.00043,
+  "wall_linear": 0.11347,
+  "floor_8bit": 1.6
+ },
+ "dynamic_250": {
+  "picture": "bay_dynamic_250_01.png",
+  "floor_linear": 0.04865,
+  "wall_linear": 0.40123,
+  "floor_8bit": 28.7
+ },
+ "none_0": {
+  "picture": "bay_none_0_01.png",
+  "floor_linear": 0.00021,
+  "wall_linear": 0.0,
+  "floor_8bit": 0.8
+ }
+}

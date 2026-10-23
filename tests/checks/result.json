@@ -1,0 +1,555 @@
+{
+ "ok": true,
+ "seconds": 129.1,
+ "cases": {
+  "clean": {
+   "pass": true,
+   "expected": [],
+   "reported": [],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 0 warning(s)"
+  },
+  "geo_none": {
+   "pass": true,
+   "expected": [
+    "geo.none"
+   ],
+   "reported": [
+    "geo.none"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "map_no_mode": {
+   "pass": true,
+   "expected": [
+    "map.no_mode"
+   ],
+   "reported": [
+    "map.no_mode"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "supremacy_posts": {
+   "pass": true,
+   "expected": [
+    "supremacy.posts"
+   ],
+   "reported": [
+    "supremacy.posts"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "supremacy_letters": {
+   "pass": true,
+   "expected": [
+    "supremacy.letters"
+   ],
+   "reported": [
+    "supremacy.letters"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "geo_no_material": {
+   "pass": true,
+   "expected": [
+    "geo.no_material"
+   ],
+   "reported": [
+    "geo.no_material"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "geo_auto_uv": {
+   "pass": true,
+   "expected": [
+    "geo.auto_uv"
+   ],
+   "reported": [
+    "geo.auto_uv"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "geo_degenerate": {
+   "pass": true,
+   "expected": [
+    "geo.degenerate"
+   ],
+   "reported": [
+    "geo.degenerate"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "geo_mirrored": {
+   "pass": true,
+   "expected": [
+    "geo.scale"
+   ],
+   "reported": [
+    "geo.scale"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "scene_extent": {
+   "pass": true,
+   "expected": [
+    "scene.extent"
+   ],
+   "reported": [
+    "scene.extent"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "scene_scale": {
+   "pass": true,
+   "expected": [
+    "scene.scale"
+   ],
+   "reported": [
+    "scene.scale"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "class_limited": {
+   "pass": true,
+   "expected": [
+    "class.limited"
+   ],
+   "reported": [
+    "class.limited"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 0 warning(s)"
+  },
+  "class_placeholder": {
+   "pass": true,
+   "expected": [
+    "class.placeholder"
+   ],
+   "reported": [
+    "class.placeholder"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "class_guessed": {
+   "pass": true,
+   "expected": [
+    "class.guessed"
+   ],
+   "reported": [
+    "class.guessed"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "class_auto": {
+   "pass": true,
+   "expected": [
+    "class.auto"
+   ],
+   "reported": [
+    "class.auto"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 0 warning(s)"
+  },
+  "tex_missing": {
+   "pass": true,
+   "expected": [
+    "tex.missing"
+   ],
+   "reported": [
+    "tex.missing"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "tex_cutout_no_alpha": {
+   "pass": true,
+   "expected": [
+    "tex.cutout_no_alpha"
+   ],
+   "reported": [
+    "tex.cutout_no_alpha"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "class_guess_fallback": {
+   "pass": true,
+   "expected": [
+    "class.auto",
+    "class.guessed"
+   ],
+   "reported": [
+    "class.auto",
+    "class.guessed"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "tex_resized": {
+   "pass": true,
+   "expected": [
+    "tex.resized"
+   ],
+   "reported": [
+    "tex.resized"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 0 warning(s)"
+  },
+  "tex_uv_transform": {
+   "pass": true,
+   "expected": [
+    "tex.uv_transform"
+   ],
+   "reported": [
+    "tex.uv_transform"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "tex_approximate": {
+   "pass": true,
+   "expected": [
+    "tex.approximate"
+   ],
+   "reported": [
+    "tex.approximate"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "tex_unsupported_node": {
+   "pass": true,
+   "expected": [
+    "tex.unsupported_node"
+   ],
+   "reported": [
+    "tex.unsupported_node"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "tex_no_principled": {
+   "pass": true,
+   "expected": [
+    "tex.no_principled"
+   ],
+   "reported": [
+    "tex.no_principled"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "tex_bake_note": {
+   "pass": true,
+   "expected": [
+    "tex.bake_note"
+   ],
+   "reported": [
+    "tex.bake_note"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "kill_count": {
+   "pass": true,
+   "expected": [
+    "kill.count"
+   ],
+   "reported": [
+    "kill.count"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "spawn_in_kill": {
+   "pass": true,
+   "expected": [
+    "spawn.in_kill"
+   ],
+   "reported": [
+    "kill.walkable",
+    "spawn.in_kill"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [
+    "kill.walkable"
+   ],
+   "done": "@@DONE fail 2 error(s), 0 warning(s)"
+  },
+  "spawn_teams_close": {
+   "pass": true,
+   "expected": [
+    "spawn.teams_close"
+   ],
+   "reported": [
+    "spawn.teams_close"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "spawn_none": {
+   "pass": true,
+   "expected": [
+    "spawn.none"
+   ],
+   "reported": [
+    "spawn.none"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "door_materials": {
+   "pass": true,
+   "expected": [
+    "door.materials"
+   ],
+   "reported": [
+    "door.materials"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "door_shape": {
+   "pass": true,
+   "expected": [
+    "door.shape"
+   ],
+   "reported": [
+    "door.shape"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "light_budget": {
+   "pass": true,
+   "expected": [
+    "light.dynamic_budget"
+   ],
+   "reported": [
+    "light.dynamic_budget"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "light_saturated": {
+   "pass": true,
+   "expected": [
+    "light.saturated"
+   ],
+   "reported": [
+    "light.saturated"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "map_name_clash": {
+   "pass": true,
+   "expected": [
+    "map.name_clash"
+   ],
+   "reported": [
+    "map.name_clash"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "spawn_in_geometry": {
+   "pass": true,
+   "expected": [
+    "spawn.in_geometry"
+   ],
+   "reported": [
+    "spawn.in_geometry"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "spawn_no_floor": {
+   "pass": true,
+   "expected": [
+    "spawn.no_floor"
+   ],
+   "reported": [
+    "spawn.no_floor"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "kill_walkable": {
+   "pass": true,
+   "expected": [
+    "kill.walkable"
+   ],
+   "reported": [
+    "kill.walkable"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "light_in_surface": {
+   "pass": true,
+   "expected": [
+    "light.in_surface"
+   ],
+   "reported": [
+    "light.in_surface"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "door_travel": {
+   "pass": true,
+   "expected": [
+    "door.travel"
+   ],
+   "reported": [
+    "door.travel"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE fail 1 error(s), 0 warning(s)"
+  },
+  "geo_flipped": {
+   "pass": true,
+   "expected": [
+    "geo.flipped"
+   ],
+   "reported": [
+    "geo.flipped"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "look_sky_not_world": {
+   "pass": true,
+   "expected": [
+    "look.sky_not_world"
+   ],
+   "reported": [
+    "look.sky_not_world"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "look_sun_soft": {
+   "pass": true,
+   "expected": [
+    "look.sun_soft"
+   ],
+   "reported": [
+    "look.sun_soft"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "look_one_sun": {
+   "pass": true,
+   "expected": [
+    "look.one_sun"
+   ],
+   "reported": [
+    "look.one_sun"
+   ],
+   "missing": [],
+   "other_errors_or_warnings": [],
+   "done": "@@DONE ok 0 error(s), 1 warning(s)"
+  },
+  "door_direction": {
+   "pass": true,
+   "expected": [
+    "door.direction"
+   ],
+   "reported": [
+    "door.direction"
+   ],
+   "missing": [],
+   "patched_from": "door_shape"
+  },
+  "class_unsupported": {
+   "pass": true,
+   "expected": [
+    "class.unsupported"
+   ],
+   "reported": [
+    "class.unsupported"
+   ],
+   "missing": [],
+   "patched_from": "clean"
+  },
+  "tex_bake_incomplete": {
+   "pass": true,
+   "expected": [
+    "tex.bake_incomplete"
+   ],
+   "reported": [
+    "tex.bake_incomplete"
+   ],
+   "missing": [],
+   "patched_from": "clean"
+  },
+  "check_internal": {
+   "pass": true,
+   "expected": [
+    "check.internal"
+   ],
+   "reported": [
+    "check.internal"
+   ],
+   "missing": [],
+   "patched_from": "clean"
+  }
+ }
+}

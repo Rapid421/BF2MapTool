@@ -1,0 +1,127 @@
+{
+ "clean": [],
+ "geo_none": [
+  "geo.none"
+ ],
+ "map_no_mode": [
+  "map.no_mode"
+ ],
+ "supremacy_posts": [
+  "supremacy.posts"
+ ],
+ "supremacy_letters": [
+  "supremacy.letters"
+ ],
+ "geo_no_material": [
+  "geo.no_material"
+ ],
+ "geo_auto_uv": [
+  "geo.auto_uv"
+ ],
+ "geo_degenerate": [
+  "geo.degenerate"
+ ],
+ "geo_mirrored": [
+  "geo.scale"
+ ],
+ "scene_extent": [
+  "scene.extent"
+ ],
+ "scene_scale": [
+  "scene.scale"
+ ],
+ "class_limited": [
+  "class.limited"
+ ],
+ "class_placeholder": [
+  "class.placeholder"
+ ],
+ "class_guessed": [
+  "class.guessed"
+ ],
+ "class_auto": [
+  "class.auto"
+ ],
+ "tex_missing": [
+  "tex.missing"
+ ],
+ "tex_cutout_no_alpha": [
+  "tex.cutout_no_alpha"
+ ],
+ "class_guess_fallback": [
+  "class.auto",
+  "class.guessed"
+ ],
+ "tex_resized": [
+  "tex.resized"
+ ],
+ "tex_uv_transform": [
+  "tex.uv_transform"
+ ],
+ "tex_approximate": [
+  "tex.approximate"
+ ],
+ "tex_unsupported_node": [
+  "tex.unsupported_node"
+ ],
+ "tex_no_principled": [
+  "tex.no_principled"
+ ],
+ "tex_bake_note": [
+  "tex.bake_note"
+ ],
+ "kill_count": [
+  "kill.count"
+ ],
+ "spawn_in_kill": [
+  "spawn.in_kill"
+ ],
+ "spawn_teams_close": [
+  "spawn.teams_close"
+ ],
+ "spawn_none": [
+  "spawn.none"
+ ],
+ "door_materials": [
+  "door.materials"
+ ],
+ "door_shape": [
+  "door.shape"
+ ],
+ "light_budget": [
+  "light.dynamic_budget"
+ ],
+ "light_saturated": [
+  "light.saturated"
+ ],
+ "map_name_clash": [
+  "map.name_clash"
+ ],
+ "spawn_in_geometry": [
+  "spawn.in_geometry"
+ ],
+ "spawn_no_floor": [
+  "spawn.no_floor"
+ ],
+ "kill_walkable": [
+  "kill.walkable"
+ ],
+ "light_in_surface": [
+  "light.in_surface"
+ ],
+ "door_travel": [
+  "door.travel"
+ ],
+ "geo_flipped": [
+  "geo.flipped"
+ ],
+ "look_sky_not_world": [
+  "look.sky_not_world"
+ ],
+ "look_sun_soft": [
+  "look.sun_soft"
+ ],
+ "look_one_sun": [
+  "look.one_sun"
+ ]
+}

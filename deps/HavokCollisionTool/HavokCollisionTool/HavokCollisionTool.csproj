@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>HavokCollisionTool</AssemblyName>
+    <RootNamespace>HavokCollisionTool</RootNamespace>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <!-- No native apphost: ship a portable .dll launched via `dotnet`. Avoids needing
+         the Microsoft.NETCore.App.Host.win-x64 pack, which is not available offline. -->
+    <UseAppHost>false</UseAppHost>
+    <!-- PDB and source-path stripping is set once for every project in
+         Directory.Build.props, so the vendored csproj stays untouched. -->
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <!-- The vendored upstream library is warning-noisy; it is not our code to fix. -->
+    <NoWarn>$(NoWarn);CS8600;CS8602;CS8604;CS8619;CS8620;CS8631</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenTK.Mathematics" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\vendor\FrostyHavokPlugin\FrostyHavokPlugin.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,1376 @@
+{
+ "folder": "work/LightMatch/review/lm3",
+ "views": {
+  "sun_0": {
+   "kind": "ramp_sun",
+   "blender_linear": [
+    0.02299,
+    0.02553,
+    0.0298
+   ],
+   "blender_lum": 0.025296788308024405,
+   "blender_srgb8": [
+    41.8,
+    44.3,
+    48.2
+   ],
+   "game": {
+    "srgb8": [
+     54.8,
+     58.3,
+     64.0
+    ],
+    "linear": [
+     0.03790750902171546,
+     0.0427331313477994,
+     0.05121383512882269
+    ],
+    "spread8": 0.7
+   },
+   "game_lum": 0.04231951085426383,
+   "reflectance": 0.02
+  },
+  "sun_1": {
+   "kind": "ramp_sun",
+   "blender_linear": [
+    0.05739,
+    0.0637,
+    0.07447
+   ],
+   "blender_lum": 0.06313311508223414,
+   "blender_srgb8": [
+    67.8,
+    71.4,
+    77.1
+   ],
+   "game": {
+    "srgb8": [
+     74.1,
+     78.8,
+     86.1
+    ],
+    "linear": [
+     0.06863446826269791,
+     0.07780167640910636,
+     0.09322397376884026
+    ],
+    "spread8": 1.3
+   },
+   "game_lum": 0.0769662178265527,
+   "reflectance": 0.05
+  },
+  "sun_2": {
+   "kind": "ramp_sun",
+   "blender_linear": [
+    0.11469,
+    0.12727,
+    0.14994
+   ],
+   "blender_lum": 0.12623449324220418,
+   "blender_srgb8": [
+    95.1,
+    99.9,
+    108.0
+   ],
+   "game": {
+    "srgb8": [
+     97.0,
+     103.0,
+     112.3
+    ],
+    "linear": [
+     0.11946173492797094,
+     0.13569839631836864,
+     0.16293232712374564
+    ],
+    "spread8": 1.7
+   },
+   "game_lum": 0.1342127719109183,
+   "reflectance": 0.1
+  },
+  "sun_3": {
+   "kind": "ramp_sun",
+   "blender_linear": [
+    0.20642,
+    0.22912,
+    0.2716
+   ],
+   "blender_lum": 0.22735861634016036,
+   "blender_srgb8": [
+    125.4,
+    131.6,
+    142.3
+   ],
+   "game": {
+    "srgb8": [
+     125.0,
+     132.8,
+     145.7
+    ],
+    "linear": [
+     0.20498922318656582,
+     0.23375691639071342,
+     0.2859595557231492
+    ],
+    "spread8": 2.1
+   },
+   "game_lum": 0.23140993537531349,
+   "reflectance": 0.18
+  },
+  "sun_4": {
+   "kind": "ramp_sun",
+   "blender_linear": [
+    0.34424,
+    0.38216,
+    0.45523
+   ],
+   "blender_lum": 0.3793718764722347,
+   "blender_srgb8": [
+    158.5,
+    166.2,
+    179.8
+   ],
+   "game": {
+    "srgb8": [
+     152.1,
+     161.2,
+     174.7
+    ],
+    "linear": [
+     0.31431408903706604,
+     0.3572051729203547,
+     0.4268702725485457
+    ],
+    "spread8": 2.3
+   },
+   "game_lum": 0.3531163486799229,
+   "reflectance": 0.3
+  },
+  "sun_5": {
+   "kind": "ramp_sun",
+   "blender_linear": [
+    0.51676,
+    0.57384,
+    0.68569
+   ],
+   "blender_lum": 0.5697790944814682,
+   "blender_srgb8": [
+    190.3,
+    199.4,
+    215.9
+   ],
+   "game": {
+    "srgb8": [
+     173.7,
+     183.2,
+     197.9
+    ],
+    "linear": [
+     0.42149432224749117,
+     0.4747823749502787,
+     0.5641002703182507
+    ],
+    "spread8": 2.2
+   },
+   "game_lum": 0.4699020869912336,
+   "reflectance": 0.45
+  },
+  "sun_6": {
+   "kind": "ramp_sun",
+   "blender_linear": [
+    0.68967,
+    0.76607,
+    0.91622
+   ],
+   "blender_lum": 0.7606709456682205,
+   "blender_srgb8": [
+    216.4,
+    226.7,
+    245.4
+   ],
+   "game": {
+    "srgb8": [
+     188.5,
+     197.7,
+     213.8
+    ],
+    "linear": [
+     0.5055830612894344,
+     0.5630938835710528,
+     0.6709077001845163
+    ],
+    "spread8": 2.2
+   },
+   "game_lum": 0.5586512403134728,
+   "reflectance": 0.6
+  },
+  "sun_7": {
+   "kind": "ramp_sun",
+   "blender_linear": [
+    0.92044,
+    1.02268,
+    1.2236
+   ],
+   "blender_lum": 1.0154499795675276,
+   "blender_srgb8": [
+    245.9,
+    255.0,
+    255.0
+   ],
+   "game": {
+    "srgb8": [
+     205.0,
+     213.8,
+     227.6
+    ],
+    "linear": [
+     0.6107978332003849,
+     0.6712482647455692,
+     0.7723741287145021
+    ],
+    "spread8": 1.8
+   },
+   "game_lum": 0.66569779037762,
+   "reflectance": 0.8
+  },
+  "shade_0": {
+   "kind": "ramp_shade",
+   "blender_linear": [
+    0.00538,
+    0.00761,
+    0.01251
+   ],
+   "blender_lum": 0.007489377471804619,
+   "blender_srgb8": [
+    16.5,
+    21.2,
+    29.3
+   ],
+   "game": {
+    "srgb8": [
+     24.4,
+     30.6,
+     40.0
+    ],
+    "linear": [
+     0.009356892858994301,
+     0.013403964024385037,
+     0.021240592230789637
+    ],
+    "spread8": 0.6
+   },
+   "game_lum": 0.013109361251125377,
+   "reflectance": 0.02,
+   "looks_like_sunlit_radiance": 0.00422,
+   "read": "below the ramp (extrapolated)",
+   "against_blender": 0.563
+  },
+  "shade_1": {
+   "kind": "ramp_shade",
+   "blender_linear": [
+    0.01295,
+    0.01833,
+    0.0302
+   ],
+   "blender_lum": 0.018046464244648813,
+   "blender_srgb8": [
+    30.0,
+    36.8,
+    48.6
+   ],
+   "game": {
+    "srgb8": [
+     34.9,
+     42.8,
+     55.1
+    ],
+    "linear": [
+     0.016724352313787324,
+     0.02397370215591509,
+     0.03831067394395649
+    ],
+    "spread8": 0.9
+   },
+   "game_lum": 0.023467619742575316,
+   "reflectance": 0.05,
+   "looks_like_sunlit_radiance": 0.01027,
+   "read": "below the ramp (extrapolated)",
+   "against_blender": 0.569
+  },
+  "shade_2": {
+   "kind": "ramp_shade",
+   "blender_linear": [
+    0.02544,
+    0.03609,
+    0.05957
+   ],
+   "blender_lum": 0.035519527185335756,
+   "blender_srgb8": [
+    44.2,
+    53.4,
+    69.0
+   ],
+   "game": {
+    "srgb8": [
+     47.8,
+     57.7,
+     73.8
+    ],
+    "linear": [
+     0.029322698662047002,
+     0.04189577042191213,
+     0.0680953077594342
+    ],
+    "spread8": 1.2
+   },
+   "game_lum": 0.04111434196153389,
+   "reflectance": 0.1,
+   "looks_like_sunlit_radiance": 0.0242,
+   "read": "below the ramp (extrapolated)",
+   "against_blender": 0.681
+  },
+  "shade_3": {
+   "kind": "ramp_shade",
+   "blender_linear": [
+    0.04513,
+    0.06413,
+    0.1061
+   ],
+   "blender_lum": 0.06312276400774718,
+   "blender_srgb8": [
+    60.0,
+    71.6,
+    91.6
+   ],
+   "game": {
+    "srgb8": [
+     63.5,
+     76.1,
+     96.2
+    ],
+    "linear": [
+     0.05041913480570929,
+     0.07238031792213385,
+     0.11747931768556394
+    ],
+    "spread8": 1.5
+   },
+   "game_lum": 0.07096751817450164,
+   "reflectance": 0.18,
+   "looks_like_sunlit_radiance": 0.05577,
+   "read": "on the ramp",
+   "against_blender": 0.883
+  },
+  "shade_4": {
+   "kind": "ramp_shade",
+   "blender_linear": [
+    0.07407,
+    0.10546,
+    0.17406
+   ],
+   "blender_lum": 0.10374144287854432,
+   "blender_srgb8": [
+    76.9,
+    91.4,
+    115.8
+   ],
+   "game": {
+    "srgb8": [
+     78.5,
+     93.8,
+     117.9
+    ],
+    "linear": [
+     0.07719031924188618,
+     0.11140249249500457,
+     0.1809983906161357
+    ],
+    "spread8": 1.9
+   },
+   "game_lum": 0.10915380830573727,
+   "reflectance": 0.3,
+   "looks_like_sunlit_radiance": 0.09757,
+   "read": "on the ramp",
+   "against_blender": 0.941
+  },
+  "shade_5": {
+   "kind": "ramp_shade",
+   "blender_linear": [
+    0.10862,
+    0.15511,
+    0.25075
+   ],
+   "blender_lum": 0.152131049926579,
+   "blender_srgb8": [
+    92.7,
+    109.7,
+    137.1
+   ],
+   "game": {
+    "srgb8": [
+     95.0,
+     112.7,
+     140.4
+    ],
+    "linear": [
+     0.114507901057722,
+     0.16406863001966795,
+     0.2640357682921937
+    ],
+    "spread8": 2.0
+   },
+   "game_lum": 0.1607496464256346,
+   "reflectance": 0.45,
+   "looks_like_sunlit_radiance": 0.15339,
+   "read": "on the ramp",
+   "against_blender": 1.008
+  },
+  "shade_6": {
+   "kind": "ramp_shade",
+   "blender_linear": [
+    0.14079,
+    0.20176,
+    0.31645
+   ],
+   "blender_lum": 0.1970795448541641,
+   "blender_srgb8": [
+    104.8,
+    124.1,
+    152.5
+   ],
+   "game": {
+    "srgb8": [
+     108.9,
+     128.3,
+     154.5
+    ],
+    "linear": [
+     0.1527288293178743,
+     0.21704621193955623,
+     0.3252921033447967
+    ],
+    "spread8": 2.3
+   },
+   "game_lum": 0.211187689753645,
+   "reflectance": 0.6,
+   "looks_like_sunlit_radiance": 0.20598,
+   "read": "on the ramp",
+   "against_blender": 1.045
+  },
+  "shade_7": {
+   "kind": "ramp_shade",
+   "blender_linear": [
+    0.18342,
+    0.26659,
+    0.4148
+   ],
+   "blender_lum": 0.2596100756525993,
+   "blender_srgb8": [
+    118.7,
+    141.1,
+    172.4
+   ],
+   "game": {
+    "srgb8": [
+     121.3,
+     144.8,
+     172.6
+    ],
+    "linear": [
+     0.19217154525354116,
+     0.2822846058671131,
+     0.4155573359915086
+    ],
+    "spread8": 2.1
+   },
+   "game_lum": 0.2727488602956491,
+   "reflectance": 0.8,
+   "looks_like_sunlit_radiance": 0.27745,
+   "read": "on the ramp",
+   "against_blender": 1.069
+  },
+  "bay_point_dynamic_floor": {
+   "kind": "bay",
+   "blender_linear": [
+    0.09129,
+    0.09129,
+    0.09129
+   ],
+   "blender_lum": 0.09128880500793456,
+   "blender_srgb8": [
+    85.2,
+    85.2,
+    85.2
+   ],
+   "game": {
+    "srgb8": [
+     130.3,
+     130.3,
+     129.6
+    ],
+    "linear": [
+     0.22418839381563485,
+     0.22418802108740396,
+     0.22175440193877924
+    ],
+    "spread8": 3.1
+   },
+   "game_lum": 0.22401239302689513,
+   "reflectance": 0.45,
+   "bay": "point_dynamic",
+   "looks_like_sunlit_radiance": 0.21952,
+   "read": "on the ramp",
+   "against_blender": 2.405
+  },
+  "bay_point_dynamic_wall": {
+   "kind": "bay",
+   "blender_linear": [
+    0.06355,
+    0.06355,
+    0.06355
+   ],
+   "blender_lum": 0.06354879587888718,
+   "blender_srgb8": [
+    71.3,
+    71.3,
+    71.3
+   ],
+   "game": {
+    "srgb8": [
+     109.2,
+     109.2,
+     108.4
+    ],
+    "linear": [
+     0.1535931388187581,
+     0.1536015092918032,
+     0.15115115242758437
+    ],
+    "spread8": 1.6
+   },
+   "game_lum": 0.1534228139636372,
+   "reflectance": 0.45,
+   "bay": "point_dynamic",
+   "looks_like_sunlit_radiance": 0.14586,
+   "read": "on the ramp",
+   "against_blender": 2.295
+  },
+  "bay_spot_dynamic_floor": {
+   "kind": "bay",
+   "blender_linear": [
+    0.10203,
+    0.10203,
+    0.10203
+   ],
+   "blender_lum": 0.10202580690383911,
+   "blender_srgb8": [
+    89.9,
+    89.9,
+    89.9
+   ],
+   "game": {
+    "srgb8": [
+     126.8,
+     126.8,
+     126.1
+    ],
+    "linear": [
+     0.21132937825376305,
+     0.21133622029684687,
+     0.20885710902928428
+    ],
+    "spread8": 1.6
+   },
+   "game_lum": 0.21115577384496922,
+   "reflectance": 0.45,
+   "bay": "spot_dynamic",
+   "looks_like_sunlit_radiance": 0.20594,
+   "read": "on the ramp",
+   "against_blender": 2.019
+  },
+  "bay_area_dynamic_floor": {
+   "kind": "bay",
+   "blender_linear": [
+    0.39662,
+    0.39662,
+    0.39662
+   ],
+   "blender_lum": 0.3966151773929596,
+   "blender_srgb8": [
+    169.0,
+    169.0,
+    169.0
+   ],
+   "game": {
+    "srgb8": [
+     176.1,
+     176.1,
+     175.5
+    ],
+    "linear": [
+     0.4347199958595965,
+     0.4347232867189974,
+     0.4312398530052543
+    ],
+    "spread8": 3.5
+   },
+   "game_lum": 0.43447108316815647,
+   "reflectance": 0.45,
+   "bay": "area_dynamic",
+   "looks_like_sunlit_radiance": 0.50961,
+   "read": "on the ramp",
+   "against_blender": 1.285
+  },
+  "bay_point_baked_floor": {
+   "kind": "bay",
+   "blender_linear": [
+    0.09131,
+    0.09131,
+    0.09131
+   ],
+   "blender_lum": 0.09130904823541641,
+   "blender_srgb8": [
+    85.2,
+    85.2,
+    85.2
+   ],
+   "game": {
+    "srgb8": [
+     147.2,
+     147.2,
+     146.0
+    ],
+    "linear": [
+     0.2926498545482416,
+     0.2926515962164969,
+     0.28757615213767224
+    ],
+    "spread8": 2.3
+   },
+   "game_lum": 0.29228477887533466,
+   "reflectance": 0.45,
+   "bay": "point_baked",
+   "looks_like_sunlit_radiance": 0.30171,
+   "read": "on the ramp",
+   "against_blender": 3.304
+  },
+  "bay_point_baked_wall": {
+   "kind": "bay",
+   "blender_linear": [
+    0.06355,
+    0.06355,
+    0.06355
+   ],
+   "blender_lum": 0.06355102360248566,
+   "blender_srgb8": [
+    71.3,
+    71.3,
+    71.3
+   ],
+   "game": {
+    "srgb8": [
+     143.7,
+     143.7,
+     142.8
+    ],
+    "linear": [
+     0.27779775578507204,
+     0.2778049364081701,
+     0.27377391582053023
+    ],
+    "spread8": 1.8
+   },
+   "game_lum": 0.2775123701212719,
+   "reflectance": 0.45,
+   "bay": "point_baked",
+   "looks_like_sunlit_radiance": 0.28333,
+   "read": "on the ramp",
+   "against_blender": 4.458
+  },
+  "bay_spot_baked_floor": {
+   "kind": "bay",
+   "blender_linear": [
+    0.10202,
+    0.10202,
+    0.10202
+   ],
+   "blender_lum": 0.10201659798622131,
+   "blender_srgb8": [
+    89.9,
+    89.9,
+    89.9
+   ],
+   "game": {
+    "srgb8": [
+     72.4,
+     72.4,
+     71.8
+    ],
+    "linear": [
+     0.06550806456530504,
+     0.0655089738053457,
+     0.06450604672893834
+    ],
+    "spread8": 1.5
+   },
+   "game_lum": 0.06543636916599645,
+   "reflectance": 0.45,
+   "bay": "spot_baked",
+   "looks_like_sunlit_radiance": 0.04926,
+   "read": "on the ramp",
+   "against_blender": 0.483
+  },
+  "bay_area_baked_floor": {
+   "kind": "bay",
+   "blender_linear": [
+    0.39663,
+    0.39663,
+    0.39663
+   ],
+   "blender_lum": 0.3966320753097534,
+   "blender_srgb8": [
+    169.0,
+    169.0,
+    169.0
+   ],
+   "game": {
+    "srgb8": [
+     188.4,
+     188.4,
+     187.4
+    ],
+    "linear": [
+     0.505202192422271,
+     0.5052147656082054,
+     0.499288605540829
+    ],
+    "spread8": 2.0
+   },
+   "game_lum": 0.5047842237920112,
+   "reflectance": 0.45,
+   "bay": "area_baked",
+   "looks_like_sunlit_radiance": 0.64217,
+   "read": "on the ramp",
+   "against_blender": 1.619
+  },
+  "bay_glow_floor": {
+   "kind": "bay",
+   "blender_linear": [
+    0.30285,
+    0.30285,
+    0.30285
+   ],
+   "blender_lum": 0.302846610546112,
+   "blender_srgb8": [
+    149.5,
+    149.5,
+    149.5
+   ],
+   "game": {
+    "srgb8": [
+     140.2,
+     140.2,
+     139.2
+    ],
+    "linear": [
+     0.2632643002842175,
+     0.26326757511140886,
+     0.2588458823596792
+    ],
+    "spread8": 2.8
+   },
+   "game_lum": 0.2629476326664731,
+   "reflectance": 0.45,
+   "bay": "glow",
+   "looks_like_sunlit_radiance": 0.26542,
+   "read": "on the ramp",
+   "against_blender": 0.876
+  },
+  "bay_glow_wall": {
+   "kind": "bay",
+   "blender_linear": [
+    0.15262,
+    0.15262,
+    0.15262
+   ],
+   "blender_lum": 0.15262341499328613,
+   "blender_srgb8": [
+    108.9,
+    108.9,
+    108.9
+   ],
+   "game": {
+    "srgb8": [
+     101.1,
+     101.1,
+     100.3
+    ],
+    "linear": [
+     0.1304496139691795,
+     0.13045124462626329,
+     0.12826067450907588
+    ],
+    "spread8": 2.1
+   },
+   "game_lum": 0.13029273878610634,
+   "reflectance": 0.45,
+   "bay": "glow",
+   "looks_like_sunlit_radiance": 0.12166,
+   "read": "on the ramp",
+   "against_blender": 0.797
+  },
+  "bay_glow_panel": {
+   "kind": "glow_direct",
+   "blender_linear": [
+    5.0,
+    5.0,
+    5.0
+   ],
+   "blender_lum": 5.0,
+   "blender_srgb8": [
+    255.0,
+    255.0,
+    255.0
+   ],
+   "game": {
+    "srgb8": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "linear": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "spread8": 0.0
+   },
+   "game_lum": 0.0,
+   "looks_like_sunlit_radiance": null,
+   "read": "black",
+   "against_blender": null
+  },
+  "bay_panels_floor": {
+   "kind": "bay",
+   "blender_linear": [
+    0.0048,
+    0.0048,
+    0.0048
+   ],
+   "blender_lum": 0.004804117139428854,
+   "blender_srgb8": [
+    15.1,
+    15.1,
+    15.1
+   ],
+   "game": {
+    "srgb8": [
+     6.3,
+     6.3,
+     6.2
+    ],
+    "linear": [
+     0.0019095351249892826,
+     0.0019095351249892826,
+     0.0018725233388893834
+    ],
+    "spread8": 0.8
+   },
+   "game_lum": 0.0019068628740328698,
+   "reflectance": 0.45,
+   "bay": "panels",
+   "looks_like_sunlit_radiance": 0.00022,
+   "read": "below the ramp (extrapolated)",
+   "against_blender": 0.046
+  },
+  "panel_0": {
+   "kind": "glow_direct",
+   "blender_linear": [
+    0.2,
+    0.2,
+    0.2
+   ],
+   "blender_lum": 0.19999903440475464,
+   "blender_srgb8": [
+    123.6,
+    123.6,
+    123.6
+   ],
+   "game": {
+    "srgb8": [
+     0.1,
+     0.4,
+     0.9
+    ],
+    "linear": [
+     3.865001269777288e-05,
+     0.00010982185711612074,
+     0.00028116822424097116
+    ],
+    "spread8": 0.3
+   },
+   "game_lum": 0.00010706193069919418,
+   "looks_like_sunlit_radiance": 0.0,
+   "read": "below the ramp (extrapolated)",
+   "against_blender": 0.0
+  },
+  "panel_1": {
+   "kind": "glow_direct",
+   "blender_linear": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "blender_lum": 1.0,
+   "blender_srgb8": [
+    255.0,
+    255.0,
+    255.0
+   ],
+   "game": {
+    "srgb8": [
+     0.2,
+     0.5,
+     1.0
+    ],
+    "linear": [
+     4.6416420272835566e-05,
+     0.0001451347415589839,
+     0.00029293918572193553
+    ],
+    "spread8": 0.3
+   },
+   "game_lum": 0.00013481870732211387,
+   "looks_like_sunlit_radiance": 0.0,
+   "read": "below the ramp (extrapolated)",
+   "against_blender": 0.0
+  },
+  "panel_2": {
+   "kind": "glow_direct",
+   "blender_linear": [
+    0.20067,
+    0.20067,
+    0.20067
+   ],
+   "blender_lum": 0.2006659358739853,
+   "blender_srgb8": [
+    123.7,
+    123.7,
+    123.7
+   ],
+   "game": {
+    "srgb8": [
+     101.4,
+     114.0,
+     122.0
+    ],
+    "linear": [
+     0.13136055049783932,
+     0.168353593801201,
+     0.19455777435939248
+    ],
+    "spread8": 1.9
+   },
+   "game_lum": 0.1623808146312077,
+   "looks_like_sunlit_radiance": 0.15508,
+   "read": "on the ramp",
+   "against_blender": 0.773
+  },
+  "panel_3": {
+   "kind": "glow_direct",
+   "blender_linear": [
+    1.00095,
+    1.00095,
+    1.00095
+   ],
+   "blender_lum": 1.0009487867355347,
+   "blender_srgb8": [
+    255.0,
+    255.0,
+    255.0
+   ],
+   "game": {
+    "srgb8": [
+     190.4,
+     204.3,
+     212.3
+    ],
+    "linear": [
+     0.517062200178561,
+     0.6058835651123426,
+     0.6603350638218524
+    ],
+    "spread8": 1.7
+   },
+   "game_lum": 0.5909315411342473,
+   "looks_like_sunlit_radiance": 0.83445,
+   "read": "on the ramp",
+   "against_blender": 0.834
+  },
+  "sky_pX": {
+   "kind": "sky_marker",
+   "blender_linear": [
+    0.26067,
+    7.58917,
+    0.28595
+   ],
+   "blender_lum": 5.503840113902092,
+   "blender_srgb8": [
+    139.6,
+    255.0,
+    145.7
+   ],
+   "game": {
+    "srgb8": [
+     162.0,
+     254.9,
+     156.0
+    ],
+    "linear": [
+     0.3614550023604164,
+     0.9992796864196524,
+     0.3322353500087467
+    ],
+    "spread8": 1.5
+   },
+   "game_lum": 0.8155175574997914,
+   "expect": "+X red",
+   "looks_like_sunlit_radiance": 1.41882,
+   "read": "above the ramp (extrapolated)",
+   "against_blender": 0.258
+  },
+  "sky_pY": {
+   "kind": "sky_marker",
+   "blender_linear": [
+    0.26067,
+    0.26878,
+    7.60634
+   ],
+   "blender_lum": 0.7968269677937031,
+   "blender_srgb8": [
+    139.6,
+    141.6,
+    255.0
+   ],
+   "game": {
+    "srgb8": [
+     118.4,
+     125.3,
+     255.0
+    ],
+    "linear": [
+     0.1823369529422331,
+     0.206287443714171,
+     0.9996326735604883
+    ],
+    "spread8": 2.2
+   },
+   "game_lum": 0.2584750949709611,
+   "expect": "+Y green",
+   "looks_like_sunlit_radiance": 0.25996,
+   "read": "on the ramp",
+   "against_blender": 0.326
+  },
+  "sky_mX": {
+   "kind": "sky_marker",
+   "blender_linear": [
+    7.58105,
+    7.58917,
+    0.28595
+   ],
+   "blender_lum": 7.060154904550314,
+   "blender_srgb8": [
+    255.0,
+    255.0,
+    145.7
+   ],
+   "game": {
+    "srgb8": [
+     252.9,
+     253.9,
+     162.5
+    ],
+    "linear": [
+     0.9815050891168309,
+     0.9905673035309558,
+     0.36355509183431134
+    ],
+    "spread8": 1.0
+   },
+   "game_lum": 0.943370395062015,
+   "expect": "-X blue",
+   "looks_like_sunlit_radiance": 1.80365,
+   "read": "above the ramp (extrapolated)",
+   "against_blender": 0.255
+  },
+  "sky_mY": {
+   "kind": "sky_marker",
+   "blender_linear": [
+    7.58105,
+    0.26878,
+    0.28595
+   ],
+   "blender_lum": 1.8246095992982387,
+   "blender_srgb8": [
+    255.0,
+    141.6,
+    145.7
+   ],
+   "game": {
+    "srgb8": [
+     254.9,
+     133.4,
+     129.3
+    ],
+    "linear": [
+     0.9992199710406875,
+     0.23611688332083794,
+     0.22065158486258354
+    ],
+    "spread8": 3.0
+   },
+   "game_lum": 0.397236005221392,
+   "expect": "-Y yellow",
+   "looks_like_sunlit_radiance": 0.44859,
+   "read": "on the ramp",
+   "against_blender": 0.246
+  },
+  "sky_up": {
+   "kind": "sky_plain",
+   "blender_linear": [
+    0.25,
+    0.44922,
+    0.89844
+   ],
+   "blender_lum": 0.43929843749999997,
+   "blender_srgb8": [
+    137.0,
+    178.7,
+    243.3
+   ],
+   "game": {
+    "srgb8": [
+     131.1,
+     139.6,
+     152.5
+    ],
+    "linear": [
+     0.22740723643000496,
+     0.2604205376876021,
+     0.3161032990350226
+    ],
+    "spread8": 3.6
+   },
+   "game_lum": 0.2574222052095207,
+   "looks_like_sunlit_radiance": 0.25868,
+   "read": "on the ramp",
+   "against_blender": 0.589
+  }
+ },
+ "sun_ramp": [
+  {
+   "blender_lum": 0.0253,
+   "game_lum": 0.0423,
+   "game_over_blender": 1.673
+  },
+  {
+   "blender_lum": 0.0631,
+   "game_lum": 0.077,
+   "game_over_blender": 1.219
+  },
+  {
+   "blender_lum": 0.1262,
+   "game_lum": 0.1342,
+   "game_over_blender": 1.063
+  },
+  {
+   "blender_lum": 0.2274,
+   "game_lum": 0.2314,
+   "game_over_blender": 1.018
+  },
+  {
+   "blender_lum": 0.3794,
+   "game_lum": 0.3531,
+   "game_over_blender": 0.931
+  },
+  {
+   "blender_lum": 0.5698,
+   "game_lum": 0.4699,
+   "game_over_blender": 0.825
+  },
+  {
+   "blender_lum": 0.7607,
+   "game_lum": 0.5587,
+   "game_over_blender": 0.734
+  },
+  {
+   "blender_lum": 1.0154,
+   "game_lum": 0.6657,
+   "game_over_blender": 0.656
+  }
+ ],
+ "exposure": {
+  "game_over_blender_display": 0.974,
+  "usable_patches": 8,
+  "note": "1.0 = a sunlit surface is as bright on the game screen as in Blender (Standard view); the mid patches only"
+ },
+ "ramp_monotone": true,
+ "against_sunlight": {
+  "bay_area_baked": {
+   "median": 1.619,
+   "min": 1.619,
+   "max": 1.619,
+   "n": 1
+  },
+  "bay_area_dynamic": {
+   "median": 1.285,
+   "min": 1.285,
+   "max": 1.285,
+   "n": 1
+  },
+  "bay_glow": {
+   "median": 0.837,
+   "min": 0.797,
+   "max": 0.876,
+   "n": 2
+  },
+  "bay_point_baked": {
+   "median": 3.881,
+   "min": 3.304,
+   "max": 4.458,
+   "n": 2
+  },
+  "bay_point_dynamic": {
+   "median": 2.35,
+   "min": 2.295,
+   "max": 2.405,
+   "n": 2
+  },
+  "bay_spot_baked": {
+   "median": 0.483,
+   "min": 0.483,
+   "max": 0.483,
+   "n": 1
+  },
+  "bay_spot_dynamic": {
+   "median": 2.019,
+   "min": 2.019,
+   "max": 2.019,
+   "n": 1
+  },
+  "glow_direct": {
+   "median": 0.803,
+   "min": 0.773,
+   "max": 0.834,
+   "n": 2
+  },
+  "ramp_shade": {
+   "median": 1.008,
+   "min": 0.883,
+   "max": 1.069,
+   "n": 5
+  },
+  "sky_marker": {
+   "median": 0.286,
+   "min": 0.246,
+   "max": 0.326,
+   "n": 2
+  },
+  "sky_plain": {
+   "median": 0.589,
+   "min": 0.589,
+   "max": 0.589,
+   "n": 1
+  }
+ },
+ "sun_colour": {
+  "game_r_over_g": 0.877,
+  "blender_r_over_g": 0.901,
+  "game_b_over_g": 1.223,
+  "blender_b_over_g": 1.185
+ },
+ "sky": {
+  "sky_pX": {
+   "blender_brightest_channels": [
+    1,
+    2
+   ],
+   "game_srgb8": [
+    162.0,
+    254.9,
+    156.0
+   ],
+   "blender_srgb8": [
+    139.6,
+    255.0,
+    145.7
+   ],
+   "same_hue": false
+  },
+  "sky_pY": {
+   "blender_brightest_channels": [
+    2,
+    1
+   ],
+   "game_srgb8": [
+    118.4,
+    125.3,
+    255.0
+   ],
+   "blender_srgb8": [
+    139.6,
+    141.6,
+    255.0
+   ],
+   "same_hue": true
+  },
+  "sky_mX": {
+   "blender_brightest_channels": [
+    1,
+    0
+   ],
+   "game_srgb8": [
+    252.9,
+    253.9,
+    162.5
+   ],
+   "blender_srgb8": [
+    255.0,
+    255.0,
+    145.7
+   ],
+   "same_hue": true
+  },
+  "sky_mY": {
+   "blender_brightest_channels": [
+    0,
+    2
+   ],
+   "game_srgb8": [
+    254.9,
+    133.4,
+    129.3
+   ],
+   "blender_srgb8": [
+    255.0,
+    141.6,
+    145.7
+   ],
+   "same_hue": false
+  },
+  "sky_up": {
+   "blender_brightest_channels": null,
+   "game_srgb8": [
+    131.1,
+    139.6,
+    152.5
+   ],
+   "blender_srgb8": [
+    137.0,
+    178.7,
+    243.3
+   ],
+   "same_hue": true
+  }
+ }
+}

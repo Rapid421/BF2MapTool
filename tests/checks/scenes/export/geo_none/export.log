@@ -1,0 +1,8 @@
+00:00.406  blend            | Read blend: "I:\BF2MapTool\tests\checks\scenes\geo_none.blend"
+materials baked: 0 (0 renders, 0.0 s)
+00:00.953  render           | Saved: 'I:\BF2MapTool\tests\checks\scenes\export\geo_none\reflection.hdr'
+reflection capture at (0.0, 0.0, 1.6), 50.0 m of free space around it
+EXPORT DONE objects 0 (triangles 0), materials 0, images 0, lights 0, spawns 0, command posts 0, kill volumes 0, doors 0 -> I:\BF2MapTool\tests\checks\scenes\export\geo_none
+Blender 5.2.0 LTS (hash fbe6228777e7 built 2026-07-14 01:35:40)
+
+Blender quit
