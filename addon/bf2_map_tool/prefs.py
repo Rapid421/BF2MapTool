@@ -108,6 +108,25 @@ def pylib_dir(p):
     return os.path.join(wd, '_python', 'py' + v.replace('.', '')).replace('\\', '/')
 
 
+NEEDED = ('numpy', 'PIL', 'scipy', 'xatlas')     # what every build imports (PACKAGES by import name, less the optional video one)
+
+
+def missing_packages(p):
+    """the packages the build's Python cannot import with the runtime's environment -> list of names ([] = all there).
+    They live in <work folder>/_python: a NEW work folder has none (clean-install test 2026-10-24: a second map in its
+    own work folder died with "No module named 'PIL'")"""
+    py = python_exe(p)
+    if not py or not os.path.exists(py):
+        return list(NEEDED)
+    code = 'import importlib.util as u; print(",".join(m for m in %r if u.find_spec(m) is None))' % (NEEDED,)
+    try:
+        r = subprocess.run([py, '-c', code], capture_output=True, text=True, timeout=60, env=runtime_env(p), stdin=subprocess.DEVNULL,
+                           creationflags=getattr(subprocess, 'CREATE_NO_WINDOW', 0))
+    except (OSError, subprocess.TimeoutExpired):
+        return []                                    # cannot tell: let the build say what it lacks
+    return [m for m in r.stdout.strip().split(',') if m] if r.returncode == 0 else []
+
+
 def runtime_env(p):
     """the environment of every runtime process: the runtime and the private packages first on the import path"""
     env = dict(os.environ)
