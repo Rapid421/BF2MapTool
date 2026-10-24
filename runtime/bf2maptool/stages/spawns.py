@@ -40,7 +40,7 @@ AREA_BELOW, AREA_ABOVE = 60.0, 340.0
 def inputs(job):
     m = job.map
     return {'spawns': m.get('spawns'), 'kill': m.get('kill_volumes'), 'nw': m.get('not_walkable'), 'combat': m.get('combat_area'),
-            'auto': (m.get('options') or {}).get('auto_spawns', True), 'offset': job.offset(), 'area': (AREA_BELOW, AREA_ABOVE), 'v': 7,
+            'auto': (m.get('options') or {}).get('auto_spawns', True), 'offset': job.offset(), 'area': (AREA_BELOW, AREA_ABOVE), 'v': 8,
             'posts': [c.get('pos') for c in m.get('command_posts') or []]}      # v6: posts pick the floor too
 
 
@@ -62,6 +62,8 @@ def load_obj(p):
 JOIN_MIN_AREA, JOIN_MIN_FRAC, JOIN_DY = 30.0, 0.01, 30.0    # a walkable part joins the floor: m2, share of all, metres of height
                                                              # (LEGO Utapau: its biggest deck 26.5 m over the anchored one; the
                                                              # OG Coruscant backdrop plane 70 m under the temple stays out)
+FINDER_HEIGHT = 4.0       # metres: a spawn-finder area reaches this far above its floor. Height 0 (as shipped on flat Kamino) let
+                          # soldiers spawn on ANY floor under the outline - LEGO Utapau: the sinkhole floor 60 m below
 ROOF_CELL, ROOF_SHARE = 2.0, 0.3   # a part above the anchored floor with 30 % of its polygons over it (2 m cells) is its roof
 
 
@@ -155,6 +157,10 @@ class Floor:
         self.anchor_count = len(anchors)
         self.all_polys = len(F)
         self.F = [f for r in chosen for f in components[r]]
+        # the connected part each polygon belongs to: spawns go on ONE part (see Planner), the joined ones only widen
+        # the combat area - bots cannot walk between parts the navmesh does not connect
+        self.F_root = [r for r in chosen for f in components[r]]
+        self.part_area, self.part_hits = {r: area[r] for r in chosen}, {r: hits[r] for r in chosen}
         self.parts_joined = len(chosen) - 1
         self.components, self.area, self.total_area = len(area), sum(area[r] for r in chosen), sum(area.values())
         ec = {}
@@ -212,8 +218,8 @@ class Floor:
         return (best, bd) if bd <= max_d else (None, bd)
 
     def candidates(self, rng, per_m2=1 / 6.0):
-        out = []
-        for f in self.F:
+        out, self.cand_root = [], []
+        for f, root in zip(self.F, self.F_root):
             P = self.V[f]
             for i in range(1, len(f) - 1):
                 a, b, c = P[0], P[i], P[i + 1]
@@ -223,6 +229,7 @@ class Floor:
                     if r1 + r2 > 1:
                         r1, r2 = 1 - r1, 1 - r2
                     out.append(a + r1 * (b - a) + r2 * (c - a))
+                    self.cand_root.append(root)
         return np.array(out)
 
 
@@ -336,6 +343,20 @@ class Planner:
                          'blocked': int(((edge >= self.clear) & (head >= self.headroom) & ~free).sum())}
         self.n_cand = len(cand)
         self.C = np.array([p for p, k in zip(cand, ok) if k])
+        # every safe spot of the joined floor: the combat area and play volumes are drawn round these
+        self.C_all = self.C
+        # spawns: ONE connected part. LEGO Utapau (2026-10-23): spawns spread over 7 parts the navmesh does not connect,
+        # Team 2 mostly on islands - in Blast the bots stood still with no path to anyone. The anchored part (hand-placed
+        # spawns / posts on it) when it has room, else the part with the most safe spots.
+        roots = np.array(floor.cand_root)[ok] if len(cand) else np.zeros(0)
+        count = {r: int((roots == r).sum()) for r in set(roots.tolist())}
+        self.spawn_part = None
+        if len(count) > 1:
+            part = max(count, key=lambda r: (floor.part_hits.get(r, 0) > 0 and count[r] >= MIN_SPOTS, count[r]))
+            if count[part] >= 8:
+                self.C = self.C[roots == part]
+                self.spawn_part = {'area_m2': round(float(floor.part_area[part]), 1), 'spots': count[part], 'parts_with_spots': len(count),
+                                   'anchored': floor.part_hits.get(part, 0) > 0}
         self.spacing = 2.5 if self.clear >= EDGE_CLEAR else max(1.2, self.clear)
         if len(self.C) < 8:
             raise StageError('Only %d safe spawn spots were found on the walkable floor (%d m2 in its largest connected part), even at '
@@ -479,14 +500,14 @@ def run(job, log):
         pts = np.array([job.to_game((x, y, 0.0)) for x, y in job.map['combat_area']['points']])[:, [0, 2]]
         area_poly, area_grow, area_src = hull(pts), 0.0, 'the scene\'s combat area outline'
     else:
-        area_poly, area_grow, area_src = hull(P.C[:, [0, 2]]), 40.0, 'hull of the walkable floor + 40 m'
-    floor_y = float(np.percentile(P.C[:, 1], 5))
-    area_base = float(P.C[:, 1].min()) - AREA_BELOW
-    area_height = float(P.C[:, 1].max()) + AREA_ABOVE - area_base
+        area_poly, area_grow, area_src = hull(P.C_all[:, [0, 2]]), 40.0, 'hull of the walkable floor + 40 m'
+    floor_y = float(np.percentile(P.C_all[:, 1], 5))
+    area_base = float(P.C_all[:, 1].min()) - AREA_BELOW
+    area_height = float(P.C_all[:, 1].max()) + AREA_ABOVE - area_base
     plan = {'navmesh': {'main_polygons': len(floor.F), 'polygons': floor.all_polys, 'components': floor.components, 'parts_same_height_joined': floor.parts_same_height,
                         'main_area_m2': round(floor.area, 1), 'total_area_m2': round(floor.total_area, 1),
                         'placed_spawns_on_component': floor.anchor_hits, 'placed_spawns': floor.anchor_count},
-            'candidates': {'sampled': P.n_cand, 'valid': len(P.C), 'rejected': P.rejected}, 'combat_area': area_src,
+            'candidates': {'sampled': P.n_cand, 'valid': len(P.C_all), 'spawn_part': P.spawn_part, 'rejected': P.rejected}, 'combat_area': area_src,
             'hand_placed': {k: len(v) for k, v in hand.items()}, 'left_out_off_floor': [n for n, _ in dropped_off_floor]}
     drawn = {}
     # ---- Blast / Arcade
@@ -523,11 +544,11 @@ def run(job, log):
     for i in shp:
         if i['team'] in ('Team1', 'Team2'):
             b = b1 if i['team'] == 'Team1' else b2
-            put_shape(lay, i['guid'], disc(b, 14.0), b[1] + 1.5, i['npts'])
+            put_shape(lay, i['guid'], disc(b, 14.0), b[1] - 0.5, i['npts'], height=FINDER_HEIGHT)
     zs = P.zones(len(nz)) if nz else []
     for k, i in enumerate(nz):
         z = zs[k % len(zs)]
-        put_shape(lay, i['guid'], hull(z[:, [0, 2]]), float(np.median(z[:, 1])) + 1.5, i['npts'], grow=3.0)
+        put_shape(lay, i['guid'], hull(z[:, [0, 2]]), float(np.median(z[:, 1])) - 0.5, i['npts'], grow=3.0, height=FINDER_HEIGHT)
     for i in Gl:
         if i['type'] == 'VolumeVectorShapeData':
             put_shape(lay, i['guid'], area_poly, area_base, i['npts'], grow=area_grow, height=area_height)

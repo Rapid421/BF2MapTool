@@ -15,7 +15,12 @@ import os
 import sys
 import time
 
-from . import cli, config, pipeline, runner
+try:
+    from . import cli, config, pipeline, runner
+except ImportError as _e:              # a package of the add-on's private folder is missing (a new work folder has none)
+    print('@@DONE blocked The Python package "%s" is missing. In Blender: Edit > Preferences > Add-ons > BF2 Map Tool > '
+          '"Install Python packages", then build again.' % (_e.name or _e), flush=True)
+    sys.exit(2)
 
 
 def _export(a, settings):

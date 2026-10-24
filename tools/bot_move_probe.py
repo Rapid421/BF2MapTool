@@ -33,6 +33,20 @@ def main():
     out = os.environ.get('BF2_TEST_OUT') or '.'
     filt, gap, rounds = arg('--filter', 'Soldier'), arg('--gap', 25.0), arg('--rounds', 3)
     snaps, tail = [], ''
+    # the soldier entities' type name is not known for sure: when the filter finds none, try the likely others,
+    # and keep a sample of every name the game lists so a wrong filter shows at once
+    rows, tail = entities(filt)
+    sample = []
+    if not rows:
+        for alt in ('soldier', 'Character', 'character', 'Player', 'Humanoid'):
+            rows, tail = entities(alt)
+            if rows:
+                filt = alt
+                break
+        if not rows:
+            allrows, _ = entities('')
+            from collections import Counter
+            sample = Counter(v['name'] for v in allrows.values()).most_common(60)
     for k in range(rounds):
         rows, tail = entities(filt)
         snaps.append({'t': time.strftime('%H:%M:%S'), 'rows': rows})
@@ -43,7 +57,7 @@ def main():
     names = sorted({v['name'] for v in first.values()})
     res = {'filter': filt, 'gap_s': gap, 'rounds': rounds, 'soldiers_seen': [len(s['rows']) for s in snaps], 'names': names[:20],
            'moved_over_2m': sum(1 for d in moves.values() if d > 2.0), 'still_under_0_5m': sum(1 for d in moves.values() if d < 0.5),
-           'moves_m': sorted(moves.values()), 'last_reply_tail': tail}
+           'moves_m': sorted(moves.values()), 'last_reply_tail': tail, 'entity_name_sample': sample}
     json.dump({'summary': res, 'snapshots': snaps}, open(os.path.join(out, 'bot_moves.json'), 'w'), indent=1)
     print(json.dumps(res))
 

@@ -78,6 +78,11 @@ def start(context, kind, extra_args=()):
     wf = work_folder(context)
     if not wf:
         return 'Give the level a name first (Map tab).'
+    miss = P.missing_packages(p)
+    if miss:
+        return ('The Python packages the build needs (%s) are not installed for this work folder (%s). In Edit > Preferences > '
+                'Add-ons > BF2 Map Tool press "Install Python packages" (about a minute, needs the internet once), then try again.'
+                % (', '.join('Pillow' if m == 'PIL' else m for m in miss), p.work_dir))
     os.makedirs(wf + '/logs', exist_ok=True)
     os.makedirs(wf + '/export', exist_ok=True)
     copy = wf + '/export/scene_copy.blend'
