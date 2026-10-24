@@ -28,3 +28,8 @@ tests/**/*.res
 tests/**/*.f32
 tests/**/*.fxs
 tests/**/out/
+
+# planning notes stay local (not in the public repo)
+NIGHT_PLAN_*.md
+PLAN_*.md
+NIGHT_BACKLOG.md
